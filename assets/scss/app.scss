@@ -1,0 +1,23 @@
+@import "node_modules/\@thulite/doks-core/assets/scss/app.scss";
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+@media (min-width: 991px) {
+    .min-vh-100-lg {
+        min-height: 100vh;
+    }
+
+    .min-vh-75-lg {
+        min-height: 75vh;
+    }
+
+    .h-75vh-lg {
+        height: 75vh;
+    }
+
+    .w-75-lg {
+        width: 75%;
+    }
+}
