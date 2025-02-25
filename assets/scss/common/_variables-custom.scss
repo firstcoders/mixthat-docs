@@ -1,0 +1,16 @@
+// Put your custom SCSS variables here
+$light-bg-subtle-dark: hsl(224, 14%, 16%);
+$light-border-subtle-dark: hsl(224, 10%, 23%);
+
+$body-bg-dark: #151a1f;
+$body-overlay-dark: hsl(224, 14%, 16%);
+$border-dark: hsl(224, 14%, 16%);
+$body-color-dark: hsl(224, 6%, 77%);
+$headings-color-dark: hsl(0, 0%, 100%);
+$link-color-dark: white;
+$button-color-dark: $link-color-dark;
+$focus-color-dark: lighten($link-color-dark, 2.5%);
+
+$navbar-dark-color: $body-color-dark;
+$navbar-dark-hover-color: $link-color-dark;
+$navbar-dark-active-color: $link-color-dark;

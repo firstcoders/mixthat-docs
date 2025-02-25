@@ -1,0 +1,78 @@
+---
+title: "Uploading Your Stems"
+description: "Learn how to upload audio stems, configure track settings, and manage your tracks in Mix That."
+summary: "Step-by-step guide to uploading and organizing your audio stems in Mix That."
+date: 2025-03-01T16:13:18+02:00
+lastmod: 2025-06-12T00:00:00+02:00
+draft: false
+weight: 2
+toc: true
+seo:
+  title: "Uploading Audio Stems | Mix That"
+  description: "A complete guide to uploading, organizing, and managing your audio stems and tracks in Mix That."
+  canonical: "/docs/gemeral/upload-tracks/"
+  robots: "index, follow"
+---
+
+Uploading Your Stems
+Ready to upload your audio and create a new track? It's simple!
+
+First, register for an account. Once you're signed in, head over to the [Upload page](https://app.mixthat.co/upload).
+
+On this page, you can create a new track and add your audio stems. Just drag and drop your files directly onto the page, or click the add files button to select them.
+
+Track Settings
+After uploading, you can fine-tune your track's details.
+
+Select the controls-bar and click edit to access the general settings. Here, you can:
+
+- Add a label (track title)
+- Write a description
+- Add tags to help with discovery
+
+Public Access & Quality
+You can also make your track publicly accessible. This means anyone with the track's URL can play it without needing to log in.
+
+Below the settings, you'll see an indicator for the audio quality stored for your track. This will show if the audio is streaming only or if it's available for both streaming and download quality.
+
+Managing Your Stems
+Easily organize your individual stems within the track:
+
+- Rename a Stem: Select the stem you want to change, then click the edit button to update its label.
+- Reorder Stems: Use the ▲ (up) and ▼ (down) buttons to move a selected stem up or down in the list.
+- Remove a Stem: If you need to take a stem out, select it and click the remove button.
+
+Saving Your Work
+Once you're happy with how your player is set up and your stems are organized, simply hit save. Your track will then be saved to your account, ready to be shared or further developed!
+
+## Audio Quality Settings
+
+### Streaming Quality
+
+Audio quality for streaming can be set to **LOW (64kbps Opus)** or **HIGH (96kbps Opus)**. Opus is a modern, highly efficient codec that delivers excellent sound quality even at lower bitrates. At 96kbps, Opus is considered transparent for most audio samples. Because a stemplayer streams multiple tracks simultaneously, bandwidth and performance are especially important—this setting offers the best balance between quality, storage, and performance for most users.
+
+### Download & Mixing Quality
+
+The quality of audio available for download or mixing depends on the quality of the source audio you upload. If you choose to keep the source, downloads and mixes will use your original uploaded files to generate the mix (subject to your account permissions).
+
+## Audio Duration Limits
+
+Each stem you upload must be under a maximum duration. If a file is too long, you'll see a clear error message.
+
+## Source Audio Persistence
+
+When uploading stems, you have the option to keep your original source audio files. This affects:
+
+- **Mix Generation:** If source audio is preserved, you will be able to generate mixes and also offer this ability to those you share the track with
+- **Download Quality:** Downloads will maintain the quality of your source files
+- **Storage:** Keeping source files requires additional storage space
+
+## Track & Stem Limits
+
+There are limits on the number of tracks. If you reach a limit, you'll be notified and may need to remove existing tracks or stems.
+
+There are also limits on the number of stems you can add to each track, although this limit is set to a generous number. The reason for this is mainly to ensure adequate player performance in the browser.
+
+## Account Permissions
+
+Some upload features may depend on your current account settings. If you don't have access, you'll see a warning or error message.
