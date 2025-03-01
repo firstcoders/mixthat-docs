@@ -14,4 +14,16 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Download a mix
+Mixthat Mix That is a service that handles the hosting, transcoding & streaming of audio using fast content-delivery-networks in a format ready to be consumed by our "stem" player — a fully customisable web-component that can be embedded in clients web-apps that is able to play stem/ multi-track audio.
+
+## Who is it for?
+
+- Hobbyists
+- Musicians
+- Music Teachers
+- Karaoke
+- Choirs
+- Music Labels
+- Music Publishers
+
+If you can think of another use, [let us know](/contact)!
