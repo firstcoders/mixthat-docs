@@ -16,6 +16,8 @@ seo:
 
 Mixthat Mix That is a service that handles the hosting, transcoding & streaming of audio using fast content-delivery-networks in a format ready to be consumed by our [_stem-player_](https://www.stemplayer-js.com) — a fully customisable web-component that can be embedded in web-sites and is able to play stem & multi-track audio.
 
+You can use it to create Stem Players to play and share multi-track audio online, or you can use it to embed players into your own website.
+
 ## Who is it for?
 
 - Hobbyists
