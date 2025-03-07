@@ -1,9 +1,9 @@
 ---
 title: "Sharing a Track"
-description: "Downloading a high quality mix"
+description: "Sharing a Track"
 summary: ""
-date: 2023-09-07T16:13:18+02:00
-lastmod: 2023-09-07T16:13:18+02:00
+date: 2025-03-01T16:13:18+02:00
+lastmod: 2025-03-01T16:13:18+02:00
 draft: false
 weight: 4
 toc: true
@@ -14,4 +14,10 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Download a mix
+You can share a track by clicking on the share icon.
+
+![share icon](./icon-share.png "share icon")
+
+For tracks that are not marked as [public](/docs/quickstart/upload-audio/#player-settings) a secure URL will be generated. This URL will provide access to the track for 30 days.
+
+For tracks that are marked as [public](/docs/quickstart/upload-audio/#player-settings) a URL will be generated that will remain valid until the track is no longer marked as public.

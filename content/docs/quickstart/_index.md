@@ -2,8 +2,8 @@
 title: "Quick Start"
 description: ""
 summary: ""
-date: 2023-09-07T16:06:50+02:00
-lastmod: 2023-09-07T16:06:50+02:00
+date: 2025-03-01T16:06:50+02:00
+lastmod: 2025-03-01T16:06:50+02:00
 draft: false
 weight: 1
 toc: true
