@@ -18,4 +18,4 @@ We have created a REST-full API which will allow you to integrate your backend w
 
 The API can be made available for [premium sponsors](/docs/reference/sponsor-this-project/), please [contact us](/contact) for help.
 
-API documentation can be found here.
+API documentation can be found [here](/openapi).

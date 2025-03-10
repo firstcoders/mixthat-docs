@@ -178,3 +178,25 @@ h6 {
 [data-bs-theme="dark"] .doks-subnavbar {
     background-color: transparent;
 }
+
+[data-bs-theme="light"] .logo {
+    filter: invert(1) grayscale(1) contrast(0) brightness(0) !important;
+}
+
+.swagger-ui {
+    table,
+    tr,
+    th {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    th,
+    td {
+        padding: 5px !important;
+    }
+}
+
+.bg-body {
+    background-color: $body-bg-dark;
+}

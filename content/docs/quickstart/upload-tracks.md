@@ -14,9 +14,9 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Navigate to [https://app.mixthat.co/upload](https://app.mixthat.co/upload) where you upload create a new track and add audio either by drag-drop, or by clicking `add files`.
+Navigate to [https://app.mixthat.co/upload](https://app.mixthat.co/upload) where you upload create a new track and add audio (stems) either by drag-drop, or by clicking `add files`.
 
-## Player Settings
+## General Settings
 
 Select the `controls-bar` and edit select `edit`. Here you can edit some additional settings, such as a `label`, `description`, and `tags`.
 
@@ -26,9 +26,9 @@ There is also an indicator to show the what [audio quality is stored for this pa
 
 ## Stem Settings
 
-You can change the label for each stem by selecting the relevant track and clicking the `edit` button.
+You can change the label for each stem by selecting the relevant stem and clicking the `edit` button.
 
-You can move a selected track up or down by pressing the &#9650; and &#9660; buttons.
+You can move a selected stem up or down by pressing the &#9650; and &#9660; buttons.
 
 You can remove a selected stem by pressing the `remove` button.
 

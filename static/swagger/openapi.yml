@@ -1,0 +1,316 @@
+openapi: 3.0.0
+info:
+  title: Mixthat!
+  description: The Mixthat API
+  version: 0.1.0
+
+servers:
+  - url: https://app.mixthat.co/api/v1
+    description: The Mixthat API
+
+paths:
+  /tracks/:
+    get:
+      summary: List Tracks
+      parameters:
+        - in: query
+          name: modified_since
+          schema:
+            type: number
+            format: timestamp
+          description: Return records after the track with this track ID
+      responses:
+        '200':
+          description: A list of tracks
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfTracksResponse'
+
+    post:
+      summary: Create a new Track
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/TrackPayload'
+      responses:
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '200':
+          description: OK
+          # content:
+          #   application/json:
+          #     schema:
+          #       '$ref': '#/components/schemas/DefaultResponse'
+        '202':
+          description: The request has been accepted but is still processing
+
+  /tracks/{track_id}:
+    get:
+      summary: Get a track
+      parameters:
+        - in: path
+          name: track_id
+          type: string
+          required: true
+          description: The track id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/TrackResponse'
+
+    delete:
+      summary: Delete a track
+      parameters:
+        - in: path
+          name: track_id
+          type: string
+          required: true
+          description: The track id
+      responses:
+        '200':
+          description: OK
+        '403':
+          description: Access Denied
+        '404':
+          description: Not found
+
+    put:
+      summary: Update a track
+      parameters:
+        - in: path
+          name: track_id
+          type: string
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/TrackPayload'
+      responses:
+        '200':
+          description: OK
+        '403':
+          description: Access Denied
+        '404':
+          description: Not found
+
+  /jobs/{job_id}:
+    get:
+      summary: Get the async job
+      parameters:
+        - in: path
+          name: job_id
+          schema: '#/components/schemas/job_id'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [PENDING, DONE, FAILED]
+                  response:
+                    type: object
+                    properties:
+                      $links:
+                        '$ref': '#/components/schemas/Links'
+
+components:
+  headers:
+  securitySchemes:
+    tokenAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    track_id:
+      type: string
+      pattern: '^[a-zA-Z0-9]{6}$'
+    job_id:
+      type: string
+      pattern: '^[a-zA-Z0-9]{6}$'
+
+    Links:
+      type: array
+      items:
+        type: object
+        properties:
+          href:
+            type: string
+            format: url
+          rel:
+            type: string
+
+    TrackResponse:
+      type: object
+      required:
+        - name
+        - files
+      properties:
+        id:
+          type: string
+        created_time:
+          type: string
+          format: date-time
+        modified_time:
+          type: string
+          format: date-time
+        label:
+          type: string
+        files:
+          type: array
+          minItems: 0
+          maxItems: 15
+          items:
+            type: object
+            required:
+              - id
+            properties:
+              id:
+                type: string
+              label:
+                type: string
+              type:
+                type: string
+                enum: [STEM, MIX]
+              index:
+                type: integer
+              $links:
+                '$ref': '#/components/schemas/Links'
+        $links:
+          '$ref': '#/components/schemas/Links'
+
+    TrackPayload:
+      type: object
+      additionalProperties: false
+      required:
+        - label
+        - files
+      properties:
+        track_id:
+          schema: '#/components/schemas/track_id'
+        label:
+          type: string
+        is_public:
+          description: makes the track available to anyone with the URL
+          type: boolean
+        files:
+          type: array
+          minItems: 0
+          maxItems: 15
+          items:
+            oneOf:
+              - type: object
+                additionalProperties: false
+                description: An existing file
+                required:
+                  - file_id
+                  - type
+                minItems: 0
+                maxItems: 30
+                properties:
+                  file_id:
+                    type: string
+                  label:
+                    type: string
+                  type:
+                    type: string
+                    enum: [STEM, MIX]
+                  index:
+                    type: integer
+              - type: object
+                additionalProperties: false
+                description: A new file
+                required:
+                  - src
+                  - type
+                minItems: 0
+                maxItems: 30
+                properties:
+                  src:
+                    type: string
+                    format: url
+                  label:
+                    type: string
+                  type:
+                    type: string
+                    enum: [STEM, MIX]
+                  index:
+                    type: integer
+        object_strategy_hint:
+          description: An instruction to either discard source audio and only keep streaming audio, or to keep the source audio for mixing and downloading.
+          type: string
+          enum: [KEEP_SOURCE, DISCARD_SOURCE]
+        # created_time:
+        #   type: string
+        #   format: date-time
+        # modified_time:
+        #   type: string
+        #   format: date-time
+
+    ArrayOfTracksResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              modified_time:
+                type: string
+                format: date-time
+              label:
+                type: string
+              description:
+                type: string
+              $links:
+                '$ref': '#/components/schemas/Links'
+        $links:
+          '$ref': '#/components/schemas/Links'
+
+    BadRequestResponse:
+      type: object
+      required:
+        - message
+      properties:
+        errors:
+          type: array
+          items:
+            type: object
+            properties:
+              message:
+                type: string
+              property:
+                type: string
+
+    DefaultResponse:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+
+    # ErrorResponse:
+    #   type: object
+    #   properties:
+    #     message:
+    #       type: string
+
+security:
+  - tokenAuth: []
