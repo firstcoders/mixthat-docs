@@ -14,4 +14,8 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-The (previous) beta version of Mix That can be found at [https://beta.mixthat.co](https://beta.mixthat.co), and will remain accessible until 1-5-2025..
+Ask us about how audio assets are secured.
+
+In due course we will publish a detailed description.
+
+For [Enterprise Sponsors](/docs/reference/sponsor-this-project/) we can also make the source code available for audit.

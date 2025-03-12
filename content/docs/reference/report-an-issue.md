@@ -1,6 +1,6 @@
 ---
 title: "Report an Issue"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+description: "Report an Issue"
 summary: ""
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00
@@ -14,8 +14,6 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.
+Have you noticed anything that is not working as it should? Please create an issue [here](https://github.com/firstcoders/mixthat/issues).
 
-## Further reading
-
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+Anything you'd like to see changed in this documentation, please create an issue [here](https://github.com/firstcoders/mixthat-docs/issues), or alternatively create a `pull request` [here](https://github.com/firstcoders/mixthat-docs).

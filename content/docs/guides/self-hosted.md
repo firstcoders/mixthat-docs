@@ -1,6 +1,6 @@
 ---
 title: "Self Hosted"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+description: "Self Hosted"
 summary: ""
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00
@@ -14,8 +14,12 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.
+If you are an [enterprise sponsor](/docs/reference/sponsor-this-project/) and are interested in hosting Mix That in your own environment then that is possible.
 
-## Further reading
+Mix That is built using only modern technology and methods, using a "serverless-first" approach which ensures a very cost-effictive and scalable way to host the application.
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+A self hosted Mix That instance can be used, for example, as a "track-microservice" in which you host your audio assets. Mix That can then take care of transcoding of the audio into streams which you can use to play audio on your own platform.
+
+In due course we will make the source code available. We will also publish detailed documentation and architectural diagrams which will help your developers to understand the stack.
+
+Please [contact us](/contact) if you like any more information.

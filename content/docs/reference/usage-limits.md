@@ -1,6 +1,6 @@
 ---
 title: "Usage Limits"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+description: "Usage Limits"
 summary: ""
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00
@@ -14,8 +14,10 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.
+To keep costs in check we have to impose certain limitations with respect to storage & network traffic. Sorry!
 
-## Further reading
+Storage for free accounts will initially be limited to 2GB per account or 25 tracks.
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+If you require additional storage, we hope you'd consider becoming a [sponsor](/docs/reference/sponsor-this-project/).
+
+CAUTION: Please note that we will actively monitor accounts in order to prevent creative ways designed to circumvent the above and may disable or block any accounts that we deem suspicious.

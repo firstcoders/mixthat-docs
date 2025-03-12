@@ -1,6 +1,6 @@
 ---
-title: "Request a Feature"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+title: "Product Feedback"
+description: "Product Feedback"
 summary: ""
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00

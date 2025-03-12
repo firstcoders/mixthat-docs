@@ -14,8 +14,10 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.
+If you would like to see the development of Mix That and [Stemplayer-JS](https://www.stemplayer-js.com) progress we'd be very grateful if you'd become a sponsor! This can be done using the following links:
 
-## Further reading
+- [https://github.com/sponsors/stemplayer-js](https://github.com/sponsors/stemplayer-js)
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+More links will be added here in due course.
+
+You can also [contact us](/contact) for options.

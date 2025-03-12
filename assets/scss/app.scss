@@ -113,6 +113,10 @@ h6 {
     min-height: 100vh;
 }
 
+.min-vh-60 {
+    min-height: 60vh;
+}
+
 @media (min-width: 991px) {
     .min-vh-100-lg {
         min-height: 100vh;
@@ -183,20 +187,12 @@ h6 {
     filter: invert(1) grayscale(1) contrast(0) brightness(0) !important;
 }
 
-.swagger-ui {
-    table,
-    tr,
-    th {
-        background-color: transparent !important;
-        border: none !important;
-    }
-
-    th,
-    td {
-        padding: 5px !important;
-    }
-}
-
 .bg-body {
     background-color: $body-bg-dark;
+}
+
+.swagger-ui {
+    code:not(:where(.not-content *)) {
+        background-color: black !important;
+    }
 }

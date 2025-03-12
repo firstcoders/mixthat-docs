@@ -1,12 +1,10 @@
 ---
-title: "Resources"
+title: "Contact"
 description: ""
 summary: ""
-date: 2024-02-27T09:30:56+01:00
-lastmod: 2024-02-27T09:30:56+01:00
-draft: true
-weight: 999
-toc: true
+date: 2025-03-01T17:19:07+02:00
+lastmod: 2025-03-01T17:19:07+02:00
+draft: false
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
@@ -14,4 +12,4 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Link to valuable, relevant resources.
+If you would like to contact us, please send us an email at [mixthat@firstcoders.co.uk](mailto:mixthat@firstcoders.co.uk)

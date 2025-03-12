@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Support"
-  url = "/support/"
+  url = "/contact/"
   weight = 3
 
 [[main]]

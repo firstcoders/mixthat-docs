@@ -14,7 +14,7 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Navigate to [https://app.mixthat.co/upload](https://app.mixthat.co/upload) where you upload create a new track and add audio (stems) either by drag-drop, or by clicking `add files`.
+Register and then navigate to [https://app.mixthat.co/upload](https://app.mixthat.co/upload) where you upload create a new track and add audio (stems) either by drag-drop, or by clicking `add files`.
 
 ## General Settings
 

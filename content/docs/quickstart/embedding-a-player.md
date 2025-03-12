@@ -40,12 +40,14 @@ then simply paste the embed code, for example
 
 in the appropriate place in your website.
 
-## NPM
+## Package Managers (NPM | Yarn)
 
-If you prefer not to import the player script via "cdn.jsdelivr.net" you can use NPM instead to pull in the dependency into your platform.
+If you prefer not to import the player script via a CDN you can use NPM instead to pull in the dependency into your platform.
 
 Simply run `npm i @firstcoders/mixthat-player`
 
 See [here for more information](https://github.com/firstcoders/mixthat-player).
 
-See the [stemplayer-js documentation](https://github.com/stemplayer-js/stemplayer-js) for more information on configuration, such as styling.
+## Customization
+
+See the [stemplayer-js documentation](https://github.com/stemplayer-js/stemplayer-js/blob/main/docs/stemplayer-js.md) for more information on configuration, such as styling.
