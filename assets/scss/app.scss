@@ -196,3 +196,32 @@ h6 {
         background-color: black !important;
     }
 }
+
+.btn-brand {
+    background-color: #42b983;
+}
+
+.btn-brand:hover {
+    background-color: #4fe19f !important;
+    color: white;
+}
+
+.bg-dj {
+    background-color: #f3c623 !important;
+    background-image: url("images/reshot-illustration-dj-music-equipment-3XBR2WVSHG.png") !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 68px;
+    opacity: 0.9;
+    // mix-blend-mode: soft-light;
+    background-blend-mode: soft-light;
+}
+
+.mt--navbar {
+    margin-top: -68px !important;
+}

@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Support"
-  url = "/contact/"
+  url = "/docs/reference/support/"
   weight = 3
 
 [[main]]
@@ -18,10 +18,10 @@
   url = "/docs/reference/sponsor-this-project/"
   weight = 4
 
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 5
+# [[main]]
+#   name = "Blog"
+#   url = "/blog/"
+#   weight = 5
 
 
 

@@ -19,6 +19,7 @@ The (previous) beta version of Mix That can be found at [https://beta.mixthat.co
 ## What's different?
 
 - We have made improvements to audio storage size, enabling storing more audio and improving streaming speeds;
-- We have added a feature to the player to allow selection of regions;
+- We have added a feature to the player to allow selection of regions as well as zooming;
 - The page listing public tracks is no longer supported (sorry);
 - We have added a modern [REST API](/docs/guides/api/) enabling integration with backends [Premium Sponsors Only](/docs/reference/sponsor-this-project/)
+- We have overhauled the upload process, making it more friendly and allowing you to interact with the player as you add audio.

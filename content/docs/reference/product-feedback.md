@@ -17,3 +17,5 @@ seo:
 Have an idea to make Mix That better? Wonderful!
 
 We'd be very grateful if you'd create a feature request [here](https://github.com/firstcoders/mixthat).
+
+If you would like to contact us, please send us an email at [mixthat@firstcoders.co.uk](mailto:mixthat@firstcoders.co.uk)
