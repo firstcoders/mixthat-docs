@@ -16,8 +16,8 @@ seo:
 
 A player can be configured to allow a user to create a high quality mix of a track. For this to be possible, high quality audio has to be available for all stems in a player.
 
-Storing download quality audio is available for [premium sponsors](/docs/reference/sponsor-this-project/)
+[NOTE] Storing download quality audio is available for [premium sponsors](/docs/reference/sponsor-this-project/)
 
 ## Downloading a region
 
-If a user selects a region of a track, and then preses the "download mix" button, a high quality mix will be created for that region.
+If a user selects a region of a track, and then preses the `download mix` button, a high quality mix will be created for the region and start downloading.

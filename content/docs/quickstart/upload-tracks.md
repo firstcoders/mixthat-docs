@@ -22,7 +22,7 @@ Select the `controls-bar` and edit select `edit`. Here you can edit some additio
 
 Additionally you can make the track publicly accessible. This means that anyone with a URL to the track can play the track without logging in.
 
-There is also an indicator to show the what [audio quality is stored for this particular track](/docs/reference/audio-quality/).
+There is also an indicator to show the what audio quality is stored for this particular track. This can be either streaming only, or streaming and [download quality](/docs/quickstart/downloading-a-mix/).
 
 ## Stem Settings
 

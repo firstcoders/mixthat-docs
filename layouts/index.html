@@ -2,7 +2,10 @@
 <div class="bg-dj"></div>
 <section class="section container-fluid mt-n3 pb-3 position-relative z-top mt--navbar">
     <div class="min-vh-100 d-flex align-items-center">
-      <div class="w-100 text-center text-black">
+      <div class="w-100">
+
+      <div class="text-center text-black d-flex align-items-center mb-4" style="min-height: 50vh;">
+        <div class="w-100">
         <div>
           <h1 class="text-black">{{ .Title }}</h1>
         </div>
@@ -21,8 +24,43 @@
           </p>
         </div>
       </div>
+      </div>
+
+
+      <div style="margin-bottom: 3rem !important">
+        <!-- paste the below just before the </head> tag -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@firstcoders/mixthat-player@4.0.0-beta.2"></script>
+        <style>
+          :root {
+            --stemplayer-js-brand-color: #42b983;
+            --stemplayer-js-background-color: rgb(14, 17, 20) !important;
+            --stemplayer-js-row-controls-background-color: rgb(14, 17, 20);
+            --stemplayer-js-row-end-background-color: rgb(14, 17, 20);
+            --stemplayer-js-controls-background-color: #2d3339;
+            --fc-player-button-focus-color: black;
+            --stemplayer-hover-mix-blend-mode: color-dodge;
+            --stemplayer-hover-background-color: rgba(255, 196, 0, 0.3);
+            --stemplayer-js-row-height: 4.5rem;
+            --stemplayer-js-font-size: 1.3rem;
+            --stemplayer-js-font-family: 'BenchNine', sans-serif;
+          }
+        </style>
+
+        <div class="rounded overflow-hidden bg-black p-1">
+          <mixthat-player class="rounded overflow-hidden" src="https://app.mixthat.co/api/v1/tracks/QIbR0A?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoid2hCdGdFIiwic2NvcGUiOiJ0cmFja3MvcmVhZCIsInJlc291cmNlIjoidHJhY2tzL1FJYlIwQSIsImlhdCI6MTc0MTg2MjY5MywiZXhwIjoxNzQ0NDU0NjkzLCJhdWQiOiJodHRwczovL2FwcC5taXh0aGF0LmNvIiwiaXNzIjoiaHR0cHM6Ly9hcHAubWl4dGhhdC5jbyIsInN1YiI6IjE0ZDg0NDI4LWUwYTEtNzAyYy02MTE0LWNlMzM3ZDY4YzkyYSJ9.dsNO2ZsCEKKDfwK7fRtWj12CbKXeUrdECQDofPibnVs"></mixthat-player>
+        </div>
+
+      </div>
+
+
+    </div>
+
   </div>
+
 </section>
+
+
+
 {{ end }}
 
 {{ define "sidebar-footer" }}
