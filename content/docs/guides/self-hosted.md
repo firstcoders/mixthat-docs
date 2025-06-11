@@ -1,25 +1,25 @@
 ---
-title: "Self Hosted"
-description: "Self Hosted"
-summary: ""
+title: "Self-Hosting Mix That"
+description: "Guide for enterprise sponsors on self-hosting Mix That, including benefits, requirements, and upcoming resources."
+summary: "Learn how enterprise sponsors can deploy and manage their own Mix That instance."
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00
 draft: false
 weight: 102
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Self-Hosting Mix That: Enterprise Guide"
+  description: "Discover how to self-host Mix That for your organization, including technical requirements, benefits, and support options."
+  canonical: "/docs/guides/self-hosted/"
+  robots: "index, follow"
 ---
 
-If you are an [enterprise sponsor](/docs/reference/sponsor-this-project/) and are interested in hosting Mix That in your own environment then that is possible.
+If you are an [enterprise sponsor](/docs/reference/sponsor-this-project/) interested in hosting Mix That within your own infrastructure, we offer a flexible self-hosting option.
 
-Mix That is built using only modern technology and methods, using a "serverless-first" approach which ensures a very cost-effictive and scalable way to host the application.
+Mix That is architected with a modern, serverless-first approach, ensuring cost-effectiveness, scalability, and ease of deployment. This makes it ideal for organizations seeking control over their audio assets and data.
 
-A self hosted Mix That instance can be used, for example, as a "track-microservice" in which you host your audio assets. Mix That can then take care of transcoding of the audio into streams which you can use to play audio on your own platform.
+A self-hosted Mix That instance can serve as a dedicated "track microservice," allowing you to manage, store, and transcode audio assets for seamless integration with your own platforms. Our solution handles audio transcoding and streaming, so you can focus on delivering a great user experience.
 
-In due course we will make the source code available. We will also publish detailed documentation and architectural diagrams which will help your developers to understand the stack.
+We are preparing to release the source code, along with comprehensive documentation and architectural diagrams to support your development team in deploying and maintaining your instance.
 
-Please [contact us](/contact) if you like any more information.
+For more information or to discuss your requirements, please [contact us](/contact). We are happy to provide guidance and early access to resources as they become available.

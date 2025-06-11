@@ -1,5 +1,5 @@
 ---
-title: "Quick Start"
+title: "General"
 description: ""
 summary: ""
 date: 2025-03-01T16:06:50+02:00

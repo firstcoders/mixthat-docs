@@ -16,7 +16,7 @@ seo:
 
 We have created a [REST-full API](https://aws.amazon.com/what-is/restful-api/) which will allow you to integrate your backend with MixThat, enabling you to delegate the complicated bits that deal with transcoding, hosting and serving of your assets via CDN to us.
 
-The API can be made available for [premium sponsors](/docs/reference/sponsor-this-project/), please [contact us](/contact) for help.
+The API can be made available for [sponsors](/docs/reference/sponsor-this-project/), please [contact us](/contact) for help.
 
 The API documentation can be found [here](/openapi).
 

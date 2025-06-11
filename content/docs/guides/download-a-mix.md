@@ -16,7 +16,7 @@ seo:
 
 A player can be configured to allow a user to create a high quality mix of a track. For this to be possible, high quality audio has to be available for all stems in a player.
 
-[NOTE] Storing download quality audio is available for [premium sponsors](/docs/reference/sponsor-this-project/)
+[NOTE] Storing download quality audio is available for [sponsors](/docs/reference/sponsor-this-project/)
 
 ## Downloading a region
 
