@@ -5,6 +5,7 @@ summary: "Need help with Mix That? Contact our support team for assistance."
 date: 2025-03-01T17:19:07+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
+weight: 6
 seo:
   title: "Support | Mix That"
   description: "Reach out to the Mix That team for support, technical help, or questions about the platform."

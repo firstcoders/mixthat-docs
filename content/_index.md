@@ -1,14 +1,14 @@
 ---
-title: "Play your stems using our Free Online Stem-Player"
-description: ""
-lead: "Mix That is a service that handles the hosting, transcoding & streaming of audio using fast content-delivery-networks in a format ready to be played by our Stem-Player — a fully customisable web-component that can be embedded in web-sites and is able to play stem & multi-track audio."
-date: 2025-03-01T16:33:54+02:00
-lastmod: 2025-03-01T16:33:54+02:00
+title: "Play Your Stems Instantly with Mix That — The Free Online Stem Player"
+description: "Mix That lets you upload, organize, and play multi-track audio (stems) in your browser. Host, transcode, and stream your music with ease using our customizable, embeddable web player."
+lead: "Mix That is your all-in-one platform for uploading, managing, and streaming multi-track audio. Instantly play your stems with our powerful, customizable stem player — perfect for musicians, producers, and creators. Host your audio, transcode for streaming, and embed the stem player anywhere. Free, fast, and easy."
+date: 2024-06-12T00:00:00+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
 logo: ./logo-darkmode.png
 # seo:
-#   title: "Welcome to Doks" # custom title (optional)
-#   description: "" # custom description (recommended)
-#   canonical: "" # custom canonical URL (optional)
-#   robots: "" # custom robot tags (optional)
+#   title: "Mix That — Free Online Stem Player & Audio Hosting"
+#   description: "Upload, organize, and stream your multi-track audio with Mix That. Play stems in your browser, embed the player, and share your music instantly."
+#   canonical: "/"
+#   robots: "index, follow"
 ---

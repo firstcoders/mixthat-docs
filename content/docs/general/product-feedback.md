@@ -5,7 +5,7 @@ summary: "Let us know how we can make Mix That better by submitting your feedbac
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 1009
+weight: 3
 toc: true
 seo:
   title: "Mix That Product Feedback"

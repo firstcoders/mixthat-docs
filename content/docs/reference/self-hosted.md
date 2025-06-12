@@ -17,8 +17,17 @@ Are you an [enterprise sponsor](/docs/reference/sponsor-this-project/) looking t
 
 Mix That is built with a modern, serverless-first architecture, ensuring cost-effectiveness, scalability, and straightforward deployment. This makes it ideal for enterprises seeking robust, secure, and flexible audio management solutions.
 
-A self-hosted Mix That instance operates as a dedicated "track microservice," empowering your team to manage, store, and transcode audio assets seamlessly. Our platform handles audio transcoding and streaming, so you can focus on delivering exceptional user experiences across your products.
+A self-hosted Mix That instance provides a solid foundation for audio asset management and delivery, with core features including:
 
-We are preparing to release the full source code, along with detailed documentation and architectural diagrams, to support your development team in deploying and maintaining your instance efficiently.
+- **Track & Metadata Storage:** Store tracks along with rich metadata. Each track can contain multiple audio stems, supporting complex, multi-track projects.
+- **Audio Transcoding:** Automatically transcodes uploaded audio into streaming-ready formats, optimized for use with our advanced stem player.
+- **Secure CDN Delivery:** Delivers audio assets securely and efficiently over a preconfigured Content Delivery Network (CDN), ensuring fast and reliable access worldwide.
+- **Mixing & Downloading:** Enables users to mix audio stems directly in the platform and download high-quality mixes on demand.
+
+While Mix That is still in early development and not yet feature-rich, it is designed to grow with your needs. We welcome your feedback and suggestions—your input will help shape the platform's future features and capabilities.
+
+With Mix That, your team can manage, store, transcode, and deliver audio seamlessly, while providing powerful mixing and download capabilities for your users—all within your own infrastructure.
+
+We are preparing to release the full source code under the Business Source License (BSL), along with detailed documentation and architectural diagrams, to support your development team in deploying and maintaining your instance efficiently.
 
 For more information, to discuss your requirements, or to request early access to resources, please [contact us](/contact). Our team is ready to provide guidance and support tailored to your organization's needs.

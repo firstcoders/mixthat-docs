@@ -5,7 +5,7 @@ summary: "Learn how you can sponsor Mix That and Stemplayer-JS to help accelerat
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00
 draft: false
-weight: 1011
+weight: 7
 toc: true
 seo:
   title: "Sponsor Mix That & Stemplayer-JS"

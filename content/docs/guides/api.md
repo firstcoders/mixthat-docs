@@ -1,5 +1,5 @@
 ---
-title: "Mix That API"
+title: "REST API"
 description: "Integrate your backend with Mix That using our RESTful API. Learn about sponsor access, features, and documentation."
 summary: "A guide to accessing and using the Mix That REST API for backend integration, automation, and more."
 date: 2025-03-01T16:04:48+02:00
@@ -8,13 +8,11 @@ draft: false
 weight: 101
 toc: true
 seo:
-  title: "Mix That API Integration Guide"
+  title: "REST API Integration Guide | Mix That"
   description: "Learn how to access and use the Mix That REST API for backend integration, automation, and advanced workflows."
   canonical: "/docs/guides/api/"
   robots: "index, follow"
 ---
-
-## Integrate with the Mix That API
 
 The Mix That platform offers a powerful [RESTful API](https://aws.amazon.com/what-is/restful-api/) that enables you to integrate your backend systems, automate workflows, and delegate complex tasks like audio transcoding, hosting, and secure CDN delivery to us.
 

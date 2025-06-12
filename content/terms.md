@@ -1,16 +1,16 @@
 ---
 title: "Terms and Conditions"
-description: ""
-summary: ""
+description: "Read the terms and conditions for using Mix That, including acceptable use, intellectual property, and user responsibilities."
+summary: "Review the terms and conditions governing your use of Mix That, including user rights, content ownership, and legal disclaimers."
 date: 2025-03-01T17:19:07+02:00
-lastmod: 2025-03-01T17:19:07+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
 type: "legal"
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Terms and Conditions | Mix That"
+  description: "Understand the terms and conditions for using Mix That, including user rights, content policies, and legal responsibilities."
+  canonical: "/terms/"
+  robots: "index, follow"
 ---
 
 ##### Terms and Conditions

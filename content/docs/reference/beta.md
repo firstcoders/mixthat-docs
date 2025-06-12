@@ -14,8 +14,9 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-What's New with Mix That?
-The previous beta version of Mix That is still available at [https://beta.mixthat.co](https://beta.mixthat.co) and will remain accessible until the end of the year. Please note that uploading new audio will be disabled on the beta version soon.
+The beta version of Mix That is still available at [https://beta.mixthat.co](https://beta.mixthat.co) and will remain accessible until the end of the year.
+
+:warning: Please note that uploading new audio and creating new accounts will be disabled on the beta version soon.
 
 We've been busy making exciting improvements to Mix That, and we're thrilled to share what's new!
 
@@ -26,6 +27,13 @@ We've been busy making exciting improvements to Mix That, and we're thrilled to 
 - Detailed Waveform View: Get a closer look at your audio with our new zoom-in functionality, letting you examine the waveform in greater detail.
 - Modern REST API: For developers and power users, we've introduced a robust REST API, opening up new possibilities for integration and automation.
 - Overhauled Upload Process: We've completely redesigned the upload experience to be more intuitive and user-friendly. You can now interact with the player while you add your audio, making the process seamless.
-- Improved Platform Security: We've made significant enhancements to the platform's architecture security, including stronger data encryption, improved authentication mechanisms, and more robust access controls to better protect your audio and personal information.
+- Improved Platform Architecture, Performance & Security: We've made major upgrades to the platform's underlying architecture, resulting in faster performance, greater reliability, and enhanced security for your audio and user experience.
 
-:warning: Please note: The page listing public tracks is no longer supported in this new version. We apologize for any inconvenience this may cause. If this is a feature you would like in this new version, let us know!
+## Features Not Yet Included
+
+Some features from the previous version are not yet available in the new Mix That:
+
+- The page listing your public tracks is not currently supported.
+- Stream and download analytics are not yet available.
+
+If these, or any other features, are important to you, please let us know by submitting a [feature request](/docs/general/request-a-feature/). Your feedback helps us prioritize future development.
