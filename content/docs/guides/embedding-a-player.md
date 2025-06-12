@@ -16,6 +16,18 @@ seo:
 
 You can easily embed the Mix That Player in any website using our open source [Mix That Player web component](https://www.npmjs.com/package/@firstcoders/mixthat-player), built on [stemplayer-js](https://www.stemplayer-js.com). This approach ensures seamless integration and full control over styling, without the limitations of an iframe.
 
+### Why Web Components Instead of Iframes?
+
+Embedding the Mix That Player as a web component offers several advantages over traditional iframes:
+
+- **Seamless Integration:** Web components allow the player to blend naturally with your site's layout and design, without the visual and functional limitations of an iframe.
+- **Full Customization:** You can style the player using CSS variables and adapt it to your branding, which is not possible with iframe-embedded content.
+- **Better Performance:** Web components are lighter and more efficient, reducing load times and resource usage compared to iframes.
+- **Improved Accessibility:** The player can interact directly with your site's DOM, making it easier to ensure accessibility and responsive design.
+- **Enhanced Functionality:** Web components can communicate with your site's JavaScript, enabling advanced integrations and interactivity that iframes cannot provide.
+
+This approach gives you greater control, flexibility, and a better user experience when embedding audio on your website.
+
 ### How to Embed the Player
 
 1. Click the embed button in the Mix That app to generate your embed code.
@@ -33,8 +45,6 @@ You can easily embed the Mix That Player in any website using our open source [M
 <mixthat-player controls src="https://app.mixthat.co/api/v1/tracks/jgaYB9"></mixthat-player>
 ```
 
-You can fully customize the player using CSS variables to match your site's color scheme.
-
 ### Using Package Managers (NPM / Yarn)
 
 Prefer not to use a CDN? Install the player via NPM:
@@ -47,6 +57,14 @@ See the [GitHub repository](https://github.com/firstcoders/mixthat-player) for a
 
 ### Customization
 
+You can fully customize the player using CSS variables to match your site's color scheme and branding. For example, you can adjust colors, fonts, and other visual elements to ensure the player fits seamlessly into your website's design.
+
+The Mix That Player is open source and released under the MIT license, so you are free to further customize or extend its functionality to suit your needs. You can contribute to its development or adapt it for your own projects.
+
 For more configuration and styling options, refer to the [stemplayer-js documentation](https://github.com/stemplayer-js/stemplayer-js/blob/main/docs/stemplayer-js.md).
+
+### Browser Support
+
+The Mix That Player works in any modern browser that supports the Web Audio API and Custom Elements (including recent versions of Chrome, Firefox, Safari, and Edge).
 
 If you have questions or need help with embedding, feel free to [contact support](/docs/general/support/).
