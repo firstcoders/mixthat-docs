@@ -1,5 +1,5 @@
 ---
-title: "Mix That Usage Limits"
+title: "Usage Limits"
 description: "Details on storage, network, and quality limits for Mix That accounts."
 summary: "Understand the storage, network, and quality limits for free and sponsored Mix That accounts."
 date: 2025-03-01T16:04:48+02:00

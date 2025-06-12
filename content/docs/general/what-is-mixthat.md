@@ -38,7 +38,7 @@ Mix That is built for anyone working with multitrack or stem audio who wants a p
 - Music Labels: Present artist catalogs with dynamic, interactive listening experiences.
 - Music Publishers: License and distribute multitrack content efficiently and securely.
 
-> Have a unique use case in mind? We'd love to hear about it!
+:bulb: Have a unique use case in mind? We'd love to hear about it!
 
 ## Your Chance to Influence Mix That's Development
 

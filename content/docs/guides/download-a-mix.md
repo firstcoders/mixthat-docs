@@ -1,23 +1,29 @@
 ---
 title: "Downloading a Mix"
-description: "Downloading a high quality mix"
-summary: ""
+description: "How to download a high-quality mix from Mix That, including requirements and step-by-step instructions."
+summary: "Learn how to download your mixes in high quality, including sponsor requirements and region selection."
 date: 2025-03-01T16:13:18+02:00
-lastmod: 2025-03-01T16:13:18+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
 weight: 3
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Download a Mix | Mix That"
+  description: "Step-by-step guide to downloading high-quality mixes from Mix That, including sponsor access and region selection."
+  canonical: "/docs/guides/download-a-mix/"
+  robots: "index, follow"
 ---
 
-A player can be configured to allow a user to create a high quality mix of a track. For this to be possible, high quality audio has to be available for all stems in a player.
+Downloading High-Quality Mixes
 
-[NOTE] Storing download quality audio is available for [sponsors](/docs/reference/sponsor-this-project/)
+Mix That allows you to download high-quality mixes of your tracks, provided that high-quality audio is available for all stems in the player.
 
-## Downloading a region
+:warning: Storing and downloading high-quality audio is a feature available to [sponsors](/docs/reference/sponsor-this-project/).
 
-If a user selects a region of a track, and then preses the `download mix` button, a high quality mix will be created for the region and start downloading.
+## How to Download a Mix
+
+1. Select the region of the track you want to download using the player interface.
+2. Click the `download mix` button.
+3. A high-quality mix will be created for the selected region and your download will begin automatically.
+
+If you have any questions or need help with downloading, please contact our support team.

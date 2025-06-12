@@ -1,23 +1,29 @@
 ---
 title: "Sharing a Track"
-description: "Sharing a Track"
-summary: ""
+description: "Learn how to share your Mix That tracks securely or publicly, and understand the difference between public and private sharing options."
+summary: "A guide to sharing tracks in Mix That, including secure and public sharing options."
 date: 2025-03-01T16:13:18+02:00
-lastmod: 2025-03-01T16:13:18+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 4
+weight: 2
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "How to Share a Track | Mix That"
+  description: "Step-by-step instructions for sharing your Mix That tracks securely or publicly, with details on link expiration and access."
+  canonical: "/docs/guides/sharing-a-track/"
+  robots: "index, follow"
 ---
 
-You can share a track by clicking on the share icon.
+Sharing your music with others is easy in Mix That!
+
+To share a track, simply click the share icon:
 
 ![share icon](./icon-share.png "share icon")
 
-For tracks that are not marked as [public](/docs/quickstart/upload-audio/#player-settings) a secure URL will be generated. This URL will provide access to the track for 30 days.
+- **Private Tracks:** If your track is not marked as [public](/docs/guides/upload-tracks/#public-access--quality), a secure, time-limited URL will be generated. This link grants access to your track for 30 days, making it perfect for sharing with select collaborators or friends.
 
-For tracks that are marked as [public](/docs/quickstart/upload-audio/#player-settings) a URL will be generated that will remain valid until the track is no longer marked as public.
+- **Public Tracks:** If your track is marked as [public](/docs/guides/upload-tracks/#public-access--quality), a public URL will be generated. This link remains valid as long as the track is public, allowing anyone with the link to listen without logging in.
+
+You can change a track's public/private status at any time in the track settings. Remember, sharing a public link means anyone with the URL can access your track.
+
+Enjoy sharing your music, and let us know if you have any questions or need help with sharing options!

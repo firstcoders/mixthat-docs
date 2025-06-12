@@ -1,17 +1,17 @@
 ---
 title: "Request a Feature"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
-summary: ""
+description: "Submit your ideas and feature requests to help us improve Mix That. Your feedback shapes our roadmap!"
+summary: "Share your feature requests and suggestions to make Mix That better for everyone."
 date: 2025-03-01T16:04:48+02:00
-lastmod: 2025-03-01T16:04:48+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
 weight: 1009
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Request a Feature | Mix That"
+  description: "Let us know what features you'd like to see in Mix That. Submit your ideas and help us build a better platform."
+  canonical: "/docs/general/request-a-feature/"
+  robots: "index, follow"
 ---
 
 Have an idea to make Mix That better? Wonderful!

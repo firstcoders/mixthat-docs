@@ -1,37 +1,46 @@
 ---
-title: "Uploading Audio"
-description: "Uploading Audio"
-summary: ""
+title: "Uploading Your Stems"
+description: "Learn how to upload audio stems, configure track settings, and manage your tracks in Mix That."
+summary: "Step-by-step guide to uploading and organizing your audio stems in Mix That."
 date: 2025-03-01T16:13:18+02:00
-lastmod: 2025-03-01T16:13:18+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 2
+weight: 1
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Uploading Audio Stems | Mix That"
+  description: "A complete guide to uploading, organizing, and managing your audio stems and tracks in Mix That."
+  canonical: "/docs/guides/upload-tracks/"
+  robots: "index, follow"
 ---
 
-Register and then navigate to [https://app.mixthat.co/upload](https://app.mixthat.co/upload) where you upload create a new track and add audio (stems) either by drag-drop, or by clicking `add files`.
+Uploading Your Stems
+Ready to upload your audio and create a new track? It's simple!
 
-## General Settings
+First, register for an account. Once you're signed in, head over to the [Upload page](https://app.mixthat.co/upload).
 
-Select the `controls-bar` and edit select `edit`. Here you can edit some additional settings, such as a `label`, `description`, and `tags`.
+On this page, you can create a new track and add your audio stems. Just drag and drop your files directly onto the page, or click the add files button to select them.
 
-Additionally you can make the track publicly accessible. This means that anyone with a URL to the track can play the track without logging in.
+Track Settings
+After uploading, you can fine-tune your track's details.
 
-There is also an indicator to show the what audio quality is stored for this particular track. This can be either streaming only, or streaming and [download quality](/docs/quickstart/downloading-a-mix/).
+Select the controls-bar and click edit to access the general settings. Here, you can:
 
-## Stem Settings
+- Add a label (track title)
+- Write a description
+- Add tags to help with discovery
 
-You can change the label for each stem by selecting the relevant stem and clicking the `edit` button.
+Public Access & Quality
+You can also make your track publicly accessible. This means anyone with the track's URL can play it without needing to log in.
 
-You can move a selected stem up or down by pressing the &#9650; and &#9660; buttons.
+Below the settings, you'll see an indicator for the audio quality stored for your track. This will show if the audio is streaming only or if it's available for both streaming and download quality.
 
-You can remove a selected stem by pressing the `remove` button.
+Managing Your Stems
+Easily organize your individual stems within the track:
 
-## Saving
+- Rename a Stem: Select the stem you want to change, then click the edit button to update its label.
+- Reorder Stems: Use the ▲ (up) and ▼ (down) buttons to move a selected stem up or down in the list.
+- Remove a Stem: If you need to take a stem out, select it and click the remove button.
 
-Once you are happy with your player you can hit save, which will then save the track to your account.
+Saving Your Work
+Once you're happy with how your player is set up and your stems are organized, simply hit save. Your track will then be saved to your account, ready to be shared or further developed!
