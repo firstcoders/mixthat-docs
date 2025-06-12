@@ -5,17 +5,17 @@
 
 [[main]]
   name = "API"
-  url = "/docs/reference/api/"
+  url = "/docs/guides/rest-api/"
   weight = 2
 
 [[main]]
   name = "Support"
-  url = "/docs/reference/support/"
+  url = "/docs/general/support/"
   weight = 3
 
 [[main]]
   name = "Sponsor this project"
-  url = "/docs/reference/sponsor-this-project/"
+  url = "/docs/general/sponsor-this-project/"
   weight = 4
 
 # [[main]]

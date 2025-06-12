@@ -24,6 +24,6 @@ At Mix That, the security of your audio files and personal data is a top priorit
 
 A detailed technical description of our security architecture will be published soon.
 
-For [Enterprise Sponsors](/docs/reference/sponsor-this-project/), we can provide source code access for independent security audits and compliance reviews.
+For [Enterprise Sponsors](/docs/general/sponsor-this-project/), we can provide source code access for independent security audits and compliance reviews.
 
 If you have questions about our security practices or need more information, please [contact us](/contact).

@@ -1,17 +1,17 @@
 ---
 title: "Beta"
-description: "Beta"
-summary: ""
+description: "Learn about the Mix That beta, including new features, improvements, and upcoming changes."
+summary: "Details on the Mix That beta version, key improvements, and features not yet included."
 date: 2025-03-01T16:04:48+02:00
-lastmod: 2025-03-01T16:04:48+02:00
+lastmod: 2025-06-12T00:00:00+02:00
 draft: false
 weight: 1010
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Mix That Beta | New Features & Improvements"
+  description: "Explore what's new in the Mix That beta, including enhanced audio storage, player upgrades, and upcoming features."
+  canonical: "/docs/reference/beta/"
+  robots: "index, follow"
 ---
 
 The beta version of Mix That is still available at [https://beta.mixthat.co](https://beta.mixthat.co) and will remain accessible until the end of the year.
@@ -20,7 +20,7 @@ The beta version of Mix That is still available at [https://beta.mixthat.co](htt
 
 We've been busy making exciting improvements to Mix That, and we're thrilled to share what's new!
 
-# Key Improvements
+## Key Improvements
 
 - Enhanced Audio Storage & Streaming: We've significantly improved our audio storage capabilities, allowing you to store more audio and enjoy faster streaming speeds.
 - Player Enhancements: The Mix That player now includes a fantastic new feature: you can select regions to loop, perfect for honing in on specific parts of your tracks. Plus, you can now easily download your mixes directly from the player.

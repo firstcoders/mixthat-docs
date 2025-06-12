@@ -18,7 +18,7 @@ The Mix That platform offers a powerful [RESTful API](https://aws.amazon.com/wha
 
 **API Access:**
 
-- The API is available to [sponsors](/docs/reference/sponsor-this-project/). If you're interested in API access, please [contact us](/contact) for more information and onboarding support.
+- The API is available to [sponsors](/docs/general/sponsor-this-project/). If you're interested in API access, please [contact us](/contact) for more information and onboarding support.
 
 **API Documentation:**
 

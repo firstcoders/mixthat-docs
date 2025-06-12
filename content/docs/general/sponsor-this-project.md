@@ -10,7 +10,7 @@ toc: true
 seo:
   title: "Sponsor Mix That & Stemplayer-JS"
   description: "Discover how your sponsorship can drive the growth and innovation of Mix That and Stemplayer-JS. Support us via GitHub Sponsors, Patreon, or contact us for custom opportunities."
-  canonical: "/docs/reference/sponsor-this-project/"
+  canonical: "/docs/general/sponsor-this-project/"
   robots: "index, follow"
 ---
 

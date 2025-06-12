@@ -18,7 +18,7 @@ Downloading High-Quality Mixes
 
 Mix That allows you to download high-quality mixes of your tracks, provided that high-quality audio is available for all stems in the player.
 
-:warning: Storing and downloading high-quality audio is a feature available to [sponsors](/docs/reference/sponsor-this-project/).
+:warning: Storing and downloading high-quality audio is a feature available to [sponsors](/docs/general/sponsor-this-project/).
 
 ## How to Download a Mix
 
