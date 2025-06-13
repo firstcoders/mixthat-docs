@@ -5,7 +5,7 @@ summary: "A step-by-step guide to embedding and customizing the Mix That Player 
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 4
+weight: 102
 toc: true
 seo:
   title: "Embed the Mix That Player | Mix That"

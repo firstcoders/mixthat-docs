@@ -5,7 +5,7 @@ summary: "Step-by-step guide to uploading and organizing your audio stems in Mix
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 1
+weight: 100
 toc: true
 seo:
   title: "Uploading Audio Stems | Mix That"

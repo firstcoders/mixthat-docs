@@ -5,7 +5,7 @@ summary: "Learn how to download your mixes in high quality, including sponsor re
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 3
+weight: 103
 toc: true
 seo:
   title: "Download a Mix | Mix That"
@@ -18,7 +18,7 @@ Downloading High-Quality Mixes
 
 Mix That allows you to download high-quality mixes of your tracks, provided that high-quality audio is available for all stems in the player.
 
-:warning: Storing and downloading high-quality audio is a feature available to [sponsors](/docs/general/sponsor-this-project/).
+:warning: Downloading a mix requires storing high-quality audio, which uses additional storage resources. To keep Mix That sustainable, this feature is available to [sponsors](/docs/general/sponsor-this-project/).
 
 ## How to Download a Mix
 

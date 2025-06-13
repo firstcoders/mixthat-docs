@@ -4,7 +4,7 @@ description: "Comprehensive guide for enterprise sponsors on deploying and manag
 summary: "Step-by-step instructions and key information for enterprise sponsors to self-host Mix That, with details on architecture, support, and early access."
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-11T00:00:00+02:00
-weight: 102
+weight: 1000
 toc: true
 seo:
   title: "Self-Hosting Mix That: Enterprise Deployment Guide"

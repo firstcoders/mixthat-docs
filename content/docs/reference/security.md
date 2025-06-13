@@ -5,7 +5,7 @@ summary: "An overview of Mix That's security practices for protecting your audio
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 1010
+weight: 1001
 toc: true
 seo:
   title: "Audio Asset Security | Mix That"

@@ -1,11 +1,11 @@
 ---
-title: "Beta"
+title: "Mix That Beta"
 description: "Learn about the Mix That beta, including new features, improvements, and upcoming changes."
 summary: "Details on the Mix That beta version, key improvements, and features not yet included."
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 1010
+weight: 1002
 toc: true
 seo:
   title: "Mix That Beta | New Features & Improvements"
@@ -29,11 +29,14 @@ We've been busy making exciting improvements to Mix That, and we're thrilled to 
 - Overhauled Upload Process: We've completely redesigned the upload experience to be more intuitive and user-friendly. You can now interact with the player while you add your audio, making the process seamless.
 - Improved Platform Architecture, Performance & Security: We've made major upgrades to the platform's underlying architecture, resulting in faster performance, greater reliability, and enhanced security for your audio and user experience.
 
-## Features Not Yet Included
+## Features Not Included
 
 Some features from the previous version are not yet available in the new Mix That:
 
 - The page listing your public tracks is not currently supported.
 - Stream and download analytics are not yet available.
+- Social login using Google has been removed.
 
 If these, or any other features, are important to you, please let us know by submitting a [feature request](/docs/general/request-a-feature/). Your feedback helps us prioritize future development.
+
+If you need any help migrating to the new version or moving your assets, please [contact us](/docs/general/support/) and our team will be happy to assist you.
