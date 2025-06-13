@@ -4,30 +4,30 @@
     <div class="min-vh-100 d-flex align-items-center">
       <div class="w-100">
 
-      <div class="text-center text-black d-flex align-items-center mb-4" style="min-height: 50vh;">
+      <div class="text-center text-black d-flex align-items-center mb-4" style="min-height: 50vh; ">
         <div class="w-100">
-        <div>
-          <h1 class="text-black">{{ .Title }}</h1>
+          <div>
+            <h1 class="text-black">{{ .Title }}</h1>
+          </div>
+          <div class="col-lg-9 mx-auto text-center">
+            <p class="lead">{{ .Params.lead | safeHTML }}</p>
+            {{/*  <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>  */}}
+            <p>
+              <a href="https://app.mixthat.co/upload"
+                class="btn btn-lg me-1 border-dark btn-pulse-lg-hover text-black"
+                >Build Your Player</a
+              >
+              <a href="/docs/general/what-is-mixthat/"
+                class="btn btn-lg me-1 border-dark btn-pulse-lg-hover text-black"
+                >Read the Docs</a
+              >
+            </p>
+          </div>
         </div>
-        <div class="col-lg-9 mx-auto text-center">
-          <p class="lead">{{ .Params.lead | safeHTML }}</p>
-          {{/*  <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>  */}}
-          <p>
-            <a href="https://app.mixthat.co/upload"
-              class="btn btn-lg me-1 border-dark btn-pulse-lg-hover text-black"
-              >Build Your Player</a
-            >
-            <a href="/docs/general/what-is-mixthat/"
-              class="btn btn-lg me-1 border-dark btn-pulse-lg-hover text-black"
-              >Read the Docs</a
-            >
-          </p>
-        </div>
-      </div>
       </div>
 
 
-      <div style="margin-bottom: 3rem !important">
+      <div style="margin-bottom: 102rem !important">
         <!-- paste the below just before the </head> tag -->
         <script type="module" src="https://cdn.jsdelivr.net/npm/@firstcoders/mixthat-player@4.0.0-beta.2"></script>
         <style>
@@ -47,7 +47,7 @@
         </style>
 
         <div class="rounded overflow-hidden bg-black p-1">
-          <mixthat-player class="rounded overflow-hidden" src="https://app.mixthat.co/api/v1/tracks/QIbR0A?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoid2hCdGdFIiwic2NvcGUiOiJ0cmFja3MvcmVhZCIsInJlc291cmNlIjoidHJhY2tzL1FJYlIwQSIsImlhdCI6MTc0MTg2MjY5MywiZXhwIjoxNzQ0NDU0NjkzLCJhdWQiOiJodHRwczovL2FwcC5taXh0aGF0LmNvIiwiaXNzIjoiaHR0cHM6Ly9hcHAubWl4dGhhdC5jbyIsInN1YiI6IjE0ZDg0NDI4LWUwYTEtNzAyYy02MTE0LWNlMzM3ZDY4YzkyYSJ9.dsNO2ZsCEKKDfwK7fRtWj12CbKXeUrdECQDofPibnVs"></mixthat-player>
+          <mixthat-player class="rounded overflow-hidden" src="https://app.mixthat.co/api/v1/public/tracks/LpVTyL"></mixthat-player>
         </div>
 
       </div>
