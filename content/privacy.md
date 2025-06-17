@@ -1,21 +1,21 @@
 ---
 title: "Privacy Policy"
-description: ""
-summary: ""
-date: 2025-03-01T17:19:07+02:00
-lastmod: 2025-03-01T17:19:07+02:00
+description: "How First Coders Ltd collects, uses, stores, and protects your personal data."
+summary: "This Privacy Policy explains what personal data we collect, how we use it, and your rights."
+date: 2024-06-10T00:00:00+00:00
+lastmod: 2024-06-10T00:00:00+00:00
 draft: false
 type: "legal"
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "Privacy Policy | First Coders Ltd"
+  description: "Read our Privacy Policy to learn how First Coders Ltd handles your personal information in compliance with UK GDPR."
+  canonical: "https://www.mixthat.co/privacy-policy"
+  robots: "index, follow"
 ---
 
 # Privacy Policy
 
-Last Updated: 6 April 2021
+Last Updated: 14 Jun 2025
 
 ## Introduction
 
