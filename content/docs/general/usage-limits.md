@@ -25,7 +25,8 @@ Here's what you can expect with a free Mix That account:
 
 - Storage: You can store up to 2GB of audio or a maximum of 25 tracks, whichever limit is reached first.
 - Network Traffic: Free accounts are allocated up to 5,000 requests per month.
-- Audio Quality: To optimize streaming, audio for free accounts is transcoded to 64k Opus. This format provides excellent quality, roughly comparable to 128k MP3.
+- Audio Processing: Free accounts include a limit of 1,000 minutes of audio processing (such as transcoding and waveform generation) to help manage operational costs.
+- Audio Quality: To optimize streaming, audio for free accounts is transcoded to 64k Opus. This format provides reasonable quality, roughly comparable to 128k MP3.
 - Inactive Track Removal: To efficiently manage our storage resources, tracks on free accounts that receive no activity for three months or more may be deleted without warning. We'll do our best to notify you, but consistent activity is key to keeping your tracks live.
 
 ## Elevate Your Experience with Sponsorship
