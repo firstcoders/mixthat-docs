@@ -58,6 +58,27 @@ Subject to the terms contained in this agreement, we grant you a revocable, limi
 
 The Term will commence on the date you accept these Terms and Conditions, or when you start using the Products and will remain in force until you stop using the Products or terminate your plan, or when we terminate this agreement.
 
+## Data Retention and Account Management
+
+To maintain sustainable service operations and optimal performance for all users, the following policies apply:
+
+### Free Accounts
+
+- **Content Retention**: User content (tracks, mixes, and associated data) on free accounts may be automatically deleted if no activity (plays, shares, edits, or account access) occurs for a period of 3 months or more.
+- **Account Retention**: Free user accounts that remain completely inactive (no login or platform interaction) for 6 months or more may be subject to removal.
+- **Notification Policy**: While we endeavor to provide advance notice via email before automatic deletions, we cannot guarantee delivery of such notifications. Users are responsible for maintaining regular account activity to preserve their content.
+
+### Sponsored Accounts
+
+- **Permanent Retention**: Content and accounts associated with active sponsorship are exempt from automatic deletion policies and enjoy permanent data retention.
+- **Grace Period**: Should sponsorship lapse, a 30-day grace period applies before reverting to free account policies.
+
+### General Provisions
+
+- **Technical Necessity**: We reserve the right to remove content or accounts as necessary for legal compliance, security, or technical maintenance purposes.
+- **No Liability**: We accept no liability for data loss resulting from automatic deletion policies outlined in these terms.
+- **User Responsibility**: Users are advised to maintain regular backups of important content and remain active on the platform to ensure content preservation.
+
 ## Termination
 
 We shall have the right to terminate your access to the Products without notice at any time, for any reason, including without limitation the breach by you of any of these Terms and Conditions. You agree that We shall not be liable to you or any third party for any termination of your access to the Products including the suspension or discontinuance of the Products.

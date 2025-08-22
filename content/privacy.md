@@ -76,6 +76,14 @@ This Privacy Policy describes the type of information that we collect from you (
 - 6.6 Notwithstanding the security measures that we take, it is important to remember that the transmission of data via the internet may not be completely secure and that you are advised to take suitable precautions when transmitting to us data via the internet and you take the risk that any sending of that data turns out to be not secure despite our efforts.
 - 6.7 We will keep personal data for as long as is necessary which is usually the life of our relationship and up to a period of seven years after our relationship have ended. We may however be required to retain personal data for a longer period of time to ensure we comply with our legislative and regulatory requirements. We review our data retention obligations to ensure we are not retaining data for longer than we are legally obliged to.
 
+### Data Retention Policies for Service Users
+
+- **Active Accounts**: Personal data and associated content for active accounts (both free and sponsored) are retained for the duration of the account relationship.
+- **Free Account Inactivity**: For free accounts, content may be deleted after 3 months of inactivity (no plays, shares, edits, or account access), and accounts may be removed after 6 months of complete inactivity (no login or platform interaction). While we aim to provide email notifications before deletion, we cannot guarantee delivery.
+- **Sponsored Account Protection**: Sponsored accounts enjoy permanent data retention and are exempt from automatic deletion due to inactivity, subject to the continuation of sponsorship.
+- **Legal and Safety Requirements**: We reserve the right to retain or delete data as required for legal compliance, security, or to protect the rights and safety of other users.
+- **User Control**: Users may request deletion of their personal data at any time by contacting us at [privacy@firstcoders.co.uk](mailto:privacy@firstcoders.co.uk), subject to our legal obligations to retain certain information.
+
 ## 7.Disclosing your information
 
 - We are allowed to disclose your information in the following cases:
@@ -96,7 +104,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - to object to processing of your personal data; and
   - complain to a supervisory authority.
 - 8.2 You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes.
-- 8.3 To enforce any of the foregoing rights or if you have any other questions about this Privacy Policy, please contact us at privacy@firstcoders.co.uk.
+- 8.3 To enforce any of the foregoing rights or if you have any other questions about this Privacy Policy, please contact us at [privacy@firstcoders.co.uk](mailto:privacy@firstcoders.co.uk).
 
 ## 9.Dispute Resolution
 
