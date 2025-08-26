@@ -66,11 +66,13 @@ To maintain sustainable service operations and optimal performance for all users
 
 - **Content Retention**: User content (tracks, mixes, and associated data) on free accounts may be automatically deleted if no activity (plays, shares, edits, or account access) occurs for a period of 3 months or more.
 - **Account Retention**: Free user accounts that remain completely inactive (no login or platform interaction) for 6 months or more may be subject to removal.
+- **Sharing URLs**: Private track sharing URLs expire after 3 days to manage server resources and security.
 - **Notification Policy**: While we endeavor to provide advance notice via email before automatic deletions, we cannot guarantee delivery of such notifications. Users are responsible for maintaining regular account activity to preserve their content.
 
 ### Sponsored Accounts
 
 - **Permanent Retention**: Content and accounts associated with active sponsorship are exempt from automatic deletion policies and enjoy permanent data retention.
+- **Extended Sharing**: Sponsored accounts can set custom expiry periods for sharing URLs or create permanent links that do not expire.
 - **Grace Period**: Should sponsorship lapse, a 30-day grace period applies before reverting to free account policies.
 
 ### General Provisions

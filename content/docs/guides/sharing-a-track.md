@@ -20,10 +20,22 @@ To share a track, simply click the share icon:
 
 ![share icon](./icon-share.png "share icon")
 
-- **Private Tracks:** If your track is not marked as [public](/docs/guides/upload-tracks/#public-access--quality), a secure, time-limited URL will be generated. This link grants access to your track for 30 days, making it perfect for sharing with select collaborators or friends.
+## Sharing Options by Account Type
 
-- **Public Tracks:** If your track is marked as [public](/docs/guides/upload-tracks/#public-access--quality), a public URL will be generated. This link remains valid as long as the track is public, allowing anyone with the link to listen without logging in.
+### Free Accounts
 
-You can change a track's public/private status at any time in the track settings. Remember, sharing a public link means anyone with the URL can access your track.
+- **Private Tracks:** A secure, time-limited URL will be generated that **expires after 3 days**. This temporary link is perfect for quick sharing with collaborators or friends.
+- **Public Tracks:** A public URL will be generated that remains valid as long as the track is public, allowing anyone with the link to listen without logging in.
+
+### Sponsored Accounts
+
+- **Private Tracks:** You can choose your preferred expiry period for sharing URLs, or create **permanent links that never expire** for long-term sharing and embedding.
+- **Public Tracks:** Same as free accounts - public URLs remain valid as long as the track is public.
+
+## Account Features
+
+- You can change a track's public/private status at any time in the track settings
+- Remember, sharing a public link means anyone with the URL can access your track
+- [Become a sponsor](/docs/general/sponsor-this-project/) to unlock extended or permanent sharing options
 
 Enjoy sharing your music, and let us know if you have any questions or need help with sharing options!
