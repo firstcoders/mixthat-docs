@@ -20,23 +20,18 @@ Your sponsorship is key to the continued growth and innovation of Mix That and S
 
 Sponsoring Mix That isn't just about supporting the project—it's about unlocking a significantly enhanced experience for yourself:
 
-| Feature                 | Free Account                         | Sponsored Account                              |
-| ----------------------- | ------------------------------------ | ---------------------------------------------- |
-| **Storage Limit**       | 2GB or 25 tracks                     | **10GB+ with custom limits available**         |
-| **Streaming Quality**   | 64k Opus                             | **128k Opus (equivalent to 192k MP3)**         |
-| **Download Quality**    | None                                 | **Download your mixes in lossless WAV format** |
-| **Track Retention**     | Deleted after 3 months of inactivity | **Permanent storage - your tracks stay safe**  |
-| **Sharing & Embedding** | 3-day expiring URLs                  | **Extended or permanent sharing links**        |
-| **API Access**          | None                                 | **Full API access for advanced integrations**  |
-| **Support Priority**    | Standard                             | **Priority support and direct access**         |
+| Feature                 | Default (Free)                       | Sponsor                       | Pro                           |
+| ----------------------- | ------------------------------------ | ----------------------------- | ----------------------------- |
+| **Storage Quota**       | 2GB                                  | 5GB                           | 50GB                          |
+| **Bandwidth Quota**     | 5GB                                  | 20GB                          | 200GB                         |
+| **Tracks Quota**        | 10                                   | 50                            | 500                           |
+| **Audio Max Quality**   | STANDARD                             | STANDARD                      | HIGH                          |
+| **Audio Max Duration**  | 5 MIN                                | 10 MIN                        | 25 MIN                        |
+| **Sharing & Embedding** | 3-day expiring URLs (DEFAULT)        | Extended/permanent (EXTENDED) | Extended/permanent (EXTENDED) |
+| **Track Retention**     | Deleted after 3 months of inactivity | Permanent\*                   | Permanent\*                   |
+| **API Access**          | None                                 | None                          | Full                          |
 
-### 💡 Why Sponsor?
-
-- **More Storage**: Free accounts are limited to 2GB. As a sponsor, enjoy 10GB+ with the option to discuss custom limits for your specific needs.
-- **Keep Your Data Safe**: Free account tracks may be deleted after 3 months of inactivity. Sponsors get permanent storage—your creative work stays protected.
-- **Superior Audio Quality**: While free accounts use compressed 64k Opus, sponsors get access to high-quality audio formats and lossless WAV downloads.
-- **Persistent Sharing**: Free accounts get sharing URLs that expire after 3 days. Sponsors can set extended expiry periods or create permanent sharing links that never expire.
-- **Future-Proof Your Workflow**: Get API access for advanced integrations and workflows.
+\*Permanent while plan is active
 
 ## 🎯 Ready to Upgrade Your Experience?
 

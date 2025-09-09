@@ -18,6 +18,6 @@ Help us refine Mix That!
 
 We're constantly striving to enhance your experience, and your detailed feedback is crucial. Whether it's a bug report, a feature request, or general comments, please share your thoughts.
 
-Tell us what you think: [Submit feedback on GitHub](https://github.com/firstcoders/mixthat) or email us at [mixthat@firstcoders.co.uk](mailto:mixthat@firstcoders.co.uk)
+Tell us what you think: [Submit feedback on GitHub](https://github.com/firstcoders/mixthat) or email us at <a href="mailto:mixthat@firstcoders.co.uk">mixthat@firstcoders.co.uk</a>
 
 Thank you for helping us build a better product!

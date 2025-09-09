@@ -17,17 +17,7 @@ seo:
 
 ## Keeping Mix That Sustainable
 
-To offer Mix That as a free service, we need to manage our operational costs, particularly for storage and network traffic. We've implemented some fair usage limits to ensure everyone can enjoy the platform.
-
-## Free Account Limits
-
-Here's what you can expect with a free Mix That account:
-
-- **Storage**: You can store up to 2GB of audio or a maximum of 25 tracks, whichever limit is reached first.
-- **Network Traffic**: Free accounts are allocated up to 5,000 requests per month.
-- **Audio Processing**: Free accounts include a limit of 1,000 minutes of audio processing (such as transcoding and waveform generation) to help manage operational costs.
-- **Audio Quality**: To optimize streaming, audio for free accounts is transcoded to 64k Opus. This format provides reasonable quality, roughly comparable to 128k MP3.
-- **Sharing & Embedding**: Sharing URLs for free accounts expire after **3 days** to manage server resources and security.
+To offer Mix That as a free service, we need to manage our operational costs, particularly for storage and network traffic. We've implemented some fair usage limits to ensure everyone can enjoy the platform.\*\*\*\*
 
 ### 🗂️ Data Management for Free Accounts
 
@@ -38,21 +28,6 @@ To maintain sustainable service costs and optimal performance for all users, we 
 - **Pre-deletion Notifications**: While we aim to send warning emails before automatic deletions, we cannot guarantee delivery. **Consistent activity is the best way to ensure your content remains available.**
 
 > 💡 **Pro Tip**: [Become a sponsor](/docs/general/sponsor-this-project/) to enjoy **permanent data retention** and significantly higher storage limits!
-
-## Elevate Your Experience with Sponsorship
-
-Ready to unlock the full potential of Mix That? Become a sponsor and enjoy significant advantages:
-
-### 🚀 Sponsored Account Benefits
-
-- **📈 Massive Storage Upgrade**: Jump from 2GB to **10GB+ with custom limits available** for your specific needs
-- **🔒 Permanent Data Protection**: Your tracks and account are **never deleted due to inactivity**—enjoy peace of mind with permanent storage
-- **🎵 Premium Audio Quality**: Access **high-quality, uncompressed audio formats** instead of compressed 64k Opus
-- **🔗 Extended Sharing Control**: Set **custom expiry periods** for sharing URLs, or create **permanent links that never expire**
-- **🔌 Full API Access**: Gain complete access to the Mix That API for advanced integrations and custom workflows
-- **⬇️ Download Your Creations**: Store and download your mixes in **high-quality formats** for offline use
-- **🎧 Custom Audio Settings**: Discuss your specific audio quality requirements with our team for tailored solutions
-- **⚡ Priority Support**: Get faster response times and direct access to our development team
 
 ### 💰 Cost Control Through Sponsorship
 

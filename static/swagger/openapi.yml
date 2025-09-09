@@ -37,12 +37,6 @@ paths:
                   schema:
                       type: string
                   description: Filter tracks by prefix (searches track labels)
-                - in: query
-                  name: v
-                  schema:
-                      type: string
-                      pattern: '^[0-9]{13}$'
-                  description: Version of the object
             responses:
                 '200':
                     description: A list of tracks
@@ -95,31 +89,6 @@ paths:
                                 '$ref': '#/components/schemas/BadRequestResponse'
                 '403':
                     description: Access Denied - Insufficient permissions
-
-    /public/tracks/{track_id}:
-        get:
-            summary: Get a public track
-            description: Retrieve details of a specific public track by its ID (no authentication required)
-            operationId: getPublicTrack
-            tags:
-                - Public
-            parameters:
-                - in: path
-                  name: track_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/track_id'
-                  description: The track id
-            responses:
-                '200':
-                    description: OK
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/TrackResponse'
-                '404':
-                    description: Track not found or not public
-            security: []
 
     /tracks/{track_id}:
         get:
@@ -201,7 +170,7 @@ paths:
                 '404':
                     description: Not found
 
-    /tracks/{track_id}/token:
+    /tracks/{track_id}/share:
         get:
             summary: Get a token for track access
             description: Generate a temporary token for accessing a specific track
@@ -238,16 +207,82 @@ paths:
                 '404':
                     description: Track not found
 
+    /tracks/{track_id}/mix:
+        post:
+            summary: Create a mix from track files
+            description: |
+                Create a custom mix from the files in a specific track. This endpoint allows you to mix
+                multiple stems/files from an existing track with custom volume levels and timing.
+            operationId: createTrackMix
+            tags:
+                - Library
+            parameters:
+                - in: path
+                  name: track_id
+                  required: true
+                  schema:
+                      $ref: '#/components/schemas/track_id'
+                  description: The track id containing the files to mix
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/CreateTrackMixRequest'
+            responses:
+                '202':
+                    description: Mix creation job successfully initiated
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    $links:
+                                        '$ref': '#/components/schemas/Links'
+                '400':
+                    description: Invalid request parameters
+                    content:
+                        application/json:
+                            schema:
+                                '$ref': '#/components/schemas/BadRequestResponse'
+                '403':
+                    description: Access Denied - Only track owners can create mixes
+                '404':
+                    description: Track not found
+                '409':
+                    description: Conflict - Files missing source audio
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    error:
+                                        type: string
+                                        description: Error message indicating which files are missing source audio
+
     /tracks/tags:
         get:
             summary: List all unique tags
-            description: Returns a list of all unique tags used across the user's tracks
+            description: Returns a paginated list of all unique tags used across the user's tracks
             operationId: listTrackTags
             tags:
                 - Library
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      type: string
+                      pattern: '^[0-9]+$'
+                  description: Maximum number of tags to return (1-500)
+                - in: query
+                  name: next
+                  schema:
+                      type: string
+                      pattern: '^[A-Za-z0-9+/=]+$'
+                  description: Base64-encoded pagination token for the next page
             responses:
                 '200':
-                    description: A list of unique tags
+                    description: A paginated list of unique tags
                     headers:
                         Cache-Control:
                             schema:
@@ -260,6 +295,7 @@ paths:
                                 required:
                                     - tags
                                     - count
+                                    - $links
                                 properties:
                                     tags:
                                         type: array
@@ -289,6 +325,21 @@ paths:
                                     count:
                                         type: integer
                                         description: Total number of unique tags
+                                    $links:
+                                        type: array
+                                        items:
+                                            type: object
+                                            required:
+                                                - rel
+                                                - href
+                                            properties:
+                                                rel:
+                                                    type: string
+                                                    enum: [first, next]
+                                                href:
+                                                    type: string
+                                                    format: uri-reference
+                                        description: Navigation links for pagination
 
     /tracks/tags/{tag}:
         get:
@@ -321,12 +372,6 @@ paths:
                   schema:
                       type: string
                   description: Filter tracks by prefix (searches track labels)
-                - in: query
-                  name: v
-                  schema:
-                      type: string
-                      pattern: '^[0-9]{13}$'
-                  description: Timestamp to force cache invalidation
             responses:
                 '200':
                     description: A list of tracks with the specified tag
@@ -389,8 +434,10 @@ paths:
         post:
             summary: Process audio
             description: |
-                Process audio files with different tasks like creating waveforms, m3u8 segments, or mixing multiple files.
+                Process audio files with different tasks like creating waveforms or m3u8 segments.
                 This endpoint initiates an asynchronous job and returns immediately with a job ID for tracking progress.
+
+                Note: For mixing track files, use the /tracks/{track_id}/mix endpoint instead.
             operationId: processAudio
             tags:
                 - Audio
@@ -400,7 +447,7 @@ paths:
                   required: true
                   schema:
                       type: string
-                      enum: [waveform, m3u8, mix]
+                      enum: [waveform, m3u8]
                   description: The audio processing task to perform
             requestBody:
                 required: true
@@ -410,7 +457,6 @@ paths:
                             oneOf:
                                 - $ref: '#/components/schemas/WaveformRequest'
                                 - $ref: '#/components/schemas/M3u8Request'
-                                - $ref: '#/components/schemas/CreateMixRequest'
                         examples:
                             waveform:
                                 summary: Generate waveform
@@ -420,20 +466,8 @@ paths:
                                 summary: Generate HLS segments
                                 value:
                                     href: 'https://example.com/audio/track.wav'
-                                    audio_quality: 1
+                                    streaming_quality: HIGH
                                     duration: 120
-                            mix:
-                                summary: Mix multiple files
-                                value:
-                                    format: mp3
-                                    offset: 30
-                                    duration: 30
-                                    files:
-                                        - href: 'https://example.com/audio/track1.wav'
-                                          volume: 0.8
-                                        - href: 'https://example.com/audio/track2.wav'
-                                          volume: 0.6
-                                    filename: 'my_mix.mp3'
             responses:
                 '202':
                     description: Audio processing job successfully initiated
@@ -604,6 +638,11 @@ components:
                     description: An instruction to either discard source audio and only keep streaming audio, or to keep the source audio for mixing and downloading.
                     type: string
                     enum: [KEEP_SOURCE, DISCARD_SOURCE]
+                streaming_quality:
+                    description: The quality level for streaming audio processing
+                    type: string
+                    enum: [STANDARD, HIGH]
+                    default: STANDARD
                 # created_time:
                 #   type: string
                 #   format: date-time
@@ -714,6 +753,51 @@ components:
                     description: The filename for the output mix
                     default: 'my_mixed_stems.wav'
 
+        CreateTrackMixRequest:
+            type: object
+            required:
+                - files
+                - format
+            additionalProperties: false
+            properties:
+                format:
+                    type: string
+                    enum: [mp3, wav]
+                    description: The audio format for the output mix
+                offset:
+                    type: number
+                    minimum: 0
+                    description: Start time offset in seconds
+                duration:
+                    type: number
+                    minimum: 0
+                    description: Duration of the mix in seconds
+                files:
+                    type: array
+                    minItems: 1
+                    maxItems: 25
+                    description: Array of file IDs from the track to mix
+                    items:
+                        type: object
+                        required:
+                            - file_id
+                            - volume
+                        additionalProperties: false
+                        properties:
+                            file_id:
+                                type: string
+                                description: The file ID from the track
+                            volume:
+                                type: number
+                                format: float
+                                minimum: 0
+                                maximum: 1
+                                description: Volume level for this file (0-1)
+                filename:
+                    type: string
+                    description: The filename for the output mix
+                    default: 'my_mixed_stems.wav'
+
         WaveformRequest:
             type: object
             required:
@@ -735,11 +819,11 @@ components:
                     type: string
                     format: uri
                     description: URL to the audio file to process
-                audio_quality:
-                    type: integer
-                    minimum: 0
-                    maximum: 2
-                    description: Audio quality level (0=low, 1=medium, 2=high)
+                streaming_quality:
+                    type: string
+                    enum: [STANDARD, HIGH]
+                    default: STANDARD
+                    description: Audio quality level (STANDARD or HIGH)
                 duration:
                     type: number
                     minimum: 0

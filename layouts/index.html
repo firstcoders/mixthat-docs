@@ -4,7 +4,7 @@
     <div class="min-vh-100  d-flex align-items-center">
       <div class="w-100">
 
-      <div class="text-center text-black d-flex align-items-center mb-4">
+      <div class="text-center text-black d-flex align-items-center mb-4" style="min-height: 65vh;">
         <div class="w-100">
         <div>
           <h1 class="text-black">{{ .Title }}</h1>
@@ -27,9 +27,9 @@
       </div>
 
 
-      <div class="mb-4">
+      <div class="mb-4" style="margin-bottom: 10rem!important;">
         <!-- paste the below just before the </head> tag -->
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@firstcoders/mixthat-player@4.0.0-beta.2"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@firstcoders/mixthat-player@4.0.0-beta.6"></script>
         <style>
           :root {
             --stemplayer-js-brand-color: #42b983;
@@ -47,7 +47,7 @@
         </style>
 
         <div class="rounded overflow-hidden bg-black p-1">
-          <mixthat-player class="rounded overflow-hidden" src="https://app.mixthat.co/api/v1/public/tracks/ytxiuk"></mixthat-player>
+          <mixthat-player controls="" src="https://app.mixthat.co/api/v1/tracks/ytxiuk?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoiOWNKQUZJIiwic2NvcGUiOiJ0cmFja3MvcmVhZC95dHhpdWsgdHJhY2tzL2F1ZGlvL3JlYWQveXR4aXVrIiwiaXNfc2hhcmVfdG9rZW4iOnRydWUsImlhdCI6MTc1NzQwNzQ2NSwiYXVkIjoiaHR0cHM6Ly9hcHAubWl4dGhhdC5jbyIsImlzcyI6Imh0dHBzOi8vYXBwLm1peHRoYXQuY28iLCJzdWIiOiI0MjE1YTRkNC0yMDYxLTcwNGUtM2RlZS0xYWVhNWM2NDEzODk6c2hhcmU6WHd2OE8zIn0.6kAogRE0pctf-Tlof0nchH4f53I7yn7_LOC5goR9MVg"></mixthat-player>
         </div>
 
       </div>

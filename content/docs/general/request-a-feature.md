@@ -28,4 +28,4 @@ Before submitting, please take a moment to:
 
 We'd be very grateful if you'd create a feature request [here](https://github.com/firstcoders/mixthat).
 
-Alternatively, you can reach us at [mixthat@firstcoders.co.uk](mailto:mixthat@firstcoders.co.uk).
+Alternatively, you can reach us at <a href="mailto:mixthat@firstcoders.co.uk">mixthat@firstcoders.co.uk</a>.
