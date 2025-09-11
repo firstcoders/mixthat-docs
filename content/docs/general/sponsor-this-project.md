@@ -23,7 +23,7 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 | Feature                 | Default (Free)                       | Sponsor                       | Pro                           |
 | ----------------------- | ------------------------------------ | ----------------------------- | ----------------------------- |
 | **Storage Quota**       | 2GB                                  | 5GB                           | 50GB                          |
-| **Bandwidth Quota**     | 5GB                                  | 20GB                          | 200GB                         |
+| **Bandwidth Quota**     | 5GB                                  | 20GB                          | 100GB                         |
 | **Tracks Quota**        | 10                                   | 50                            | 500                           |
 | **Audio Max Quality**   | STANDARD                             | STANDARD                      | HIGH                          |
 | **Audio Max Duration**  | 5 MIN                                | 10 MIN                        | 25 MIN                        |
