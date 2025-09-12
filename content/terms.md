@@ -58,6 +58,37 @@ Subject to the terms contained in this agreement, we grant you a revocable, limi
 
 The Term will commence on the date you accept these Terms and Conditions, or when you start using the Products and will remain in force until you stop using the Products or terminate your plan, or when we terminate this agreement.
 
+## Plan-Based Features, Limits, and Permissions
+
+- Users may self-register for an account and must provide accurate information.
+- The number of tracks, maximum duration, audio quality, and source audio options are determined by the user’s plan. Free users have lower limits and fewer options than sponsors.
+- If you exceed your plan’s storage, track, or bandwidth limits, we reserve the right to remove tracks or block/remove your account without warning.
+- You may only upload tracks and stems within the limits of your plan. Attempting to circumvent these limits is a violation of these Terms.
+- Only certain plans allow high quality streaming audio and the option to persist source audio for download or mixing. Free users cannot select these options.
+- The maximum duration of uploaded tracks is plan-dependent. Free users may upload only short tracks; sponsors may upload longer tracks.
+
+## Sharing, Embedding, and Permissions
+
+- You may create share URLs and embed codes for your tracks. By default, these are time-limited. Only certain plans (e.g., sponsor) can extend expiry or grant download/mixing permissions to share URLs.
+- As a free user, you cannot extend the expiry of share URLs or embed codes, nor grant download or mixing permissions to guests.
+- As a sponsor, you may extend expiry and grant download/mixing permissions to share URLs as permitted by your plan.
+- Only the owner or those with a valid share URL (with the right permissions) can access, mix, or download tracks.
+
+## Mixing and Downloading
+
+- You may mix any of your own tracks with source audio, subject to your plan’s permissions.
+- Guests with a valid share URL and the appropriate permissions may mix or download source audio as allowed by the owner’s plan and the share URL settings.
+
+## Security and Enforcement
+
+- The system enforces plan-based and share-based permissions, including but not limited to:
+  - Track count, storage, and bandwidth limits
+  - Audio quality and source audio restrictions
+  - Share URL expiry and permissions (download, mixing)
+  - Access control for reading and writing tracks
+- Attempting to circumvent these limits or permissions is strictly prohibited and may result in account suspension or removal.
+- We reserve the right to update which limits and permissions are enforced at any time, and to introduce new enforcement measures as needed to protect the service and its users.
+
 ## Data Retention and Account Management
 
 To maintain sustainable service operations and optimal performance for all users, the following policies apply:
@@ -122,6 +153,10 @@ In addition, you also acknowledge that after deletion Your content may persist a
 ## Indemnity
 
 You agree to indemnify Us from and against all costs, claims, demands, proceedings and damages including its own reasonable legal costs which are incurred by Us howsoever arising in respect of any breach by you of these Terms and Conditions and from and against any claim or demand brought against Us by any third party arising out of your use of the Products.
+
+## Payments and Refunds
+
+All payments for paid plans, sponsorships, or other services are non-refundable, except where required by applicable law. We may, at our sole discretion, consider refund requests on a case-by-case basis. To request a refund, please contact us at [support@firstcoders.co.uk](mailto:support@firstcoders.co.uk).
 
 ## Disclaimers and Limitation of Liability
 
