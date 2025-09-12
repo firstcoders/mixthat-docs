@@ -14,7 +14,7 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Mix That is a new audio content management platform focused on hosting, transcoding, and fast streaming of multitrack and stem audio. We empower you to effortlessly manage your complex audio projects and bring them to life online.
+Mix That is a new audio content management platform focused on hosting, transcoding, and fast streaming of multitrack and stem audio. We empower you to effortlessly showcase and share your stem audio projects and bring them to life online.
 
 Our core offering is the [Stem Player](https://www.stemplayer-js.com) — a fully customizable web component that seamlessly embeds into any website. It's designed to play back your multitrack and stem audio with unparalleled efficiency, allowing your audience to experience your creations in an interactive and engaging way.
 
