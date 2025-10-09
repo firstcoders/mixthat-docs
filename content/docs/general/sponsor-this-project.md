@@ -22,11 +22,11 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 
 | Feature                 | Default (Free)                       | Sponsor                       | Pro                           |
 | ----------------------- | ------------------------------------ | ----------------------------- | ----------------------------- |
-| **Storage Quota**       | 2GB                                  | 5GB                           | 50GB                          |
-| **Bandwidth Quota**     | 5GB                                  | 20GB                          | 100GB                         |
-| **Tracks Quota**        | 10                                   | 50                            | 500                           |
+| **Storage Quota**       | 2GB                                  | 10GB                          | 100GB                         |
+| **Bandwidth Quota**     | 2GB                                  | 10GB                          | 100GB                         |
+| **Tracks Quota**        | 10                                   | 100                           | 1000                          |
 | **Audio Max Quality**   | STANDARD                             | STANDARD                      | HIGH                          |
-| **Audio Max Duration**  | 5 MIN                                | 10 MIN                        | 25 MIN                        |
+| **Audio Max Duration**  | SHORT                                | MEDIUM                        | LONG                          |
 | **Sharing & Embedding** | 3-day expiring URLs (DEFAULT)        | Extended/permanent (EXTENDED) | Extended/permanent (EXTENDED) |
 | **Track Retention**     | Deleted after 3 months of inactivity | Permanent\*                   | Permanent\*                   |
 | **API Access**          | None                                 | None                          | Full                          |
