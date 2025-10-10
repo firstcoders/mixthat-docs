@@ -53,12 +53,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Hugo
+      - name: Build with yarn
         env:
           HUGO_ENVIRONMENT: production
-        run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
+        run: yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
