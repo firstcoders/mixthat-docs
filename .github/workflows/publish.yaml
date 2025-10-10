@@ -1,8 +1,8 @@
 name: Deploy Hugo site to GitHub Pages
 
 env:
-  HUGO_VERSION: "0.140.0"
-  NODE_VERSION: "20"
+  HUGO_VERSION: "0.144.2"
+  NODE_VERSION: "22"
 
 on:
   # Trigger the workflow every time you push to the `main` branch
