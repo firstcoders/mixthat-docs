@@ -1,21 +1,21 @@
 [[main]]
   name = "Docs"
-  url = "/docs/general/what-is-mixthat/"
+  url = "/mixthat-docs/docs/general/what-is-mixthat/"
   weight = 1
 
 [[main]]
   name = "API"
-  url = "/docs/reference/rest-api/"
+  url = "/mixthat-docs/docs/reference/rest-api/"
   weight = 2
 
 [[main]]
   name = "Support"
-  url = "/docs/other/contact-and-support/"
+  url = "/mixthat-docs/docs/other/contact-and-support/"
   weight = 3
 
 [[main]]
   name = "Sponsor this project"
-  url = "/docs/other/sponsor-this-project/"
+  url = "/mixthat-docs/docs/other/sponsor-this-project/"
   weight = 4
 
 # [[main]]
