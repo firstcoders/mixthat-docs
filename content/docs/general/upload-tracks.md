@@ -45,13 +45,37 @@ Easily organize your individual stems within the track:
 Saving Your Work
 Once you're happy with how your player is set up and your stems are organized, simply hit save. Your track will then be saved to your account, ready to be shared or further developed!
 
-## Important Notes About Uploading
+## Audio Quality Settings
 
-- **Audio Duration Limits:** Each stem you upload must be under a maximum duration, which depends on your account type. If a file is too long, you'll see a clear error message and may need to upgrade your account for longer uploads.
-- **Audio Quality & Source Options:**
-  - **Streaming Quality:** Audio quality for streaming can be set to **LOW (64kbps Opus)** or **HIGH (96kbps Opus)**. Opus is a modern, highly efficient codec that delivers excellent sound quality even at lower bitrates. At 96kbps, Opus is considered transparent for most audio samples. Because a stemplayer streams multiple tracks simultaneously, bandwidth and performance are especially important—this setting offers the best balance between quality, storage, and performance for most users.
-  - **Download & Mixing Quality:** The quality of audio available for download or mixing depends on the quality of the source audio you upload. If you choose to keep the source, downloads and mixes will use your original uploaded files to generate the mix (subject to your account permissions).
-- **Track & Stem Limits:** There are limits on the number of tracks you can create and the number of stems per track. If you reach a limit, you'll be notified and may need to upgrade your account or remove existing tracks/stems.
-- **Permissions:** Some upload features (like high quality, long duration, or source downloads) require an upgraded account. If you don't have access, you'll see a warning or error message.
+### Streaming Quality
+
+Audio quality for streaming can be set to **LOW (64kbps Opus)** or **HIGH (96kbps Opus)**. Opus is a modern, highly efficient codec that delivers excellent sound quality even at lower bitrates. At 96kbps, Opus is considered transparent for most audio samples. Because a stemplayer streams multiple tracks simultaneously, bandwidth and performance are especially important—this setting offers the best balance between quality, storage, and performance for most users.
+
+### Download & Mixing Quality
+
+The quality of audio available for download or mixing depends on the quality of the source audio you upload. If you choose to keep the source, downloads and mixes will use your original uploaded files to generate the mix (subject to your account permissions).
+
+## Audio Duration Limits
+
+Each stem you upload must be under a maximum duration, which depends on your account type. If a file is too long, you'll see a clear error message and may need to upgrade your account for longer uploads.
+
+## Source Audio Persistence
+
+When uploading stems, you have the option to keep your original source audio files. This affects:
+
+- **Mix Generation:** If source audio is preserved, you will be able to generate mixes and also offer this ability to those you share the track with
+- **Download Quality:** Downloads will maintain the quality of your source files
+- **Storage:** Keeping source files requires additional storage space
+- **Account Requirements:** Source audio persistence may require an upgraded account depending on file size and quality
+
+## Track & Stem Limits
+
+There are limits on the number of tracks. If you reach a limit, you'll be notified and may need to upgrade your account or remove existing tracks/stems.
+
+There are also limits on the number of stems you can add to each track, although this limit is set to a generous number. The reason for this is mainly to ensure adequate player performance in the browser.
+
+## Account Permissions
+
+Some upload features (like high quality, long duration, or source downloads) require an upgraded account. If you don't have access, you'll see a warning or error message.
 
 For more details about account features and upgrade options, see the [Sponsor This Project](/docs/other/sponsor-this-project/) page.
