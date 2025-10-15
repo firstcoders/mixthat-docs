@@ -3,13 +3,23 @@ info:
     title: Mixthat!
     description: The Mixthat API
     version: 0.1.0
-    termsOfService: https://mixthat.co/terms/
+    termsOfService: https://www.mixthat.co/terms/
     contact: support@firstcoders.co.uk
     externalDocs: https://www.mixthat.co/docs/guides/api/
 
 servers:
     - url: https://app.mixthat.co/api/v1
-      description: The Mixthat API
+      description: The Mixthat API (v1 endpoints)
+
+tags:
+    - name: Library
+      description: Track library management operations
+    - name: Audio
+      description: Audio processing operations
+    - name: Jobs
+      description: Asynchronous job operations
+    - name: Streaming
+      description: Audio streaming and file access operations
 
 paths:
     /tracks:
@@ -87,6 +97,19 @@ paths:
                         application/json:
                             schema:
                                 '$ref': '#/components/schemas/BadRequestResponse'
+                '402':
+                    description: Payment Required - Track quota exceeded
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    message:
+                                        type: string
+                                        example: 'Track quota exceeded'
+                                    code:
+                                        type: string
+                                        example: 'E_TRACKS_QUOTA_EXCEEDED'
                 '403':
                     description: Access Denied - Insufficient permissions
 
@@ -164,17 +187,51 @@ paths:
                             '$ref': '#/components/schemas/TrackPayload'
             responses:
                 '200':
-                    description: OK
+                    description: Track updated successfully (no files to process)
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    $links:
+                                        '$ref': '#/components/schemas/Links'
+                '202':
+                    description: The request has been accepted and is processing
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    $links:
+                                        '$ref': '#/components/schemas/Links'
+                '400':
+                    description: Bad Request
+                    content:
+                        application/json:
+                            schema:
+                                '$ref': '#/components/schemas/BadRequestResponse'
+                '402':
+                    description: Payment Required - High quality streaming not allowed
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    message:
+                                        type: string
+                                    code:
+                                        type: string
+                                        example: 'E_AUDIO_HIGH_QUALITY_NOT_ALLOWED'
                 '403':
                     description: Access Denied
                 '404':
                     description: Not found
 
     /tracks/{track_id}/share:
-        get:
-            summary: Get a token for track access
+        post:
+            summary: Create a token for track access
             description: Generate a temporary token for accessing a specific track
-            operationId: getTrackToken
+            operationId: createTrackToken
             tags:
                 - Library
             parameters:
@@ -184,6 +241,12 @@ paths:
                   schema:
                       $ref: '#/components/schemas/track_id'
                   description: The track id
+            requestBody:
+                required: false
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/CreateTokenRequest'
             responses:
                 '200':
                     description: Token generated successfully
@@ -447,7 +510,7 @@ paths:
                   required: true
                   schema:
                       type: string
-                      enum: [waveform, m3u8]
+                      enum: [waveform, m3u8, mix]
                   description: The audio processing task to perform
             requestBody:
                 required: true
@@ -457,6 +520,7 @@ paths:
                             oneOf:
                                 - $ref: '#/components/schemas/WaveformRequest'
                                 - $ref: '#/components/schemas/M3u8Request'
+                                - $ref: '#/components/schemas/CreateMixRequest'
                         examples:
                             waveform:
                                 summary: Generate waveform
@@ -466,8 +530,15 @@ paths:
                                 summary: Generate HLS segments
                                 value:
                                     href: 'https://example.com/audio/track.wav'
-                                    streaming_quality: HIGH
-                                    duration: 120
+                            mix:
+                                summary: Create audio mix
+                                value:
+                                    format: wav
+                                    files:
+                                        - href: 'https://example.com/audio/stem1.wav'
+                                          volume: 0.8
+                                        - href: 'https://example.com/audio/stem2.wav'
+                                          volume: 0.6
             responses:
                 '202':
                     description: Audio processing job successfully initiated
@@ -601,11 +672,10 @@ components:
                               required:
                                   - file_id
                                   - type
-                              minItems: 0
-                              maxItems: 30
                               properties:
                                   file_id:
                                       type: string
+                                      maxLength: 16
                                   label:
                                       type: string
                                       maxLength: 50
@@ -620,8 +690,6 @@ components:
                               required:
                                   - src
                                   - type
-                              minItems: 0
-                              maxItems: 30
                               properties:
                                   src:
                                       type: string
@@ -819,15 +887,23 @@ components:
                     type: string
                     format: uri
                     description: URL to the audio file to process
-                streaming_quality:
+
+        CreateTokenRequest:
+            type: object
+            additionalProperties: false
+            properties:
+                expires_at:
                     type: string
-                    enum: [STANDARD, HIGH]
-                    default: STANDARD
-                    description: Audio quality level (STANDARD or HIGH)
-                duration:
-                    type: number
-                    minimum: 0
-                    description: Duration of the audio in seconds
+                    format: date-time
+                    description: Optional expiry time for the token (ISO 8601 format)
+                allow_mix:
+                    type: boolean
+                    description: Whether to include tracks/create_mix scope in the token
+                    default: false
+                allow_read_source:
+                    type: boolean
+                    description: Whether to include tracks/audio/read_source scope in the token
+                    default: false
 
         # ErrorResponse:
         #   type: object
