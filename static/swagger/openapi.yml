@@ -4,7 +4,7 @@ info:
     description: The Mixthat API
     version: 0.1.0
     termsOfService: https://www.mixthat.co/terms/
-    contact: support@firstcoders.co.uk
+    contact: mixthat@firstcoders.co.uk
     externalDocs: https://www.mixthat.co/docs/guides/api/
 
 servers:
@@ -18,8 +18,6 @@ tags:
       description: Audio processing operations
     - name: Jobs
       description: Asynchronous job operations
-    - name: Streaming
-      description: Audio streaming and file access operations
 
 paths:
     /tracks:
