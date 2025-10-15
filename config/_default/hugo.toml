@@ -1,6 +1,6 @@
 title = "Mix That"
 baseurl = "https://firstcoders.github.io/mixthat-docs/"
-canonifyURLs = false
+canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
