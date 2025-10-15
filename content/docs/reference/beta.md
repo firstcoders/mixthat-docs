@@ -5,7 +5,7 @@ summary: "Details on the Mix That beta version, key improvements, and features n
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 1002
+weight: 1005
 toc: true
 seo:
   title: "Mix That Beta | New Features & Improvements"
@@ -37,6 +37,6 @@ Some features from the previous version are not yet available in the new Mix Tha
 - Stream and download analytics are not yet available.
 - Social login using Google has been removed.
 
-If these, or any other features, are important to you, please let us know by submitting a [feature request](/docs/general/request-a-feature/). Your feedback helps us prioritize future development.
+If these, or any other features, are important to you, please let us know by submitting a [feature request](/docs/other/request-a-feature/). Your feedback helps us prioritize future development.
 
-If you need any help migrating to the new version or moving your assets, please [contact us](/docs/general/support/) and our team will be happy to assist you.
+If you need any help migrating to the new version or moving your assets, please [contact us](/docs/other/contact-and-support/) and our team will be happy to assist you.

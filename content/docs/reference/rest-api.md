@@ -5,12 +5,12 @@ summary: "A guide to accessing and using the Mix That REST API for backend integ
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 104
+weight: 1003
 toc: true
 seo:
   title: "REST API Integration Guide | Mix That"
   description: "Learn how to access and use the Mix That REST API for backend integration, automation, and advanced workflows."
-  canonical: "/docs/guides/api/"
+  canonical: "/docs/reference/api/"
   robots: "index, follow"
 ---
 
@@ -18,7 +18,7 @@ The Mix That platform provides a robust [RESTful API](https://aws.amazon.com/wha
 
 ### API Access
 
-- Access to the API is available for [sponsors](/docs/general/sponsor-this-project/). If you're interested in leveraging the API, please [contact us](/contact) for details and onboarding support.
+- Access to the API is available for [sponsors](/docs/other/sponsor-this-project/). If you're interested in leveraging the API, please [contact us](/contact) for details and onboarding support.
 
 ### API Documentation
 

@@ -117,6 +117,14 @@ Solo mode lets you isolate one or more stems:
 - **Individual Stem Volume**: Fine-tune the balance between different elements
 - **Real-time Adjustment**: All volume changes happen instantly without interrupting playback
 
+### Waveform Zooming
+
+You can zoom in and out of the waveform for more precise control:
+
+- **Zoom In**: Get a detailed view of the audio waveform for precise editing and region selection
+- **Zoom Out**: See the entire track or larger sections at once
+- **Precision Control**: Zooming allows for more accurate positioning when selecting regions or seeking to specific moments
+
 ### Visual Feedback
 
 The player provides visual indicators for:

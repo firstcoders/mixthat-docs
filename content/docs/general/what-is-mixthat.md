@@ -48,6 +48,6 @@ We're looking for:
 
 - Valuable Feature Ideas: Share your vision for what Mix That could be. Your suggestions will help us prioritize and develop impactful new features.
 - Community Engagement: Join discussions, provide feedback, and help us refine the user experience.
-- Sponsorship Opportunities: For individuals or organizations who believe in our mission, [consider becoming a sponsor](/docs/general/sponsor-this-project/). Your contributions will directly accelerate our development and allow us to introduce more powerful features faster.
+- Sponsorship Opportunities: For individuals or organizations who believe in our mission, [consider becoming a sponsor](/docs/other/sponsor-this-project/). Your contributions will directly accelerate our development and allow us to introduce more powerful features faster.
 
 Let's build the ultimate multitrack audio management and playback platform together!

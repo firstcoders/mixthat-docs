@@ -5,12 +5,12 @@ summary: "Learn how you can sponsor Mix That and Stemplayer-JS to help accelerat
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-03-01T16:04:48+02:00
 draft: false
-weight: 7
+weight: 103
 toc: true
 seo:
   title: "Sponsor Mix That & Stemplayer-JS"
   description: "Discover how your sponsorship can drive the growth and innovation of Mix That and Stemplayer-JS. Support us via GitHub Sponsors, Patreon, or contact us for custom opportunities."
-  canonical: "/docs/general/sponsor-this-project/"
+  canonical: "/docs/other/sponsor-this-project/"
   robots: "index, follow"
 ---
 
@@ -43,4 +43,4 @@ Support our work and unlock these premium benefits via these convenient links:
 
 We're always exploring new ways to connect with our supporters, so watch this space for additional options.
 
-For custom sponsorship opportunities or questions, please don't hesitate to [contact us](/contact).
+For custom sponsorship opportunities or questions, please don't hesitate to [contact us](/docs/other/contact-and-support).

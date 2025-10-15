@@ -5,12 +5,12 @@ summary: "Share your feature requests and suggestions to make Mix That better fo
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 5
+weight: 100
 toc: true
 seo:
   title: "Request a Feature | Mix That"
   description: "Let us know what features you'd like to see in Mix That. Submit your ideas and help us build a better platform."
-  canonical: "/docs/general/request-a-feature/"
+  canonical: "/docs/other/request-a-feature/"
   robots: "index, follow"
 ---
 

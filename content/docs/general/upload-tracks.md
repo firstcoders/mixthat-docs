@@ -54,4 +54,4 @@ Once you're happy with how your player is set up and your stems are organized, s
 - **Track & Stem Limits:** There are limits on the number of tracks you can create and the number of stems per track. If you reach a limit, you'll be notified and may need to upgrade your account or remove existing tracks/stems.
 - **Permissions:** Some upload features (like high quality, long duration, or source downloads) require an upgraded account. If you don't have access, you'll see a warning or error message.
 
-For more details about account features and upgrade options, see the [Sponsor This Project](/docs/general/sponsor-this-project/) page.
+For more details about account features and upgrade options, see the [Sponsor This Project](/docs/other/sponsor-this-project/) page.

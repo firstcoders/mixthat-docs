@@ -4,7 +4,7 @@ description: "Comprehensive guide for enterprise sponsors on deploying and manag
 summary: "Step-by-step instructions and key information for enterprise sponsors to self-host Mix That, with details on architecture, support, and early access."
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-11T00:00:00+02:00
-weight: 1000
+weight: 1002
 toc: true
 seo:
   title: "Self-Hosting Mix That: Enterprise Deployment Guide"
@@ -13,7 +13,7 @@ seo:
   robots: "index, follow"
 ---
 
-Are you an [enterprise sponsor](/docs/general/sponsor-this-project/) looking to host Mix That within your own infrastructure? Our self-hosting option is designed for organizations that require full control over their audio assets, data, and integrations.
+Are you an [enterprise sponsor](/docs/other/sponsor-this-project/) looking to host Mix That within your own infrastructure? Our self-hosting option is designed for organizations that require full control over their audio assets, data, and integrations.
 
 Mix That is built with a modern, serverless-first architecture, ensuring cost-effectiveness, scalability, and straightforward deployment. This makes it ideal for enterprises seeking robust, secure, and flexible audio management solutions.
 

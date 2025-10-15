@@ -30,19 +30,19 @@ This approach gives you greater control, flexibility, and a better user experien
 
 ### How to Embed the Player
 
-1. Click the embed button in the Mix That app to generate your embed code.
-2. Copy and paste the provided code into your website:
+1. Follow the steps in [Sharing a Track](/docs/general/sharing-a-track/) to generate your embed code.
+2. Copy the embed code and paste it into your website:
 
 ```html
 <!-- Add this just before the </head> tag -->
-<script type="module" src="https://cdn.jsdelivr.net/npm/@firstcoders/mixthat-player@^4.0.0-beta.0"></script>
+<script type="module" src="https://app.mixthat.co/packages/@firstcoders/mixthat-player/latest/index.js"></script>
 <style>
   :root {
     --stemplayer-js-controls-background-color: #232323;
   }
 </style>
 <!-- Place this where you want the player to appear -->
-<mixthat-player controls src="https://app.mixthat.co/api/v1/tracks/jgaYB9"></mixthat-player>
+<mixthat-player controls="loop progress" src="https://app.mixthat.co/api/v1/tracks/6RdiBV?auth_token=ABCD"></mixthat-player>
 ```
 
 ### Using Package Managers (NPM / Yarn)
@@ -67,4 +67,4 @@ For more configuration and styling options, refer to the [stemplayer-js document
 
 The Mix That Player works in any modern browser that supports the Web Audio API and Custom Elements (including recent versions of Chrome, Firefox, Safari, and Edge).
 
-If you have questions or need help with embedding, feel free to [contact support](/docs/general/support/).
+If you have questions or need help with embedding, feel free to [contact support](/docs/other/contact-and-support/).

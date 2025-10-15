@@ -5,12 +5,12 @@ summary: "Let us know about any issues or suggestions to help us improve Mix Tha
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 4
+weight: 101
 toc: true
 seo:
   title: "Report an Issue | Mix That"
   description: "Easily report bugs, suggest documentation changes, or request improvements for Mix That. Help us make the platform better for everyone."
-  canonical: "/docs/general/report-an-issue/"
+  canonical: "/docs/other/report-an-issue/"
   robots: "index, follow"
 ---
 
