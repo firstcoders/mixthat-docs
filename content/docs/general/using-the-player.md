@@ -5,7 +5,7 @@ summary: "Learn how to play tracks, control stems, and use all the player featur
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 2
+weight: 3
 toc: true
 seo:
   title: "Uploading Audio Stems | Mix That"
