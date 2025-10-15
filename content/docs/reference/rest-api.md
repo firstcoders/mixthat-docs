@@ -18,10 +18,10 @@ The Mix That platform provides a robust [RESTful API](https://aws.amazon.com/wha
 
 ### API Access
 
-- Access to the API is available for [sponsors](/docs/other/sponsor-this-project/). If you're interested in leveraging the API, please [contact us](/contact) for details and onboarding support.
+- Access to the API is available for [sponsors](/docs/other/sponsor-this-project/). If you're interested in leveraging the API, please [contact us]({{< relref "/docs/other/contact-and-support" >}}) for details and onboarding support.
 
 ### API Documentation
 
 - Comprehensive API documentation is available in our [OpenAPI Reference](/openapi), including endpoints, authentication, and usage examples.
 
-If you have questions or want to discuss your integration needs, [get in touch](/contact). We're here to help you make the most of Mix That!
+If you have questions or want to discuss your integration needs, [get in touch]({{< relref "/docs/other/contact-and-support" >}}). We're here to help you make the most of Mix That!

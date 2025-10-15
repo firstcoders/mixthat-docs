@@ -118,7 +118,7 @@ We shall have the right to terminate your access to the Products without notice 
 
 ## Reporting infringements
 
-If you discover any content on the Products that you believe infringes your copyright, or the copyright of any third-party, please report this to us by contacting us at [https://mixthat.co/contact](/contact).
+If you discover any content on the Products that you believe infringes your copyright, or the copyright of any third-party, please report this to us by contacting us at [contact and support]({{< relref "/docs/other/contact-and-support" >}}).
 
 ## Intellectual Property Rights
 
@@ -170,7 +170,7 @@ IN ADDITION, AND TO THE MAXIMUM EXTEND PERMITTED BY LAW, WE HAVE NO LIABILITY WH
 
 ## Data Protection
 
-Where in the course of using the Products you are asked to provide any information our use of such information is governed by our [Privacy Policy](/privacy-policy), which we urge you to read.
+Where in the course of using the Products you are asked to provide any information our use of such information is governed by our [Privacy Policy]({{< relref "/privacy" >}}), which we urge you to read.
 
 ## Governing Law
 

@@ -30,4 +30,4 @@ With Mix That, your team can manage, store, transcode, and deliver audio seamles
 
 We are preparing to release the full source code under the Business Source License (BSL), along with detailed documentation and architectural diagrams, to support your development team in deploying and maintaining your instance efficiently.
 
-For more information, to discuss your requirements, or to request early access to resources, please [contact us](/contact). Our team is ready to provide guidance and support tailored to your organization's needs.
+For more information, to discuss your requirements, or to request early access to resources, please [contact us]({{< relref "/docs/other/contact-and-support" >}}). Our team is ready to provide guidance and support tailored to your organization's needs.
