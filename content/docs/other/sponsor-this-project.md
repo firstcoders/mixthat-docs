@@ -16,7 +16,7 @@ seo:
 
 Your sponsorship is key to the continued growth and innovation of Mix That and Stemplayer-JS. By contributing, you directly empower us to accelerate development, improve existing features, and bring exciting new ideas to life.
 
-## 🚀 Unlock Premium Benefits with Sponsorship
+## Unlock Premium Benefits with Sponsorship
 
 Sponsoring Mix That isn't just about supporting the project—it's about unlocking a significantly enhanced experience for yourself:
 
@@ -33,7 +33,7 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 
 \*Permanent while plan is active
 
-## 🎯 Ready to Upgrade Your Experience?
+## Ready to Upgrade Your Experience?
 
 Support our work and unlock these premium benefits via these convenient links:
 

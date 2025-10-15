@@ -6,6 +6,7 @@ date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-11T00:00:00+02:00
 weight: 1002
 toc: true
+draft: true
 seo:
   title: "Self-Hosting Mix That: Enterprise Deployment Guide"
   description: "Learn how to deploy, manage, and scale your own Mix That instance for your organization, with full support and documentation."
