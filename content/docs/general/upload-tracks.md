@@ -5,12 +5,12 @@ summary: "Step-by-step guide to uploading and organizing your audio stems in Mix
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 100
+weight: 3
 toc: true
 seo:
   title: "Uploading Audio Stems | Mix That"
   description: "A complete guide to uploading, organizing, and managing your audio stems and tracks in Mix That."
-  canonical: "/docs/guides/upload-tracks/"
+  canonical: "/docs/gemeral/upload-tracks/"
   robots: "index, follow"
 ---
 

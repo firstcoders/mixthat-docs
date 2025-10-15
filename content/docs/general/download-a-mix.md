@@ -5,12 +5,12 @@ summary: "Learn how to download your mixes in high quality, including sponsor re
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 103
+weight: 5
 toc: true
 seo:
   title: "Download a Mix | Mix That"
   description: "Step-by-step guide to downloading high-quality mixes from Mix That, including sponsor access and region selection."
-  canonical: "/docs/guides/download-a-mix/"
+  canonical: "/docs/general/download-a-mix/"
   robots: "index, follow"
 ---
 

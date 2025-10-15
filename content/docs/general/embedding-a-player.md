@@ -5,12 +5,12 @@ summary: "A step-by-step guide to embedding and customizing the Mix That Player 
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 102
+weight: 6
 toc: true
 seo:
   title: "Embed the Mix That Player | Mix That"
   description: "Learn how to embed and customize the Mix That Player web component in your website, with code examples and integration tips."
-  canonical: "/docs/guides/embedding-a-player/"
+  canonical: "/docs/general/embedding-a-player/"
   robots: "index, follow"
 ---
 

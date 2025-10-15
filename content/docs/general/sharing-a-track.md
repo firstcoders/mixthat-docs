@@ -5,12 +5,12 @@ summary: "A guide to sharing tracks in Mix That, including secure and public sha
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
-weight: 101
+weight: 4
 toc: true
 seo:
   title: "How to Share a Track | Mix That"
   description: "Step-by-step instructions for sharing your Mix That tracks securely or publicly, with details on link expiration and access."
-  canonical: "/docs/guides/sharing-a-track/"
+  canonical: "/docs/general/sharing-a-track/"
   robots: "index, follow"
 ---
 

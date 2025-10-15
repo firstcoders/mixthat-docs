@@ -1,5 +1,5 @@
 ---
-title: "Guides"
+title: "Other"
 description: "Step-by-step guides to help you get the most out of Mix That, from uploading tracks to advanced integrations."
 summary: "Browse our collection of Mix That guides for setup, sharing, embedding, and more."
 date: 2025-03-01T16:12:37+02:00
@@ -10,8 +10,8 @@ toc: true
 sidebar:
   collapsed: false
 seo:
-  title: "Guides | Mix That Documentation"
-  description: "Explore Mix That guides for uploading, sharing, embedding, and integrating audio tracks."
-  canonical: "/docs/guides/"
+  title: "Other | Mix That Documentation"
+  description: "Other bits of information around Mix That."
+  canonical: "/docs/other/"
   robots: "index, follow"
 ---
