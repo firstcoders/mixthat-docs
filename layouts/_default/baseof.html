@@ -3,6 +3,7 @@
   {{ partial "head/head" . }}
   {{ partial "head/body-class" . }}
   <body class="{{ delimit (.Scratch.Get "class") " " }}"{{ if eq site.Params.doks.scrollSpy true }} data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0"{{ end }}>
+    <div class="body-inner">
     {{ partial "header/header" . }}
     <div class="wrap container-{{ site.Params.doks.containerBreakpoint | default "lg" }}" role="document">
       <div class="content">
@@ -18,5 +19,6 @@
     {{ if eq site.Params.doks.toTopButton true -}}
       {{ partial "footer/to-top" . }}
     {{ end }}
+    </div>
   </body>
 </html>
