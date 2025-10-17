@@ -228,6 +228,11 @@ body.home > div.body-inner {
     opacity: 0.9;
     // mix-blend-mode: soft-light;
     background-blend-mode: soft-light;
+
+    // Safari fix for background-blend-mode with fixed attachment
+    @supports (-webkit-appearance: none) {
+        background-attachment: scroll;
+    }
 }
 
 .mt--navbar {
