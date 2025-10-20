@@ -22,8 +22,8 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 
 | Feature                 | Default (Free)                       | Sponsor                       | Pro                           |
 | ----------------------- | ------------------------------------ | ----------------------------- | ----------------------------- |
-| **Storage Quota**       | 2GB                                  | 10GB                          | 100GB                         |
-| **Bandwidth Quota**     | 2GB                                  | 10GB                          | 100GB                         |
+| **Storage Quota**       | 2GB                                  | 10GB                          | 50GB                          |
+| **Bandwidth Quota**     | 2GB                                  | 10GB                          | 50GB                          |
 | **Tracks Quota**        | 10                                   | 100                           | 1000                          |
 | **Audio Max Quality**   | STANDARD                             | STANDARD                      | HIGH                          |
 | **Audio Max Duration**  | SHORT                                | MEDIUM                        | LONG                          |
@@ -32,6 +32,8 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 | **API Access**          | None                                 | None                          | Full                          |
 
 \*Permanent while plan is active
+
+**Note:** Embedding and sharing for each account is limited to a single domain. If you require embedding on multiple domains, please [contact us](/docs/other/contact-and-support) to discuss custom plans.
 
 ## Ready to Upgrade Your Experience?
 
