@@ -108,7 +108,7 @@ To maintain sustainable service operations and optimal performance for all users
 
 ### General Provisions
 
-- **Technical Necessity**: We reserve the right to remove content or accounts as necessary for legal compliance, security, or technical maintenance purposes.
+- **Technical Necessity**: We reserve the right to remove content or accounts as necessary for legal compliance, security, technical maintenance purposes, or for any reason at our sole discretion.
 - **No Liability**: We accept no liability for data loss resulting from automatic deletion policies outlined in these terms.
 - **User Responsibility**: Users are advised to maintain regular backups of important content and remain active on the platform to ensure content preservation.
 
