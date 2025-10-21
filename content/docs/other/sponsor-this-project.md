@@ -39,8 +39,6 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 <strong>Note for businesses and organizations:</strong> These plans are designed for individual creators and personal use. If you represent a business or organization, please <a href="/docs/other/contact-and-support">contact us</a> for a custom plan tailored to your needs. You're welcome to try out the above plans, but for ongoing commercial use, let's work together to find the best solution for you!
 </div>
 
-**Note:** Embedding and sharing for each account is limited to a single domain. If you require embedding on multiple domains, please [contact us](/docs/other/contact-and-support) to discuss custom plans.
-
 ## Ready to Upgrade Your Experience?
 
 Support our work and unlock these premium benefits via these convenient links:
