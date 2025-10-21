@@ -3,6 +3,10 @@
   {{ partial "head/head" . }}
   {{ partial "head/body-class" . }}
   <body class="{{ delimit (.Scratch.Get "class") " " }}"{{ if eq site.Params.doks.scrollSpy true }} data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0"{{ end }}>
+    <div style="background:#6ad6a7; color:#222; padding:0.7em 1em; border:1px solid #42b983; text-align:center; font-size:1.15em; font-weight:500;">
+      Welcome to the new MixThat!
+      <a href="https://beta.mixthat.co" target="_blank" style="color:#222; text-decoration:underline; font-weight:bold;">beta.mixthat.co</a> will remain live until the end of the year for your convenience.
+    </div>
     <div class="body-inner">
     {{ partial "header/header" . }}
     <div class="wrap container-{{ site.Params.doks.containerBreakpoint | default "lg" }}" role="document">
