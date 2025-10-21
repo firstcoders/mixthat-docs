@@ -20,19 +20,24 @@ Your sponsorship is key to the continued growth and innovation of Mix That and S
 
 Sponsoring Mix That isn't just about supporting the project—it's about unlocking a significantly enhanced experience for yourself:
 
-| Feature                 | Default (Free)                       | Sponsor            | Pro                 |
-| ----------------------- | ------------------------------------ | ------------------ | ------------------- |
-| **Storage Quota**       | 2GB                                  | 10GB               | 50GB                |
-| **Tracks Quota**        | 10                                   | 100                | 1000                |
-| **Bandwidth Quota**     | 2GB                                  | 5GB                | 25GB                |
-| **Audio Max Quality**   | STANDARD                             | STANDARD           | HIGH                |
-| **Audio Max Duration**  | SHORT                                | MEDIUM             | LONG                |
-| **Sharing & Embedding** | 3-day expiring URLs                  | Extended/permanent | Extended/permanent  |
-| **Track Retention**     | Deleted after 3 months of inactivity | Permanent\*        | Permanent\*         |
-| **API Access**          | None                                 | None               | Full                |
-| **API Request Limit**   | N/A                                  | N/A                | 3000 requests/month |
+| Feature                     | Default (Free)                       | Sponsor            | Pro                 |
+| --------------------------- | ------------------------------------ | ------------------ | ------------------- |
+| **Storage Quota**           | 2GB                                  | 10GB               | 50GB                |
+| **Bandwidth Quota**         | 2GB                                  | 5GB                | 25GB                |
+| **Tracks Quota**            | 25                                   | 100                | 1000                |
+| **Streams/Downloads Quota** | 2K/month                             | 5K/month           | 25K/month           |
+| **Audio Max Quality**       | STANDARD                             | STANDARD           | HIGH                |
+| **Audio Max Duration**      | 5min                                 | 10min              | 25min               |
+| **Sharing & Embedding**     | 3-day expiring URLs                  | Extended/permanent | Extended/permanent  |
+| **Track Retention**         | Deleted after 3 months of inactivity | Permanent\*        | Permanent\*         |
+| **API Access**              | None                                 | None               | Full                |
+| **API Request Quota**       | N/A                                  | N/A                | 3000 requests/month |
 
 \*Permanent while plan is active
+
+<div style="margin-top:1em; background:#f6f8fa; border-radius:6px; padding:12px; border:1px solid #e1e4e8;">
+<strong>Note for businesses and organizations:</strong> The Pro plan is designed for individual creators and personal use. If you represent a business or organization, please <a href="/docs/other/contact-and-support">contact us</a> for a custom plan tailored to your needs. You're welcome to try out the Pro plan, but for ongoing commercial use, let's work together to find the best solution for you!
+</div>
 
 **Note:** Embedding and sharing for each account is limited to a single domain. If you require embedding on multiple domains, please [contact us](/docs/other/contact-and-support) to discuss custom plans.
 
