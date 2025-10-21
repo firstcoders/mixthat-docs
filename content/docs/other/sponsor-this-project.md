@@ -35,8 +35,8 @@ Sponsoring Mix That isn't just about supporting the project—it's about unlocki
 
 \*Permanent while plan is active
 
-<div style="margin-top:1em; background:#f6f8fa; border-radius:6px; padding:12px; border:1px solid #e1e4e8;">
-<strong>Note for businesses and organizations:</strong> The Pro plan is designed for individual creators and personal use. If you represent a business or organization, please <a href="/docs/other/contact-and-support">contact us</a> for a custom plan tailored to your needs. You're welcome to try out the Pro plan, but for ongoing commercial use, let's work together to find the best solution for you!
+<div style="margin-top:1em; margin-bottom: 1em; border-radius:6px; padding:12px; border:1px solid #e1e4e8;">
+<strong>Note for businesses and organizations:</strong> These plans are designed for individual creators and personal use. If you represent a business or organization, please <a href="/docs/other/contact-and-support">contact us</a> for a custom plan tailored to your needs. You're welcome to try out the above plans, but for ongoing commercial use, let's work together to find the best solution for you!
 </div>
 
 **Note:** Embedding and sharing for each account is limited to a single domain. If you require embedding on multiple domains, please [contact us](/docs/other/contact-and-support) to discuss custom plans.
