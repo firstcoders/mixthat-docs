@@ -2,7 +2,7 @@
 <script>
   window.onload = function() {
     const ui = SwaggerUIBundle({
-      url: '{{ .Get "file" }}',
+      url: '{{ .Get "file" | absURL }}',
       //url: "https://petstore.swagger.io/v2/swagger.json",
       dom_id: '#swagger-ui',
       deepLinking: true,
