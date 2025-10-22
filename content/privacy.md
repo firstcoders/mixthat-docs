@@ -9,7 +9,7 @@ type: "legal"
 seo:
   title: "Privacy Policy | First Coders Ltd"
   description: "Read our Privacy Policy to learn how First Coders Ltd handles your personal information in compliance with UK GDPR."
-  canonical: "https://www.mixthat.co/privacy-policy"
+  canonical: "https://docs.mixthat.co/privacy-policy"
   robots: "index, follow"
 ---
 

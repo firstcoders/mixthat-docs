@@ -1,5 +1,5 @@
 title = "Mix That"
-baseurl = "https://firstcoders.github.io/mixthat-docs/"
+baseurl = "https://docs.mixthat.co/"
 canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true

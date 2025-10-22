@@ -3,9 +3,9 @@ info:
     title: Mixthat!
     description: The Mixthat API
     version: 0.1.0
-    termsOfService: https://www.mixthat.co/terms/
+    termsOfService: https://docs.mixthat.co/terms/
     contact: mixthat@firstcoders.co.uk
-    externalDocs: https://www.mixthat.co/docs/guides/api/
+    externalDocs: https://docs.mixthat.co/docs/guides/api/
 
 servers:
     - url: https://app.mixthat.co/api/v1

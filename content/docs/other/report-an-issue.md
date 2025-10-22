@@ -17,7 +17,7 @@ seo:
 Found a bug or something not working as expected? We appreciate your help in making Mix That better!
 
 - To report a technical issue or bug, please [open an issue on GitHub](https://github.com/firstcoders/mixthat/issues).
-- For documentation suggestions or corrections, [open an issue here](https://github.com/firstcoders/mixthat-docs/issues) or [submit a pull request](https://github.com/firstcoders/mixthat-docs).
+- For documentation suggestions or corrections, [open an issue here](https://github.com/firstcoders/issues) or [submit a pull request](https://github.com/firstcoders/mixthat-docs).
 - Or contact us at <a href="mailto:mixthat@firstcoders.co.uk">mixthat@firstcoders.co.uk</a>
 
 Your feedback and contributions help us improve the platform for everyone. Thank you for your support!

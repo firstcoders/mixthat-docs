@@ -14,4 +14,4 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-{{< swagger file="/mixthat-docs/swagger/openapi.yml"  >}}
+{{< swagger file="/swagger/openapi.yml"  >}}
