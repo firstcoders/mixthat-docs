@@ -1,6 +1,7 @@
 title = "Mix That"
 baseurl = "https://docs.mixthat.co/"
 canonifyURLs = true
+relativeURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
