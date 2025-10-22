@@ -56,7 +56,8 @@ jobs:
       - name: Build with yarn
         env:
           HUGO_ENVIRONMENT: production
-          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
+          # HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
+          HUGO_BASEURL: "https://docs.mixthat.co/"
         run: yarn build
 
       - name: Upload artifact
