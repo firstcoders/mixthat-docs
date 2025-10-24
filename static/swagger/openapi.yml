@@ -263,6 +263,12 @@ paths:
                                         type: string
                                         format: date-time
                                         description: Token expiration time
+                '400':
+                    description: Bad Request - Advanced share options require extended permissions
+                    content:
+                        application/json:
+                            schema:
+                                '$ref': '#/components/schemas/BadRequestResponse'
                 '403':
                     description: Access Denied
                 '404':
@@ -518,7 +524,6 @@ paths:
                             oneOf:
                                 - $ref: '#/components/schemas/WaveformRequest'
                                 - $ref: '#/components/schemas/M3u8Request'
-                                - $ref: '#/components/schemas/CreateMixRequest'
                         examples:
                             waveform:
                                 summary: Generate waveform
@@ -528,15 +533,6 @@ paths:
                                 summary: Generate HLS segments
                                 value:
                                     href: 'https://example.com/audio/track.wav'
-                            mix:
-                                summary: Create audio mix
-                                value:
-                                    format: wav
-                                    files:
-                                        - href: 'https://example.com/audio/stem1.wav'
-                                          volume: 0.8
-                                        - href: 'https://example.com/audio/stem2.wav'
-                                          volume: 0.6
             responses:
                 '202':
                     description: Audio processing job successfully initiated
