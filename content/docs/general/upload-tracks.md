@@ -66,7 +66,7 @@ When uploading stems, you have the option to keep your original source audio fil
 - **Mix Generation:** If source audio is preserved, you will be able to generate mixes and also offer this ability to those you share the track with
 - **Download Quality:** Downloads will maintain the quality of your source files
 - **Storage:** Keeping source files requires additional storage space
-- **Account Requirements:** Source audio persistence may require an upgraded account depending on file size and quality
+- **Account Requirements:** Source audio persistence will require a upgraded account
 
 ## Track & Stem Limits
 
