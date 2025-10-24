@@ -508,7 +508,7 @@ paths:
                   required: true
                   schema:
                       type: string
-                      enum: [waveform, m3u8, mix]
+                      enum: [waveform, m3u8]
                   description: The audio processing task to perform
             requestBody:
                 required: true
