@@ -1,53 +1,90 @@
 ---
 title: "What is MixThat?"
-description: "Downloading a high quality mix"
-summary: ""
+description: "Upload, mix, and share your multitrack audio effortlessly in the browser."
+summary: "Discover MixThat — the simplest way to host, mix, and share stem and multitrack audio online."
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-03-01T16:13:18+02:00
 draft: false
 weight: 1
 toc: true
 seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  robots: "" # custom robot tags (optional)
+  title: "What is MixThat?"
+  description: "MixThat is a browser-based audio platform for hosting, mixing, and streaming stem and multitrack audio with interactive playback and sharing."
+  canonical: "/docs/what-is-mixthat/"
+  robots: "index, follow"
 ---
 
-Mix That is a new audio content management platform focused on hosting, transcoding, and fast streaming of multitrack and stem audio. We empower you to effortlessly showcase and share your stem audio projects and bring them to life online.
+# What is MixThat?
 
-Our core offering is the [Stem Player](https://www.stemplayer-js.com) — a fully customizable web component that seamlessly embeds into any website. It's designed to play back your multitrack and stem audio with unparalleled efficiency, allowing your audience to experience your creations in an interactive and engaging way.
+**MixThat** is a web-based platform for uploading, mixing, and sharing your multitrack and stem audio — all directly in the browser.
 
-Whether you're looking to create and share interactive stem players for your own multitrack audio online, or you want to embed powerful stem players directly into your website, Mix That provides the tools you need. Plus, with Mix That, you can even mix stems together to create unique new tracks and mixes.
+It’s designed for **creators, musicians, and educators** who want to turn complex audio projects into interactive listening experiences without heavy software or technical setup.
 
-## Why Choose Mix That?
+---
 
-Mix That stands out by offering a highly efficient and performant way to stream multitrack and stem audio. This is made possible through our advanced HTTP-streaming audio protocol. Unlike traditional methods, our approach allows the player to stream and decode only a brief section of the track into the browser's memory at any given time.
+## 🎚️ Create, Mix, and Share — All in One Place
 
-This innovative technology means you can confidently play tracks with more stems and much longer durations without compromising performance. We handle all the complex technicalities behind the scenes, including audio transcoding and secure, high-speed Content Delivery Network (CDN) streaming, all fully configured and optimized for you. With Mix That, you can focus on your music, not the technical hurdles.
+With MixThat, you can:
 
-## Who is Mix That For?
+- **Upload** your stem or multitrack audio
+- **Mix** stems directly in the browser
+- **Share** your track as an interactive, embeddable player
 
-Mix That is built for anyone working with multitrack or stem audio who wants a powerful, streamlined solution for management, sharing, and playback. Our platform is ideal for:
+Everything runs in the cloud — no installs, no file transfers, and no complex hosting setup.
+Your listeners can engage with your tracks immediately through our powerful [Stem Player](https://www.stemplayer-js.com).
 
-- Musicians: Showcase your tracks with interactive stems, allowing listeners to dive deeper into your arrangements.
-- Music Teachers: Provide engaging, interactive lessons with adjustable stems for learning instruments or arrangements.
-- Hobbyists: Experiment with mixes and share your multitrack projects with ease.
-- Karaoke Enthusiasts: Create and share custom karaoke tracks with individual vocal or instrumental stems.
-- Choirs: Practice and perform with individual voice parts available as separate stems.
-- Music Labels: Present artist catalogs with dynamic, interactive listening experiences.
-- Music Publishers: License and distribute multitrack content efficiently and securely.
+---
 
-:bulb: Have a unique use case in mind? We'd love to hear about it!
+## 🎵 Powered by the Stem Player
 
-## Your Chance to Influence Mix That's Development
+The **Stem Player** is MixThat’s heart — a fully customizable web component that can be embedded on any website.
+It lets listeners:
 
-Mix That is a brand-new platform, and we're gradually expanding its capabilities. To ensure we're building exactly what our users need, we're actively seeking input and support from the community.
+- Mute, solo, or adjust individual stems
+- Loop and zoom in on regions
+- Experience your track interactively, not passively
 
-We're looking for:
+It’s an entirely new way to present your music online.
 
-- Valuable Feature Ideas: Share your vision for what Mix That could be. Your suggestions will help us prioritize and develop impactful new features.
-- Community Engagement: Join discussions, provide feedback, and help us refine the user experience.
-- Sponsorship Opportunities: For individuals or organizations who believe in our mission, [consider becoming a sponsor](/docs/other/sponsor-this-project/). Your contributions will directly accelerate our development and allow us to introduce more powerful features faster.
+---
 
-Let's build the ultimate multitrack audio management and playback platform together!
+## ⚡ Why Choose MixThat?
+
+Traditional audio players stream a single file at once. MixThat’s advanced streaming engine only loads small audio chunks as needed — making it lightweight and ultra-fast, even with many stems or long tracks.
+
+Behind the scenes, MixThat handles:
+
+- High-speed CDN delivery
+- Automatic transcoding for multiple formats
+- Secure and efficient cloud hosting
+
+You focus on your music. MixThat handles the rest.
+
+---
+
+## 👥 Who Uses MixThat?
+
+MixThat is built for anyone who works with multitrack or stem audio:
+
+- 🎸 **Musicians & Producers** — Showcase interactive versions of your songs
+- 🎧 **Music Teachers** — Share lessons with adjustable stems
+- 🎤 **Karaoke Creators** — Build mixable karaoke experiences
+- 🎼 **Choirs & Ensembles** — Provide isolated voice parts for practice
+- 🏷️ **Labels & Publishers** — Present catalogs with modern, engaging playback
+
+💡 _Have a unique idea or use case? We’d love to hear from you!_
+
+---
+
+## 🚀 Shape the Future of MixThat
+
+MixThat is growing fast — and your input directly influences its direction.
+We’re currently seeking:
+
+- 💡 **Feature ideas** — What would make MixThat perfect for you?
+- 🗣️ **Community feedback** — Help us refine and prioritize what’s next
+- ❤️ **Sponsors** — Support independent development and unlock premium features
+
+[Become a Sponsor →](/docs/other/sponsor-this-project/)
+
+Let’s build the ultimate multitrack audio management and playback platform together.
