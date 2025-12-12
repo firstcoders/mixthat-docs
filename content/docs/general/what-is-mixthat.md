@@ -14,8 +14,6 @@ seo:
   robots: "index, follow"
 ---
 
-# What is MixThat?
-
 **MixThat** is a web-based platform for uploading, mixing, and sharing your multitrack and stem audio — all directly in the browser.
 
 It’s designed for **creators, musicians, and educators** who want to turn complex audio projects into interactive listening experiences without heavy software or technical setup.
