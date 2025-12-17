@@ -72,7 +72,7 @@ Click **"Manage Tokens"** when creating a share link to access the Share Managem
 
 This feature gives you complete control and transparency over your shared content, making it easy to manage who has access to your tracks and for how long.
 
-### Creating Advanced Shares
+## Creating a Share
 
 After selecting your desired options:
 
@@ -80,7 +80,7 @@ After selecting your desired options:
 2. **Copy the share link**: Direct URL that can be shared via email, messaging, or social media
 3. **Copy the embed code**: HTML code for embedding the player directly in websites
 
-### Embed Code Usage
+## Using Embed Code
 
 The embed code can be pasted into:
 

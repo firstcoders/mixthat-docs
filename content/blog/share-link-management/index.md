@@ -4,7 +4,7 @@ description: "Manage all your track share links in one place with our new Share 
 summary: "We've added a powerful new way to manage your track sharing with custom names, usage tracking, and easy deletion."
 date: 2025-12-17T00:00:00+02:00
 lastmod: 2025-12-17T00:00:00+02:00
-draft: true
+draft: false
 weight: 50
 categories: ["Features"]
 tags: ["sharing", "updates"]

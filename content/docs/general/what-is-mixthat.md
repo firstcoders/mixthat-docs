@@ -20,7 +20,7 @@ It’s designed for **creators, musicians, and educators** who want to turn comp
 
 ---
 
-## 🎚️ Create, Mix, and Share — All in One Place
+## Create, Mix, and Share — All in One Place
 
 With MixThat, you can:
 
@@ -33,7 +33,7 @@ Your listeners can engage with your tracks immediately through our powerful [Ste
 
 ---
 
-## 🎵 Powered by the Stem Player
+## Powered by the Stem Player
 
 The **Stem Player** is MixThat’s heart — a fully customizable web component that can be embedded on any website.
 It lets listeners:
@@ -46,7 +46,7 @@ It’s an entirely new way to present your music online.
 
 ---
 
-## ⚡ Why Choose MixThat?
+## Why Choose MixThat?
 
 Traditional audio players stream a single file at once. MixThat’s advanced streaming engine only loads small audio chunks as needed — making it lightweight and ultra-fast, even with many stems or long tracks.
 
@@ -60,28 +60,28 @@ You focus on your music. MixThat handles the rest.
 
 ---
 
-## 👥 Who Uses MixThat?
+## Who Uses MixThat?
 
 MixThat is built for anyone who works with multitrack or stem audio:
 
-- 🎸 **Musicians & Producers** — Showcase interactive versions of your songs
-- 🎧 **Music Teachers** — Share lessons with adjustable stems
-- 🎤 **Karaoke Creators** — Build mixable karaoke experiences
-- 🎼 **Choirs & Ensembles** — Provide isolated voice parts for practice
-- 🏷️ **Labels & Publishers** — Present catalogs with modern, engaging playback
+- **Musicians & Producers** — Showcase interactive versions of your songs
+- **Music Teachers** — Share lessons with adjustable stems
+- **Karaoke Creators** — Build mixable karaoke experiences
+- **Choirs & Ensembles** — Provide isolated voice parts for practice
+- **Labels & Publishers** — Present catalogs with modern, engaging playback
 
 💡 _Have a unique idea or use case? We’d love to hear from you!_
 
 ---
 
-## 🚀 Shape the Future of MixThat
+## Shape the Future of MixThat
 
 MixThat is growing fast — and your input directly influences its direction.
 We’re currently seeking:
 
-- 💡 **Feature ideas** — What would make MixThat perfect for you?
-- 🗣️ **Community feedback** — Help us refine and prioritize what’s next
-- ❤️ **Sponsors** — Support independent development and unlock premium features
+- **Feature ideas** — What would make MixThat perfect for you?
+- **Community feedback** — Help us refine and prioritize what’s next
+- **Sponsors** — Support independent development and unlock premium features
 
 [Become a Sponsor →](/docs/other/sponsor-this-project/)
 

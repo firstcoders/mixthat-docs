@@ -9,19 +9,19 @@
   weight = 2
 
 [[main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3
+
+[[main]]
   name = "Support"
   url = "/docs/other/contact-and-support/"
-  weight = 3
+  weight = 4
 
 [[main]]
   name = "Sponsor this project"
   url = "/docs/other/sponsor-this-project/"
-  weight = 4
-
-# [[main]]
-#   name = "Blog"
-#   url = "/blog/"
-#   weight = 5
+  weight = 5
 
 
 
