@@ -65,10 +65,8 @@ Click **"Manage Tokens"** when creating a share link to access the Share Managem
 #### Key Features
 
 - **View All Shares**: See all your active share links organized in a clean table with creation dates, expiration times, and permissions
-- **Name Your Shares**: Add custom names to help identify who you shared with or what the link is for (e.g., "Client Demo", "Blog Post", "John Smith")
 - **Track Usage**: Monitor when each share link was last accessed to understand engagement
-- **Quick Deletion**: Remove share links instantly, though it may take a few minutes for access to be fully revoked
-- **Pagination**: Easily browse through all your shares, even if you have many
+- **Deletion**: Remove share links, though it may take a few minutes for access to be fully revoked due to caching
 
 This feature gives you complete control and transparency over your shared content, making it easy to manage who has access to your tracks and for how long.
 
@@ -76,9 +74,10 @@ This feature gives you complete control and transparency over your shared conten
 
 After selecting your desired options:
 
-1. Click **"Create Share"** to generate your customized share link
-2. **Copy the share link**: Direct URL that can be shared via email, messaging, or social media
-3. **Copy the embed code**: HTML code for embedding the player directly in websites
+1. **Name your share** (optional): Add a custom name to help identify who you're sharing with or what the link is for (e.g., "Client Demo", "Blog Post", "John Smith")
+2. Click **"Create Share"** to generate your customized share link
+3. **Copy the share link**: Direct URL that can be shared via email, messaging, or social media
+4. **Copy the embed code**: HTML code for embedding the player directly in websites
 
 ## Using Embed Code
 
