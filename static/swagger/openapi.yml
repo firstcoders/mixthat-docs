@@ -1,910 +1,1130 @@
 openapi: 3.0.0
 info:
-    title: Mixthat!
-    description: The Mixthat API
-    version: 0.1.0
-    termsOfService: https://docs.mixthat.co/terms/
-    contact: mixthat@firstcoders.co.uk
-    externalDocs: https://docs.mixthat.co/docs/guides/api/
+  title: Mixthat!
+  description: The Mixthat API
+  version: 0.1.0
+  termsOfService: https://docs.mixthat.co/terms/
+  contact: mixthat@firstcoders.co.uk
+  externalDocs: https://docs.mixthat.co/docs/guides/api/
 
 servers:
-    - url: https://app.mixthat.co/api/v1
-      description: The Mixthat API (v1 endpoints)
+  - url: https://app.mixthat.co/api/v1
+    description: The Mixthat API (v1 endpoints)
 
 tags:
-    - name: Library
-      description: Track library management operations
-    - name: Audio
-      description: Audio processing operations
-    - name: Jobs
-      description: Asynchronous job operations
+  - name: Library
+    description: Track library management operations
+  - name: Audio
+    description: Audio processing operations
+  - name: Jobs
+    description: Asynchronous job operations
 
 paths:
-    /tracks:
-        get:
-            summary: List Tracks
-            description: Retrieve a list of tracks from the user's library with optional pagination and prefix filtering
-            operationId: listTracks
-            tags:
-                - Library
-            parameters:
-                - in: query
-                  name: limit
-                  schema:
-                      type: string
-                      pattern: '^[0-9]+$'
-                  description: Maximum number of items to return (1-1000)
-                - in: query
-                  name: next
-                  schema:
-                      type: string
-                      pattern: '^[A-Za-z0-9+/=]+$'
-                  description: Base64-encoded pagination token for the next page
-                - in: query
-                  name: prefix
-                  schema:
-                      type: string
-                  description: Filter tracks by prefix (searches track labels)
-            responses:
-                '200':
-                    description: A list of tracks
-                    headers:
-                        Cache-Control:
-                            schema:
-                                type: string
-                            description: Cache control directive
-                    content:
-                        application/json:
-                            schema:
-                                $ref: '#/components/schemas/ArrayOfTracksResponse'
-
-        post:
-            summary: Create a new Track
-            description: Upload and create a new track in the user's library
-            operationId: createTrack
-            tags:
-                - Library
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            '$ref': '#/components/schemas/TrackPayload'
-            responses:
-                '200':
-                    description: Track created/updated successfully (no files to process)
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    $links:
-                                        '$ref': '#/components/schemas/Links'
-                '202':
-                    description: The request has been accepted and is processing
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    $links:
-                                        '$ref': '#/components/schemas/Links'
-                '400':
-                    description: Bad Request
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/BadRequestResponse'
-                '402':
-                    description: Payment Required - Track quota exceeded
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    message:
-                                        type: string
-                                        example: 'Track quota exceeded'
-                                    code:
-                                        type: string
-                                        example: 'E_TRACKS_QUOTA_EXCEEDED'
-                '403':
-                    description: Access Denied - Insufficient permissions
-
-    /tracks/{track_id}:
-        get:
-            summary: Get a track
-            description: Retrieve details of a specific track by its ID
-            operationId: getTrack
-            tags:
-                - Library
-            parameters:
-                - in: path
-                  name: track_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/track_id'
-                  description: The track id
-            responses:
-                '200':
-                    description: OK
-                    headers:
-                        Cache-Control:
-                            schema:
-                                type: string
-                            description: Cache control directive
-                        Expires:
-                            schema:
-                                type: string
-                                format: date-time
-                            description: Cache expiration time
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/TrackResponse'
-
-        delete:
-            summary: Delete a track
-            description: Remove a track from the user's library
-            operationId: deleteTrack
-            tags:
-                - Library
-            parameters:
-                - in: path
-                  name: track_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/track_id'
-                  description: The track id
-            responses:
-                '200':
-                    description: OK
-                '403':
-                    description: Access Denied
-                '404':
-                    description: Not found
-
-        put:
-            summary: Update a track
-            description: Update metadata and properties of an existing track
-            operationId: updateTrack
-            tags:
-                - Library
-            parameters:
-                - in: path
-                  name: track_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/track_id'
-                  description: The track id
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            '$ref': '#/components/schemas/TrackPayload'
-            responses:
-                '200':
-                    description: Track updated successfully (no files to process)
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    $links:
-                                        '$ref': '#/components/schemas/Links'
-                '202':
-                    description: The request has been accepted and is processing
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    $links:
-                                        '$ref': '#/components/schemas/Links'
-                '400':
-                    description: Bad Request
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/BadRequestResponse'
-                '402':
-                    description: Payment Required - High quality streaming not allowed
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    message:
-                                        type: string
-                                    code:
-                                        type: string
-                                        example: 'E_AUDIO_HIGH_QUALITY_NOT_ALLOWED'
-                '403':
-                    description: Access Denied
-                '404':
-                    description: Not found
-
-    /tracks/{track_id}/share:
-        post:
-            summary: Create a token for track access
-            description: Generate a temporary token for accessing a specific track
-            operationId: createTrackToken
-            tags:
-                - Library
-            parameters:
-                - in: path
-                  name: track_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/track_id'
-                  description: The track id
-            requestBody:
-                required: false
-                content:
-                    application/json:
-                        schema:
-                            $ref: '#/components/schemas/CreateTokenRequest'
-            responses:
-                '200':
-                    description: Token generated successfully
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                required:
-                                    - token
-                                    - expires
-                                properties:
-                                    token:
-                                        type: string
-                                        description: JWT token for track access
-                                    expires:
-                                        type: string
-                                        format: date-time
-                                        description: Token expiration time
-                '400':
-                    description: Bad Request - Advanced share options require extended permissions
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/BadRequestResponse'
-                '403':
-                    description: Access Denied
-                '404':
-                    description: Track not found
-
-    /tracks/{track_id}/mix:
-        post:
-            summary: Create a mix from track files
-            description: |
-                Create a custom mix from the files in a specific track. This endpoint allows you to mix
-                multiple stems/files from an existing track with custom volume levels and timing.
-            operationId: createTrackMix
-            tags:
-                - Library
-            parameters:
-                - in: path
-                  name: track_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/track_id'
-                  description: The track id containing the files to mix
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            $ref: '#/components/schemas/CreateTrackMixRequest'
-            responses:
-                '202':
-                    description: Mix creation job successfully initiated
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    $links:
-                                        '$ref': '#/components/schemas/Links'
-                '400':
-                    description: Invalid request parameters
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/BadRequestResponse'
-                '403':
-                    description: Access Denied - Only track owners can create mixes
-                '404':
-                    description: Track not found
-                '409':
-                    description: Conflict - Files missing source audio
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    error:
-                                        type: string
-                                        description: Error message indicating which files are missing source audio
-
-    /tracks/tags:
-        get:
-            summary: List all unique tags
-            description: Returns a paginated list of all unique tags used across the user's tracks
-            operationId: listTrackTags
-            tags:
-                - Library
-            parameters:
-                - in: query
-                  name: limit
-                  schema:
-                      type: string
-                      pattern: '^[0-9]+$'
-                  description: Maximum number of tags to return (1-500)
-                - in: query
-                  name: next
-                  schema:
-                      type: string
-                      pattern: '^[A-Za-z0-9+/=]+$'
-                  description: Base64-encoded pagination token for the next page
-            responses:
-                '200':
-                    description: A paginated list of unique tags
-                    headers:
-                        Cache-Control:
-                            schema:
-                                type: string
-                            description: Cache control directive
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                required:
-                                    - tags
-                                    - count
-                                    - $links
-                                properties:
-                                    tags:
-                                        type: array
-                                        items:
-                                            type: object
-                                            required:
-                                                - name
-                                                - $links
-                                            properties:
-                                                name:
-                                                    type: string
-                                                    description: The tag name
-                                                $links:
-                                                    type: array
-                                                    items:
-                                                        type: object
-                                                        required:
-                                                            - rel
-                                                            - href
-                                                        properties:
-                                                            rel:
-                                                                type: string
-                                                            href:
-                                                                type: string
-                                                                format: uri-reference
-                                                                description: Link to get tracks with this tag
-                                    count:
-                                        type: integer
-                                        description: Total number of unique tags
-                                    $links:
-                                        type: array
-                                        items:
-                                            type: object
-                                            required:
-                                                - rel
-                                                - href
-                                            properties:
-                                                rel:
-                                                    type: string
-                                                    enum: [first, next]
-                                                href:
-                                                    type: string
-                                                    format: uri-reference
-                                        description: Navigation links for pagination
-
-    /tracks/tags/{tag}:
-        get:
-            summary: List tracks by tag
-            description: Retrieve a list of tracks filtered by a specific tag
-            operationId: listTracksByTag
-            tags:
-                - Library
-            parameters:
-                - in: path
-                  name: tag
-                  required: true
-                  schema:
-                      type: string
-                  description: The tag to filter tracks by
-                - in: query
-                  name: limit
-                  schema:
-                      type: string
-                      pattern: '^[0-9]+$'
-                  description: Maximum number of items to return (1-1000)
-                - in: query
-                  name: next
-                  schema:
-                      type: string
-                      pattern: '^[A-Za-z0-9+/=]+$'
-                  description: Base64-encoded pagination token for the next page
-                - in: query
-                  name: prefix
-                  schema:
-                      type: string
-                  description: Filter tracks by prefix (searches track labels)
-            responses:
-                '200':
-                    description: A list of tracks with the specified tag
-                    content:
-                        application/json:
-                            schema:
-                                $ref: '#/components/schemas/ArrayOfTracksResponse'
-                '404':
-                    description: Tag not found
-
-    /jobs/{job_id}:
-        get:
-            summary: Get the async job
-            description: Retrieve the status and result of an asynchronous job
-            operationId: getJob
-            tags:
-                - Jobs
-            parameters:
-                - in: path
-                  name: job_id
-                  required: true
-                  schema:
-                      $ref: '#/components/schemas/job_id'
-                  description: The job ID
-            responses:
-                '200':
-                    description: Job status and result
-                    headers:
-                        Cache-Control:
-                            schema:
-                                type: string
-                            description: No-cache directive
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                required:
-                                    - job_id
-                                    - status
-                                properties:
-                                    job_id:
-                                        $ref: '#/components/schemas/job_id'
-                                    status:
-                                        type: string
-                                        enum: [PENDING, DONE, FAILED]
-                                    response:
-                                        type: object
-                                        properties:
-                                            $links:
-                                                '$ref': '#/components/schemas/Links'
-                                            message:
-                                                type: string
-                                                description: Error message when status is FAILED
-                '403':
-                    description: Access Denied
-                '404':
-                    description: Job not found
-
-    /audio/{task}:
-        post:
-            summary: Process audio
-            description: |
-                Process audio files with different tasks like creating waveforms or m3u8 segments.
-                This endpoint initiates an asynchronous job and returns immediately with a job ID for tracking progress.
-
-                Note: For mixing track files, use the /tracks/{track_id}/mix endpoint instead.
-            operationId: processAudio
-            tags:
-                - Audio
-            parameters:
-                - in: path
-                  name: task
-                  required: true
-                  schema:
-                      type: string
-                      enum: [waveform, m3u8]
-                  description: The audio processing task to perform
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            oneOf:
-                                - $ref: '#/components/schemas/WaveformRequest'
-                                - $ref: '#/components/schemas/M3u8Request'
-                        examples:
-                            waveform:
-                                summary: Generate waveform
-                                value:
-                                    href: 'https://example.com/audio/track.wav'
-                            m3u8:
-                                summary: Generate HLS segments
-                                value:
-                                    href: 'https://example.com/audio/track.wav'
-            responses:
-                '202':
-                    description: Audio processing job successfully initiated
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                properties:
-                                    $links:
-                                        '$ref': '#/components/schemas/Links'
-                            example:
-                                $links:
-                                    - rel: job
-                                      href: /api/v1/jobs/abc123
-                '400':
-                    description: Invalid request parameters
-                    content:
-                        application/json:
-                            schema:
-                                '$ref': '#/components/schemas/BadRequestResponse'
-                '404':
-                    description: Unsupported task
-
-components:
-    securitySchemes:
-        tokenAuth:
-            type: http
-            scheme: bearer
-            bearerFormat: JWT
-    schemas:
-        track_id:
+  /tracks:
+    get:
+      summary: List Tracks
+      description: Retrieve a list of tracks from the user's library with optional pagination and prefix filtering
+      operationId: listTracks
+      tags:
+        - Library
+      parameters:
+        - in: query
+          name: limit
+          schema:
             type: string
-            pattern: '^[a-zA-Z0-9]{6}$'
-        job_id:
+            pattern: '^[0-9]+$'
+          description: Maximum number of items to return (1-1000)
+        - in: query
+          name: next
+          schema:
             type: string
-            pattern: '^[a-zA-Z0-9]{6}$'
+            pattern: '^[A-Za-z0-9+/=]+$'
+          description: Base64-encoded pagination token for the next page
+        - in: query
+          name: prefix
+          schema:
+            type: string
+          description: Filter tracks by prefix (searches track labels)
+      responses:
+        '200':
+          description: A list of tracks
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+              description: Cache control directive
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfTracksResponse'
 
-        Links:
-            type: array
-            items:
+    post:
+      summary: Create a new Track
+      description: Upload and create a new track in the user's library
+      operationId: createTrack
+      tags:
+        - Library
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/TrackPayload'
+      responses:
+        '200':
+          description: Track created/updated successfully (no files to process)
+          content:
+            application/json:
+              schema:
                 type: object
                 properties:
-                    href:
-                        type: string
-                        format: url
-                    rel:
-                        type: string
-
-        TrackResponse:
-            type: object
-            required:
-                - id
-                - label
-                - files
-            properties:
-                id:
-                    $ref: '#/components/schemas/track_id'
-                created_time:
-                    type: string
-                    format: date-time
-                modified_time:
-                    type: string
-                    format: date-time
-                label:
-                    type: string
-                description:
-                    type: string
-                is_public:
-                    type: boolean
-                tags:
-                    type: array
-                    items:
-                        type: string
-                files:
-                    type: array
-                    minItems: 0
-                    maxItems: 15
-                    items:
-                        type: object
-                        required:
-                            - id
-                        properties:
-                            id:
-                                type: string
-                            label:
-                                type: string
-                            type:
-                                type: string
-                                enum: [STEM, MIX]
-                            index:
-                                type: integer
-                            $links:
-                                '$ref': '#/components/schemas/Links'
-                $links:
+                  $links:
                     '$ref': '#/components/schemas/Links'
+        '202':
+          description: The request has been accepted and is processing
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  $links:
+                    '$ref': '#/components/schemas/Links'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '402':
+          description: Payment Required - Track quota exceeded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Track quota exceeded'
+                  code:
+                    type: string
+                    example: 'E_TRACKS_QUOTA_EXCEEDED'
+        '403':
+          description: Access Denied - Insufficient permissions
 
-        TrackPayload:
+  /tracks/{track_id}:
+    get:
+      summary: Get a track
+      description: Retrieve details of a specific track by its ID
+      operationId: getTrack
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id
+      responses:
+        '200':
+          description: OK
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+              description: Cache control directive
+            Expires:
+              schema:
+                type: string
+                format: date-time
+              description: Cache expiration time
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/TrackResponse'
+
+    delete:
+      summary: Delete a track
+      description: Remove a track from the user's library
+      operationId: deleteTrack
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id
+      responses:
+        '200':
+          description: OK
+        '403':
+          description: Access Denied
+        '404':
+          description: Not found
+
+    put:
+      summary: Update a track
+      description: Update metadata and properties of an existing track
+      operationId: updateTrack
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/TrackPayload'
+      responses:
+        '200':
+          description: Track updated successfully (no files to process)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  $links:
+                    '$ref': '#/components/schemas/Links'
+        '202':
+          description: The request has been accepted and is processing
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  $links:
+                    '$ref': '#/components/schemas/Links'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '402':
+          description: Payment Required - High quality streaming not allowed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  code:
+                    type: string
+                    example: 'E_AUDIO_HIGH_QUALITY_NOT_ALLOWED'
+        '403':
+          description: Access Denied
+        '404':
+          description: Not found
+
+  /tracks/{track_id}/shares:
+    get:
+      summary: List share tokens for a track
+      description: Retrieve a paginated list of all share tokens created for a specific track. Only accessible by the track owner.
+      operationId: listTrackShares
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+          description: Maximum number of share tokens to return (1-100)
+        - in: query
+          name: last_key
+          schema:
+            type: string
+          description: Token ID to start pagination from (for subsequent pages)
+      responses:
+        '200':
+          description: A paginated list of share tokens
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShareTokensResponse'
+        '400':
+          description: Bad Request - Invalid parameters
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '403':
+          description: Access Denied - Only track owners can list share tokens
+        '404':
+          description: Track not found
+
+    post:
+      summary: Create a share token for track access
+      description: Generate a share token for accessing a specific track with optional expiration and permissions
+      operationId: createTrackShare
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTokenRequest'
+      responses:
+        '200':
+          description: Share token generated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - token
+                  - expires
+                properties:
+                  token:
+                    type: string
+                    description: The generated share token
+                  expires:
+                    type: string
+                    format: date-time
+                    description: Token expiration time
+        '400':
+          description: Bad Request - Advanced share options require extended permissions
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '403':
+          description: Access Denied - Only track owners can create share tokens
+        '404':
+          description: Track not found
+
+  /tracks/{track_id}/shares/{share_id}:
+    delete:
+      summary: Delete a share token
+      description: Delete a specific share token for a track. This will invalidate the share link immediately.
+      operationId: deleteTrackShare
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id
+        - in: path
+          name: share_id
+          required: true
+          schema:
+            type: string
+          description: The share token ID to delete
+      responses:
+        '200':
+          description: Share token deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Share token deleted successfully'
+        '403':
+          description: Access Denied - Only track owners can delete share tokens
+        '404':
+          description: Track or share token not found
+
+  /tracks/{track_id}/mix:
+    post:
+      summary: Create a mix from track files
+      description: |
+        Create a custom mix from the files in a specific track. This endpoint allows you to mix
+        multiple stems/files from an existing track with custom volume levels and timing.
+      operationId: createTrackMix
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: track_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/track_id'
+          description: The track id containing the files to mix
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTrackMixRequest'
+      responses:
+        '202':
+          description: Mix creation job successfully initiated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  $links:
+                    '$ref': '#/components/schemas/Links'
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '403':
+          description: Access Denied - Only track owners can create mixes
+        '404':
+          description: Track not found
+        '409':
+          description: Conflict - Files missing source audio
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message indicating which files are missing source audio
+
+  /tracks/upload-url:
+    post:
+      summary: Get presigned URL for track upload
+      description: |
+        Request a presigned URL for uploading an audio file to temporary storage.
+        Returns both an upload URL (for the client to PUT the file) and a download URL
+        (for the backend to retrieve the file for processing). The upload size limit
+        is determined by the user's subscription plan and communicated via the response.
+      operationId: getUploadUrl
+      tags:
+        - Library
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UploadUrlRequest'
+      responses:
+        '200':
+          description: Presigned URLs generated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UploadUrlResponse'
+        '400':
+          description: Invalid request - missing fields or unsupported content type
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Content type video/mp4 is not allowed. Only audio files are permitted.'
+
+  /tracks/tags:
+    get:
+      summary: List all unique tags
+      description: Returns a paginated list of all unique tags used across the user's tracks
+      operationId: listTrackTags
+      tags:
+        - Library
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: string
+            pattern: '^[0-9]+$'
+          description: Maximum number of tags to return (1-500)
+        - in: query
+          name: next
+          schema:
+            type: string
+            pattern: '^[A-Za-z0-9+/=]+$'
+          description: Base64-encoded pagination token for the next page
+      responses:
+        '200':
+          description: A paginated list of unique tags
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+              description: Cache control directive
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - tags
+                  - count
+                  - $links
+                properties:
+                  tags:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - name
+                        - $links
+                      properties:
+                        name:
+                          type: string
+                          description: The tag name
+                        $links:
+                          type: array
+                          items:
+                            type: object
+                            required:
+                              - rel
+                              - href
+                            properties:
+                              rel:
+                                type: string
+                              href:
+                                type: string
+                                format: uri-reference
+                                description: Link to get tracks with this tag
+                  count:
+                    type: integer
+                    description: Total number of unique tags
+                  $links:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - rel
+                        - href
+                      properties:
+                        rel:
+                          type: string
+                          enum: [first, next]
+                        href:
+                          type: string
+                          format: uri-reference
+                    description: Navigation links for pagination
+
+  /tracks/tags/{tag}:
+    get:
+      summary: List tracks by tag
+      description: Retrieve a list of tracks filtered by a specific tag
+      operationId: listTracksByTag
+      tags:
+        - Library
+      parameters:
+        - in: path
+          name: tag
+          required: true
+          schema:
+            type: string
+          description: The tag to filter tracks by
+        - in: query
+          name: limit
+          schema:
+            type: string
+            pattern: '^[0-9]+$'
+          description: Maximum number of items to return (1-1000)
+        - in: query
+          name: next
+          schema:
+            type: string
+            pattern: '^[A-Za-z0-9+/=]+$'
+          description: Base64-encoded pagination token for the next page
+        - in: query
+          name: prefix
+          schema:
+            type: string
+          description: Filter tracks by prefix (searches track labels)
+      responses:
+        '200':
+          description: A list of tracks with the specified tag
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfTracksResponse'
+        '404':
+          description: Tag not found
+
+  /jobs/{job_id}:
+    get:
+      summary: Get the async job
+      description: Retrieve the status and result of an asynchronous job
+      operationId: getJob
+      tags:
+        - Jobs
+      parameters:
+        - in: path
+          name: job_id
+          required: true
+          schema:
+            $ref: '#/components/schemas/job_id'
+          description: The job ID
+      responses:
+        '200':
+          description: Job status and result
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+              description: No-cache directive
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - job_id
+                  - status
+                properties:
+                  job_id:
+                    $ref: '#/components/schemas/job_id'
+                  status:
+                    type: string
+                    enum: [PENDING, DONE, FAILED]
+                  response:
+                    type: object
+                    properties:
+                      $links:
+                        '$ref': '#/components/schemas/Links'
+                      message:
+                        type: string
+                        description: Error message when status is FAILED
+        '403':
+          description: Access Denied
+        '404':
+          description: Job not found
+
+  /audio/{task}:
+    post:
+      summary: Process audio
+      description: |
+        Process audio files with different tasks like creating waveforms or m3u8 segments.
+        This endpoint initiates an asynchronous job and returns immediately with a job ID for tracking progress.
+
+        Note: For mixing track files, use the /tracks/{track_id}/mix endpoint instead.
+      operationId: processAudio
+      tags:
+        - Audio
+      parameters:
+        - in: path
+          name: task
+          required: true
+          schema:
+            type: string
+            enum: [waveform, m3u8]
+          description: The audio processing task to perform
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: '#/components/schemas/WaveformRequest'
+                - $ref: '#/components/schemas/M3u8Request'
+            examples:
+              waveform:
+                summary: Generate waveform
+                value:
+                  href: 'https://example.com/audio/track.wav'
+              m3u8:
+                summary: Generate HLS segments
+                value:
+                  href: 'https://example.com/audio/track.wav'
+      responses:
+        '202':
+          description: Audio processing job successfully initiated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  $links:
+                    '$ref': '#/components/schemas/Links'
+              example:
+                $links:
+                  - rel: job
+                    href: /api/v1/jobs/abc123
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                '$ref': '#/components/schemas/BadRequestResponse'
+        '404':
+          description: Unsupported task
+
+components:
+  securitySchemes:
+    tokenAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    track_id:
+      type: string
+      pattern: '^[a-zA-Z0-9]{6}$'
+    job_id:
+      type: string
+      pattern: '^[a-zA-Z0-9]{6}$'
+
+    Links:
+      type: array
+      items:
+        type: object
+        properties:
+          href:
+            type: string
+            format: url
+          rel:
+            type: string
+
+    TrackResponse:
+      type: object
+      required:
+        - id
+        - label
+        - files
+      properties:
+        id:
+          $ref: '#/components/schemas/track_id'
+        created_time:
+          type: string
+          format: date-time
+        modified_time:
+          type: string
+          format: date-time
+        label:
+          type: string
+        description:
+          type: string
+        is_public:
+          type: boolean
+        tags:
+          type: array
+          items:
+            type: string
+        files:
+          type: array
+          minItems: 0
+          maxItems: 15
+          items:
             type: object
-            additionalProperties: false
             required:
-                - label
-                - files
+              - id
             properties:
-                track_id:
-                    $ref: '#/components/schemas/track_id'
-                label:
+              id:
+                type: string
+              label:
+                type: string
+              type:
+                type: string
+                enum: [STEM, MIX]
+              index:
+                type: integer
+              $links:
+                '$ref': '#/components/schemas/Links'
+        $links:
+          '$ref': '#/components/schemas/Links'
+
+    TrackPayload:
+      type: object
+      additionalProperties: false
+      required:
+        - label
+        - files
+      properties:
+        track_id:
+          $ref: '#/components/schemas/track_id'
+        label:
+          type: string
+          maxLength: 50
+        description:
+          type: string
+          maxLength: 280
+        is_public:
+          description: makes the track available to anyone with the URL
+          type: boolean
+        tags:
+          type: array
+          description: An array of tags
+          maxItems: 10
+          items:
+            type: string
+            maxLength: 15
+        files:
+          type: array
+          minItems: 0
+          maxItems: 15
+          items:
+            oneOf:
+              - type: object
+                additionalProperties: false
+                description: An existing file
+                required:
+                  - file_id
+                  - type
+                properties:
+                  file_id:
+                    type: string
+                    maxLength: 16
+                  label:
                     type: string
                     maxLength: 50
-                description:
+                  type:
                     type: string
-                    maxLength: 280
-                is_public:
-                    description: makes the track available to anyone with the URL
-                    type: boolean
-                tags:
-                    type: array
-                    description: An array of tags
-                    maxItems: 10
-                    items:
-                        type: string
-                        maxLength: 15
-                files:
-                    type: array
-                    minItems: 0
-                    maxItems: 15
-                    items:
-                        oneOf:
-                            - type: object
-                              additionalProperties: false
-                              description: An existing file
-                              required:
-                                  - file_id
-                                  - type
-                              properties:
-                                  file_id:
-                                      type: string
-                                      maxLength: 16
-                                  label:
-                                      type: string
-                                      maxLength: 50
-                                  type:
-                                      type: string
-                                      enum: [STEM, MIX]
-                                  index:
-                                      type: integer
-                            - type: object
-                              additionalProperties: false
-                              description: A new file
-                              required:
-                                  - src
-                                  - type
-                              properties:
-                                  src:
-                                      type: string
-                                      format: uri
-                                  label:
-                                      type: string
-                                      maxLength: 50
-                                  type:
-                                      type: string
-                                      enum: [STEM, MIX]
-                                  index:
-                                      type: integer
-                source_strategy:
-                    description: An instruction to either discard source audio and only keep streaming audio, or to keep the source audio for mixing and downloading.
+                    enum: [STEM, MIX]
+                  index:
+                    type: integer
+              - type: object
+                additionalProperties: false
+                description: A new file
+                required:
+                  - object_key
+                  - type
+                properties:
+                  object_key:
                     type: string
-                    enum: [KEEP_SOURCE, DISCARD_SOURCE]
-                streaming_quality:
-                    description: The quality level for streaming audio processing
+                    pattern: '^tmp/[a-zA-Z0-9]{6,10}/.+$'
+                    description: S3 key for the uploaded file (e.g., tmp/{account_id}/{filename})
+                    example: 'tmp/usJMbM/abc123.mp3'
+                  label:
                     type: string
-                    enum: [STANDARD, HIGH]
-                    default: STANDARD
-                # created_time:
-                #   type: string
-                #   format: date-time
-                # modified_time:
-                #   type: string
-                #   format: date-time
+                    maxLength: 50
+                  type:
+                    type: string
+                    enum: [STEM, MIX]
+                  index:
+                    type: integer
+        source_strategy:
+          description: An instruction to either discard source audio and only keep streaming audio, or to keep the source audio for mixing and downloading.
+          type: string
+          enum: [KEEP_SOURCE, DISCARD_SOURCE]
+        streaming_quality:
+          description: The quality level for streaming audio processing
+          type: string
+          enum: [STANDARD, HIGH]
+          default: STANDARD
+        # created_time:
+        #   type: string
+        #   format: date-time
+        # modified_time:
+        #   type: string
+        #   format: date-time
 
-        ArrayOfTracksResponse:
+    ArrayOfTracksResponse:
+      type: object
+      required:
+        - items
+      properties:
+        items:
+          type: array
+          items:
             type: object
             required:
-                - items
+              - id
+              - label
             properties:
+              id:
+                $ref: '#/components/schemas/track_id'
+              created_time:
+                type: string
+                format: date-time
+              modified_time:
+                type: string
+                format: date-time
+              label:
+                type: string
+              description:
+                type: string
+              tags:
+                type: array
                 items:
-                    type: array
-                    items:
-                        type: object
-                        required:
-                            - id
-                            - label
-                        properties:
-                            id:
-                                $ref: '#/components/schemas/track_id'
-                            created_time:
-                                type: string
-                                format: date-time
-                            modified_time:
-                                type: string
-                                format: date-time
-                            label:
-                                type: string
-                            description:
-                                type: string
-                            tags:
-                                type: array
-                                items:
-                                    type: string
-                            $links:
-                                '$ref': '#/components/schemas/Links'
-                $links:
-                    '$ref': '#/components/schemas/Links'
+                  type: string
+              $links:
+                '$ref': '#/components/schemas/Links'
+        $links:
+          '$ref': '#/components/schemas/Links'
 
-        BadRequestResponse:
+    BadRequestResponse:
+      type: object
+      required:
+        - message
+      properties:
+        errors:
+          type: array
+          items:
             type: object
-            required:
-                - message
             properties:
-                errors:
-                    type: array
-                    items:
-                        type: object
-                        properties:
-                            message:
-                                type: string
-                            property:
-                                type: string
+              message:
+                type: string
+              property:
+                type: string
 
-        DefaultResponse:
+    DefaultResponse:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+
+    CreateMixRequest:
+      type: object
+      required:
+        - files
+        - format
+      additionalProperties: false
+      properties:
+        format:
+          type: string
+          enum: [mp3, wav]
+          description: The audio format for the output mix
+        offset:
+          type: number
+          minimum: 0
+          description: Start time offset in seconds
+        duration:
+          type: number
+          minimum: 0
+          description: Duration of the mix in seconds
+        files:
+          type: array
+          minItems: 1
+          maxItems: 100
+          description: Array of audio files to mix
+          items:
             type: object
             required:
-                - message
-            properties:
-                message:
-                    type: string
-
-        CreateMixRequest:
-            type: object
-            required:
-                - files
-                - format
+              - href
+              - volume
             additionalProperties: false
             properties:
-                format:
-                    type: string
-                    enum: [mp3, wav]
-                    description: The audio format for the output mix
-                offset:
-                    type: number
-                    minimum: 0
-                    description: Start time offset in seconds
-                duration:
-                    type: number
-                    minimum: 0
-                    description: Duration of the mix in seconds
-                files:
-                    type: array
-                    minItems: 1
-                    maxItems: 100
-                    description: Array of audio files to mix
-                    items:
-                        type: object
-                        required:
-                            - href
-                            - volume
-                        additionalProperties: false
-                        properties:
-                            href:
-                                type: string
-                                format: uri
-                                description: URL or path to the audio file
-                            volume:
-                                type: number
-                                format: float
-                                minimum: 0
-                                maximum: 1
-                                description: Volume level for this file (0-1)
-                filename:
-                    type: string
-                    description: The filename for the output mix
-                    default: 'my_mixed_stems.wav'
+              href:
+                type: string
+                format: uri
+                description: URL or path to the audio file
+              volume:
+                type: number
+                format: float
+                minimum: 0
+                maximum: 1
+                description: Volume level for this file (0-1)
+        filename:
+          type: string
+          description: The filename for the output mix
+          default: 'my_mixed_stems.wav'
 
-        CreateTrackMixRequest:
+    CreateTrackMixRequest:
+      type: object
+      required:
+        - files
+        - format
+      additionalProperties: false
+      properties:
+        format:
+          type: string
+          enum: [mp3, wav]
+          description: The audio format for the output mix
+        offset:
+          type: number
+          minimum: 0
+          description: Start time offset in seconds
+        duration:
+          type: number
+          minimum: 0
+          description: Duration of the mix in seconds
+        files:
+          type: array
+          minItems: 1
+          maxItems: 25
+          description: Array of file IDs from the track to mix
+          items:
             type: object
             required:
-                - files
-                - format
+              - file_id
+              - volume
             additionalProperties: false
             properties:
-                format:
-                    type: string
-                    enum: [mp3, wav]
-                    description: The audio format for the output mix
-                offset:
-                    type: number
-                    minimum: 0
-                    description: Start time offset in seconds
-                duration:
-                    type: number
-                    minimum: 0
-                    description: Duration of the mix in seconds
-                files:
-                    type: array
-                    minItems: 1
-                    maxItems: 25
-                    description: Array of file IDs from the track to mix
-                    items:
-                        type: object
-                        required:
-                            - file_id
-                            - volume
-                        additionalProperties: false
-                        properties:
-                            file_id:
-                                type: string
-                                description: The file ID from the track
-                            volume:
-                                type: number
-                                format: float
-                                minimum: 0
-                                maximum: 1
-                                description: Volume level for this file (0-1)
-                filename:
-                    type: string
-                    description: The filename for the output mix
-                    default: 'my_mixed_stems.wav'
+              file_id:
+                type: string
+                description: The file ID from the track
+              volume:
+                type: number
+                format: float
+                minimum: 0
+                maximum: 1
+                description: Volume level for this file (0-1)
+        filename:
+          type: string
+          description: The filename for the output mix
+          default: 'my_mixed_stems.wav'
 
-        WaveformRequest:
+    WaveformRequest:
+      type: object
+      required:
+        - object_key
+      additionalProperties: false
+      properties:
+        object_key:
+          type: string
+          pattern: '^tmp/[a-zA-Z0-9]{6,10}/.+$'
+          description: S3 key for the uploaded file (e.g., tmp/{account_id}/{filename})
+          example: 'tmp/usJMbM/abc123.mp3'
+
+    M3u8Request:
+      type: object
+      required:
+        - object_key
+      additionalProperties: false
+      properties:
+        object_key:
+          type: string
+          pattern: '^tmp/[a-zA-Z0-9]{6,10}/.+$'
+          description: S3 key for the uploaded file (e.g., tmp/{account_id}/{filename})
+          example: 'tmp/usJMbM/abc123.mp3'
+
+    UploadUrlRequest:
+      type: object
+      required:
+        - filename
+        - contentType
+        - contentLength
+      additionalProperties: false
+      properties:
+        filename:
+          type: string
+          description: |
+            The name of the file to upload. Must have a supported audio file extension.
+            Supported formats: .mp3, .m4a, .wav, .wave, .flac, .ogg, .aac, .aiff, .aif, .webm
+          example: 'my-track.mp3'
+        contentType:
+          type: string
+          description: MIME type of the file (must be an allowed audio format)
+          example: 'audio/mpeg'
+        contentLength:
+          type: integer
+          description: Size of the file in bytes (validated against user's plan limit)
+          example: 10485760
+
+    UploadUrlResponse:
+      type: object
+      required:
+        - upload_url
+        - object_key
+        - expires_in
+      properties:
+        upload_url:
+          type: string
+          format: uri
+          description: Presigned PUT URL for uploading the file (expires in 15 minutes)
+        object_key:
+          type: string
+          description: S3 object key where file will be stored (for backend use)
+          example: 'tmp/{account_id}/{filename}'
+        expires_in:
+          type: integer
+          description: URL expiration time in seconds
+          example: 900
+
+    CreateTokenRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        name:
+          type: string
+          maxLength: 50
+          description: Optional name or description for the token (e.g., recipient name, intended use)
+        expires_at:
+          type: string
+          format: date-time
+          description: Optional expiry time for the token (ISO 8601 format)
+        allow_mix:
+          type: boolean
+          description: Whether to include tracks/create_mix scope in the token
+          default: false
+        allow_read_source:
+          type: boolean
+          description: Whether to include tracks/audio/read_source scope in the token
+          default: false
+
+    ShareTokensResponse:
+      type: object
+      required:
+        - items
+        - $links
+        - $metadata
+      properties:
+        items:
+          type: array
+          items:
             type: object
             required:
-                - href
-            additionalProperties: false
+              - token_id
+              - share_id
+              - track_id
+              - created_at
             properties:
-                href:
-                    type: string
-                    format: uri
-                    description: URL to the audio file to process
+              token_id:
+                type: string
+                description: Full token identifier (format tracks:{track_id}:shares:{share_id})
+              share_id:
+                type: string
+                description: The share ID portion of the token
+              track_id:
+                $ref: '#/components/schemas/track_id'
+              name:
+                type: string
+                description: Optional name or description for the share token
+              created_at:
+                type: string
+                format: date-time
+                description: When the share token was created
+              last_used:
+                type: string
+                format: date-time
+                description: When the share token was last used (if applicable)
+              expires_at:
+                type: string
+                format: date-time
+                description: When the share token expires (if applicable)
+              scope:
+                type: array
+                items:
+                  type: string
+                description: Array of permission scopes granted by this token
+                example: ['tracks/read', 'tracks/create_mix']
+        $links:
+          '$ref': '#/components/schemas/Links'
+        $metadata:
+          type: object
+          properties:
+            total_shares:
+              type: integer
+              description: Total number of share tokens for this track
 
-        M3u8Request:
-            type: object
-            required:
-                - href
-            additionalProperties: false
-            properties:
-                href:
-                    type: string
-                    format: uri
-                    description: URL to the audio file to process
-
-        CreateTokenRequest:
-            type: object
-            additionalProperties: false
-            properties:
-                expires_at:
-                    type: string
-                    format: date-time
-                    description: Optional expiry time for the token (ISO 8601 format)
-                allow_mix:
-                    type: boolean
-                    description: Whether to include tracks/create_mix scope in the token
-                    default: false
-                allow_read_source:
-                    type: boolean
-                    description: Whether to include tracks/audio/read_source scope in the token
-                    default: false
-
-        # ErrorResponse:
-        #   type: object
-        #   properties:
-        #     message:
-        #       type: string
+    # ErrorResponse:
+    #   type: object
+    #   properties:
+    #     message:
+    #       type: string
 
 security:
-    - tokenAuth: []
-
+  - tokenAuth: []
