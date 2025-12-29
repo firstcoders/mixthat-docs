@@ -67,7 +67,7 @@ Click **"Manage Tokens"** when creating a share link to access the Share Managem
 - **View All Shares**: See all your active share links organized in a clean table with creation dates, expiration times, and permissions
 - **Name Your Shares**: Add custom names to help identify who you shared with or what the link is for (e.g., "Client Demo", "Blog Post", "John Smith")
 - **Track Usage**: Monitor when each share link was last accessed to understand engagement
-- **Quick Deletion**: Remove share links instantly to revoke access immediately
+- **Quick Deletion**: Remove share links instantly, though it may take a few minutes for access to be fully revoked
 - **Pagination**: Easily browse through all your shares, even if you have many
 
 This feature gives you complete control and transparency over your shared content, making it easy to manage who has access to your tracks and for how long.
