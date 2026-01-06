@@ -135,7 +135,13 @@ This Privacy Policy describes the type of information that we collect from you (
 - 8.2 You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data or when you create your MixThat account) if we intend to use your data for such purposes.
 - 8.3 To enforce any of the foregoing rights or if you have any other questions about this Privacy Policy, please contact us at [privacy@firstcoders.co.uk](mailto:privacy@firstcoders.co.uk).
 
-## 9.Dispute Resolution
+## 9.Children's Privacy
+
+- 9.1 MixThat is not intended for use by children under the age of 13. We do not knowingly collect, store, or process personal data from children under 13 years of age.
+- 9.2 If you are a parent or guardian and believe that your child under the age of 13 has provided us with personal data, please contact us immediately at privacy@firstcoders.co.uk so that we can take appropriate action to remove such information from our systems.
+- 9.3 We comply with the UK Age Appropriate Design Code and take appropriate measures to ensure that children's data, if inadvertently collected, is handled in accordance with their best interests and legal requirements.
+
+## 10.Dispute Resolution
 
 - 9.1 We will use our best efforts to negotiate in good faith and settle any dispute that may arise out of or relate to this Privacy Policy or any breach of it.
 - 9.2 Any dispute shall not affect our ongoing obligations under this Privacy Policy.
