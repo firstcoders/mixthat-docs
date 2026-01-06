@@ -9,7 +9,7 @@ type: "legal"
 seo:
   title: "Privacy Policy | First Coders Ltd"
   description: "Read our Privacy Policy to learn how First Coders Ltd handles your personal information in compliance with UK GDPR."
-  canonical: "https://docs.mixthat.co/privacy-policy"
+  canonical: "https://docs.mixthat.co/privacy"
   robots: "index, follow"
 ---
 
@@ -114,3 +114,4 @@ This Privacy Policy describes the type of information that we collect from you (
 - 9.1 We will use our best efforts to negotiate in good faith and settle any dispute that may arise out of or relate to this Privacy Policy or any breach of it.
 - 9.2 Any dispute shall not affect our ongoing obligations under this Privacy Policy.
 - 9.3 This Privacy Policy and any dispute or claim relating to or connected with it (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of England and Wales and the courts of England and Wales are the only place where disputes or claims relating to or connected with this Privacy Policy (including non-contractual disputes or claims) may be decided.
+
