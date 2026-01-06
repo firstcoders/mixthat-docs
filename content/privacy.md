@@ -37,7 +37,7 @@ This Privacy Policy describes the type of information that we collect from you (
 - 3.2 We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:
   - Identity Data includes first name, last name, username or similar identifier, display name, and profile information you choose to provide within the App.
   - Contact Data includes email address and any contact information you provide when reaching out to us for support.
-  - Financial Data includes payment card details for sponsored accounts or premium features.
+  - Financial Data includes payment information necessary to process sponsored accounts or premium features. We do not directly store your full payment card details on our servers. All payment processing is handled by third-party payment processors (currently Patreon, and potentially Stripe in the future) who are PCI-DSS compliant and adhere to strict security standards for handling financial information.
   - Content Data includes audio files, video files, mixed content (mixes), playlists, and any other user-generated content you create, upload, or share through MixThat.
   - Usage Data includes information about how you use the App, including playback history, mixes created, content shared, interactions with other users' content, and app performance data.
   - Technical Data includes device information, IP address, browser type, operating system, app version, device identifiers, time zone settings, server logs, error logs, and diagnostic information. This data is automatically collected when you use MixThat and is necessary to provide and improve the App, ensure security (including preventing unauthorized access and DDoS attacks), troubleshoot technical issues, and maintain platform integrity. Under UK GDPR, we recognize that IP addresses and similar identifiers constitute personal data.
@@ -79,7 +79,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - Email service providers (such as Brevo) to send app notifications, newsletters, and announcements
   - Cloud storage providers to store and deliver your content securely
   - Analytics services to understand how users interact with the App and improve performance
-  - Payment processors for handling subscriptions and sponsored account payments
+  - Payment processors (currently Patreon, and potentially Stripe in the future) for handling subscriptions and sponsored account payments. These payment processors are PCI-DSS compliant and handle all sensitive payment card information directly. We do not store your payment card details on our servers.
 
   These providers process your personal data on our behalf, in accordance with our instructions and GDPR/UK GDPR requirements. They are contractually obligated to protect your data, use it only for the specified purposes, and ensure appropriate security measures.
 
