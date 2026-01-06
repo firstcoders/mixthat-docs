@@ -29,7 +29,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - Our company name is First Coders Ltd
   - Our registered address is 50 St. Marys Road, Hemel Hempstead, England, HP2 5HL
   - Our nominated representative is Mark Cremer and he can be contacted at mark@firstcoders.co.uk.
-- 2.2 We respect your right to privacy and will only process personal information about you or provided by you in accordance with the Data Protection Legislation which for the purposes of this Privacy Policy shall mean: (i) the retained EU law version of the General Data Protection Regulation ((EU) 2016/679) (UK GDPR), the Data Protection Act 2018 and any other national implementing laws, regulations and secondary legislation, as amended or updated from time to time, in the UK and then (ii) any successor legislation to the UK GDPR or the Data Protection Act 2018 and other applicable privacy laws.
+- 2.2 We respect your right to privacy and will only process personal information about you or provided by you in accordance with the Data Protection Legislation which for the purposes of this Privacy Policy shall mean: (i) the retained EU law version of the General Data Protection Regulation ((EU) 2016/679) (UK GDPR), the Data Protection Act 2018, the Data Use and Access Act 2025, and any other national implementing laws, regulations and secondary legislation, as amended or updated from time to time, in the UK and then (ii) any successor legislation to the UK GDPR, the Data Protection Act 2018, or the Data Use and Access Act 2025 and other applicable privacy laws.
 
 ## 3\. What we may collect
 
@@ -46,7 +46,8 @@ This Privacy Policy describes the type of information that we collect from you (
 - 3.4 Under UK GDPR we will ensure that your personal data is processed lawfully, fairly, and transparently, without adversely affecting your rights. We will only process your personal data if at least one of the following basis applies:
   - a) You have given consent to the processing of your personal data for one or more specific purposes;
   - b) processing is necessary for the performance of a contract to which you are a party or in order to take steps at the request of you prior to entering into a contract; or
-  - c) processing is necessary for compliance with a legal obligation to which we are subject; and/or d) processing is necessary for the purposes of the legitimate interests pursued by us or by a third party such as our financial payments.
+  - c) processing is necessary for compliance with a legal obligation to which we are subject; and/or
+  - d) processing is necessary for the purposes of the legitimate interests pursued by us or by a third party such as our financial payments.
 - 3.5 If you provide personal information to us about another data subject, you are responsible for ensuring that you have their consent to provide that data for the uses set out in this Privacy Policy and for bringing this Privacy Policy to their attention.
 
 ## 4.How we may collect and use your data
@@ -121,6 +122,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - 7.1.4 We can exchange information with others to protect against fraud or credit risks.
 - 7.2 We may contract with third parties to supply services to you on our behalf such as cloud hosting infrastructure providers (Amazon Web Services - AWS) for server hosting and content delivery, analytics providers, payment processors, and email service providers. These third parties are essential for MixThat's operation. In addition, we use certain third parties to store personal data that we collect such as cloud storage services and backup systems.
 - 7.3 Where any of your data is required for such a purpose, we will take all reasonable steps to ensure that your data will be handled safely, securely, and in accordance with your rights, our obligations, and the obligations of the third party under UK GDPR and the law. Any third party that we share data with will not be permitted to use it for any other purpose than fulfilling their contract with us.
+- 7.4 Third-Party Social Media Sharing: MixThat may allow you to share your content to third-party social media platforms (such as Instagram, TikTok, X/Twitter, Facebook, or other services). When you choose to share content to these platforms, you are subject to their respective privacy policies and data practices. We are not responsible for the privacy practices of these third-party platforms, and we encourage you to review their privacy policies before sharing your content.
 
 ## 8.Your rights
 
@@ -143,7 +145,7 @@ This Privacy Policy describes the type of information that we collect from you (
 
 ## 10.Dispute Resolution
 
-- 9.1 We will use our best efforts to negotiate in good faith and settle any dispute that may arise out of or relate to this Privacy Policy or any breach of it.
-- 9.2 Any dispute shall not affect our ongoing obligations under this Privacy Policy.
-- 9.3 This Privacy Policy and any dispute or claim relating to or connected with it (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of England and Wales and the courts of England and Wales are the only place where disputes or claims relating to or connected with this Privacy Policy (including non-contractual disputes or claims) may be decided.
+- 10.1 We will use our best efforts to negotiate in good faith and settle any dispute that may arise out of or relate to this Privacy Policy or any breach of it.
+- 10.2 Any dispute shall not affect our ongoing obligations under this Privacy Policy.
+- 10.3 This Privacy Policy and any dispute or claim relating to or connected with it (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of England and Wales and the courts of England and Wales are the only place where disputes or claims relating to or connected with this Privacy Policy (including non-contractual disputes or claims) may be decided.
 
