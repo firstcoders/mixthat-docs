@@ -3,7 +3,7 @@ title: "Privacy Policy"
 description: "How First Coders Ltd collects, uses, stores, and protects your personal data."
 summary: "This Privacy Policy explains what personal data we collect, how we use it, and your rights."
 date: 2024-06-10T00:00:00+00:00
-lastmod: 2024-06-10T00:00:00+00:00
+lastmod: 2026-01-06T00:00:00+00:00
 draft: false
 type: "legal"
 seo:
@@ -15,7 +15,7 @@ seo:
 
 # Privacy Policy
 
-Last Updated: 14 Jun 2025
+Last Updated: 6 Jan 2026
 
 ## Introduction
 
@@ -61,6 +61,8 @@ This Privacy Policy describes the type of information that we collect from you (
   - a) Where we need to perform the contract we are about to enter into or have entered into with you.
   - b) Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.
   - c) Where we need to comply with a legal or regulatory obligation, for example compliance with health and safety, tax or other statutory obligations.
+- 4.7 Use of Third-Party Email Services: We use third-party email service providers, such as Brevo (formerly Sendinblue), to send newsletters and other communications to our users and contacts. These providers process your personal data (such as your name and email address) on our behalf, in accordance with our instructions and GDPR/UK GDPR requirements. The data we share with these providers is used solely for the purposes of delivering our communications, and they are contractually obligated to protect your data, not use it for their own marketing purposes, and ensure appropriate technical and organizational security measures.
+- 4.8 Marketing Communications: We will only send marketing emails, newsletters, or announcements to users who have provided consent or where we have another lawful basis under UK GDPR. You can opt out of receiving marketing communications at any time by clicking the unsubscribe link in our emails or by contacting us at privacy@firstcoders.co.uk.
 
 ## 5.Cookies
 
@@ -75,6 +77,7 @@ This Privacy Policy describes the type of information that we collect from you (
 - 6.5 We have implemented security measures such as a firewall to protect any data and maintain a high level of security.
 - 6.6 Notwithstanding the security measures that we take, it is important to remember that the transmission of data via the internet may not be completely secure and that you are advised to take suitable precautions when transmitting to us data via the internet and you take the risk that any sending of that data turns out to be not secure despite our efforts.
 - 6.7 We will keep personal data for as long as is necessary which is usually the life of our relationship and up to a period of seven years after our relationship have ended. We may however be required to retain personal data for a longer period of time to ensure we comply with our legislative and regulatory requirements. We review our data retention obligations to ensure we are not retaining data for longer than we are legally obliged to.
+- 6.8 International Transfers: Personal data that we process through third-party email providers may be stored or processed outside the UK or EU. When this occurs, we ensure that appropriate safeguards are in place, such as standard contractual clauses, to comply with UK GDPR requirements and protect your personal data.
 
 ### Data Retention Policies for Service Users
 
