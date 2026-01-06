@@ -40,7 +40,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - Financial Data includes payment card details for sponsored accounts or premium features.
   - Content Data includes audio files, video files, mixed content (mixes), playlists, and any other user-generated content you create, upload, or share through MixThat.
   - Usage Data includes information about how you use the App, including playback history, mixes created, content shared, interactions with other users' content, and app performance data.
-  - Technical Data includes device information, IP address, browser type, operating system, app version, and diagnostic information needed to provide and improve the App.
+  - Technical Data includes device information, IP address, browser type, operating system, app version, device identifiers, time zone settings, server logs, error logs, and diagnostic information. This data is automatically collected when you use MixThat and is necessary to provide and improve the App, ensure security (including preventing unauthorized access and DDoS attacks), troubleshoot technical issues, and maintain platform integrity. Under UK GDPR, we recognize that IP addresses and similar identifiers constitute personal data.
   - Social Data includes your interactions within the App such as follows, likes, shares, and any public comments or interactions with other users' content.
 - 3.3 We do not collect any Special Categories of Personal Data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences.
 - 3.4 Under UK GDPR we will ensure that your personal data is processed lawfully, fairly, and transparently, without adversely affecting your rights. We will only process your personal data if at least one of the following basis applies:
@@ -53,7 +53,7 @@ This Privacy Policy describes the type of information that we collect from you (
 
 - 4.1 We (or third party data processors, agents and sub-contractors acting on our behalf) may collect, store and use your personal information by way of different methods to collect data from and about you including through:
   - Direct interactions when you create an account, use the App's features, create mixes, upload content, or contact us for support.
-  - Automated technologies or interactions as you navigate through and use the App, including usage data, technical data, and app performance metrics.
+  - Automated technologies or interactions as you navigate through and use the App, including usage data, technical data, and app performance metrics. This includes automatic collection through server logs and application logs.
   - User-generated content you create, upload, or share through MixThat, including audio files, video files, and mixed content.
 - 4.2 In addition to the above, we may use the information in the following ways:
   - a) provide, maintain, and improve MixThat's features and functionality;
@@ -63,8 +63,9 @@ This Privacy Policy describes the type of information that we collect from you (
   - e) process payments for sponsored accounts or premium features;
   - f) communicate with you about app updates, new features, or service announcements;
   - g) provide customer support and respond to your inquiries;
-  - h) ensure the security and integrity of the App and protect against misuse;
-  - i) comply with legal obligations and enforce our Terms of Service.
+  - h) ensure the security and integrity of the App and protect against misuse, unauthorized access, fraud, and security threats;
+  - i) monitor and analyze usage patterns and technical performance to debug issues and optimize the App;
+  - j) comply with legal obligations and enforce our Terms of Service.
 - 4.3 If you are already our user, we will only contact you electronically about MixThat features, updates, or content similar to what you have previously used or expressed interest in.
 - 4.4 If you are a new user, you will only be contacted for marketing purposes if you agree to it.
 - 4.5 In addition, if you don't want us to use your personal data for any of the other reasons set out in this section in 4, you can let us know at any time by contacting us at privacy@firstcoders.co.uk, and we will delete your data from our systems. However, you acknowledge this will limit our ability to provide MixThat's services to you.
@@ -85,7 +86,7 @@ This Privacy Policy describes the type of information that we collect from you (
 
 ## 5.Cookies
 
-- 5.1 The MixThat application does not use cookies. However, our documentation website (docs.mixthat.co) does not use cookies either.
+- 5.1 The MixThat application does not use cookies. However, our documentation website (docs.mixthat.co) does not use cookies either. Please note that while we do not use cookies, we do collect Technical Data (including IP addresses and device information) through standard server logs and application diagnostics as described in Section 3.2 above. This collection is necessary for the operation, security, and improvement of MixThat.
 
 ## 6.Where we store your data and security
 
@@ -97,6 +98,7 @@ This Privacy Policy describes the type of information that we collect from you (
 - 6.6 Notwithstanding the security measures that we take, it is important to remember that the transmission of data via the internet may not be completely secure and that you are advised to take suitable precautions when transmitting to us data via the internet and you take the risk that any sending of that data turns out to be not secure despite our efforts.
 - 6.7 We will keep personal data for as long as is necessary which is usually the life of our relationship with you. Specific retention periods for different types of data are outlined below in our Data Retention Policies. We review our data retention obligations to ensure we are not retaining data for longer than we are legally obliged to.
 - 6.8 International Transfers: Personal data that we process through third-party email providers may be stored or processed outside the UK or EU. When this occurs, we ensure that appropriate safeguards are in place, such as standard contractual clauses, to comply with UK GDPR requirements and protect your personal data.
+- 6.9 Server Logs and Technical Data: Server logs, error logs, and similar technical data (including IP addresses) are retained for a limited period necessary for security purposes, such as detecting and preventing unauthorized access, fraud, and security threats. These logs are automatically purged after a reasonable retention period.
 
 ### Data Retention Policies for MixThat Users
 
@@ -104,6 +106,7 @@ This Privacy Policy describes the type of information that we collect from you (
 - **Free Account Inactivity**: For free MixThat accounts, user-generated content (mixes, uploads, playlists) may be deleted after 3 months of inactivity (no plays, shares, edits, mixes created, or account access), and accounts may be removed after 6 months of complete inactivity (no login or app interaction). While we aim to provide email or in-app notifications before deletion, we cannot guarantee delivery.
 - **Sponsored Account Protection**: Sponsored MixThat accounts enjoy permanent data retention for all content and are exempt from automatic deletion due to inactivity, subject to the continuation of sponsorship.
 - **Content Sharing**: Publicly shared mixes and content may remain accessible to other users who have saved or interacted with your content, even after account deletion, unless you specifically request removal.
+- **Server Logs and Technical Data**: Server logs, error logs, and technical data (including IP addresses) are retained only for the limited period necessary to ensure security, prevent fraud, troubleshoot technical issues, and protect the integrity of MixThat. These logs are automatically deleted after this retention period expires.
 - **Legal and Safety Requirements**: We reserve the right to retain or delete data as required for legal compliance, security, platform integrity, or to protect the rights and safety of other MixThat users.
 - **User Control**: Users may request deletion of their personal data and content at any time by contacting us at privacy@firstcoders.co.uk. Please note that deleted content may take time to be removed from backups and cached versions, and we may be legally obligated to retain certain information.
 - **Backup Retention**: Deleted data may remain in our backup systems for up to 90 days before being permanently removed.
