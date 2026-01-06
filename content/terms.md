@@ -3,7 +3,7 @@ title: "Terms and Conditions"
 description: "Read the terms and conditions for using Mix That, including acceptable use, intellectual property, and user responsibilities."
 summary: "Review the terms and conditions governing your use of Mix That, including user rights, content ownership, and legal disclaimers."
 date: 2025-03-01T17:19:07+02:00
-lastmod: 2025-06-12T00:00:00+02:00
+lastmod: 2026-01-15T00:00:00+02:00
 draft: false
 type: "legal"
 seo:
@@ -15,7 +15,7 @@ seo:
 
 ##### Terms and Conditions
 
-Last Updated: 23 Aug 2022
+Last Updated: 15 Jan 2026
 
 ## Definitions
 
@@ -48,6 +48,8 @@ Subject to the terms contained in this agreement, we grant you a revocable, limi
 - use the Product to make a derivative product;
 - sell, resell, rent, lease, loan, sublicense, supply, publish, distribute or redistribute the Product;
 - damage or impair or attempt to damage or impair the functionality of the Product (including, but not limited to, by the use of automated scripts, bots, "hacking", injecting of harmful code, exploits);
+- use automated systems, scripts, bots, crawlers, or scraping tools to access, extract, download, or collect Content or data from the Products for any purpose, including but not limited to training machine learning models, artificial intelligence systems, or creating derivative datasets, without Our express written permission;
+- use Content obtained from the Products (whether Your own or others') to train, fine-tune, or improve any artificial intelligence, machine learning, or algorithmic system without obtaining explicit written consent from Us and all relevant rights holders.
 
 ### You must
 
@@ -156,7 +158,19 @@ You agree to indemnify Us from and against all costs, claims, demands, proceedin
 
 ## Payments and Refunds
 
-All payments for paid plans, sponsorships, or other services are non-refundable, except where required by applicable law. We may, at our sole discretion, consider refund requests on a case-by-case basis. To request a refund, please contact us at [support@firstcoders.co.uk](mailto:support@firstcoders.co.uk).
+All payments for paid plans, sponsorships, or other services are generally non-refundable, except where required by applicable law.
+
+### Statutory Rights (UK)
+
+Nothing in these Terms affects your statutory rights as a consumer under UK law, including the Consumer Rights Act 2015. If the Products do not conform to the contract or We breach these Terms, you may be entitled to a refund or other remedies as provided by law.
+
+### Discretionary Refunds
+
+Outside of your statutory rights, We may, at our sole discretion, consider refund requests on a case-by-case basis. To request a refund, please contact us at [support@firstcoders.co.uk](mailto:support@firstcoders.co.uk) with details of your purchase and the reason for your request.
+
+### Chargebacks
+
+Initiating a chargeback without first attempting to resolve the issue with Us may result in immediate termination of your account and loss of access to Your Content.
 
 ## Eligibility
 
