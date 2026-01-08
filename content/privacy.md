@@ -24,8 +24,7 @@ This Privacy Policy describes the type of information that we collect from you (
 ## 2\. Who We Are
 
 - 2.1 Here are our details:
-  - Our Website address is https://www.mixthat.co
-  - Our documentation website is https://docs.mixthat.co
+  - Our Website addresses are https://mixthat.co and its subdomains
   - Our company name is First Coders Ltd
   - Our registered address is 50 St. Marys Road, Hemel Hempstead, England, HP2 5HL
   - Our nominated representative is Mark Cremer and he can be contacted at mark@firstcoders.co.uk.
@@ -37,12 +36,13 @@ This Privacy Policy describes the type of information that we collect from you (
 - 3.2 We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:
   - Identity Data includes first name, last name, username or similar identifier, display name, and profile information you choose to provide within the App.
   - Contact Data includes email address and any contact information you provide when reaching out to us for support.
-  - Financial Data includes payment information necessary to process sponsored accounts or premium features. We do not directly store your full payment card details on our servers. All payment processing is handled by third-party payment processors (currently Patreon, and potentially Stripe in the future) who are PCI-DSS compliant and adhere to strict security standards for handling financial information.
+  - Financial Data includes payment information necessary to process sponsored accounts or premium features. We do not store any payment details on our servers. All payment processing is handled by third-party payment processors (currently Patreon, and potentially Stripe in the future) who are PCI-DSS compliant and adhere to strict security standards for handling financial information.
   - Content Data includes audio files, video files, mixed content (mixes), playlists, and any other user-generated content you create, upload, or share through MixThat.
   - Usage Data includes information about how you use the App, including playback history, mixes created, content shared, interactions with other users' content, and app performance data.
   - Technical Data includes device information, IP address, browser type, operating system, app version, device identifiers, time zone settings, server logs, error logs, and diagnostic information. This data is automatically collected when you use MixThat and is necessary to provide and improve the App, ensure security (including preventing unauthorized access and DDoS attacks), troubleshoot technical issues, and maintain platform integrity. Under UK GDPR, we recognize that IP addresses and similar identifiers constitute personal data.
   - Social Data includes your interactions within the App such as follows, likes, shares, and any public comments or interactions with other users' content.
-- 3.3 We do not collect any Special Categories of Personal Data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences.
+- 3.3 Non-User Data: If you invite friends or share content with individuals who do not have MixThat accounts (e.g., via email or external sharing links), we do not store the personal data of these non-users beyond the immediate technical necessity of delivering the invitation or shared content. We do not create "shadow profiles" or retain contact information of non-users for marketing or other purposes.
+- 3.4 We do not collect any Special Categories of Personal Data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences.
 - 3.4 Under UK GDPR we will ensure that your personal data is processed lawfully, fairly, and transparently, without adversely affecting your rights. We will only process your personal data if at least one of the following basis applies:
   - a) You have given consent to the processing of your personal data for one or more specific purposes;
   - b) processing is necessary for the performance of a contract to which you are a party or in order to take steps at the request of you prior to entering into a contract; or
@@ -64,7 +64,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - e) process payments for sponsored accounts or premium features;
   - f) communicate with you about app updates, new features, or service announcements;
   - g) provide customer support and respond to your inquiries;
-  - h) ensure the security and integrity of the App and protect against misuse, unauthorized access, fraud, and security threats;
+  - h) ensure the security and integrity of the App and protect against misuse, unauthorized access, fraud, security threats, and unauthorized automated data collection including AI scraping and training;
   - i) monitor and analyze usage patterns and technical performance to debug issues and optimize the App;
   - j) comply with legal obligations and enforce our Terms of Service.
 - 4.3 If you are already our user, we will only contact you electronically about MixThat features, updates, or content similar to what you have previously used or expressed interest in.
@@ -76,7 +76,7 @@ This Privacy Policy describes the type of information that we collect from you (
   - c) Where we need to comply with a legal or regulatory obligation, for example compliance with health and safety, tax or other statutory obligations.
 - 4.7 Use of Third-Party Services: We use third-party service providers to help us deliver MixThat's features, including:
 
-  - Cloud hosting infrastructure (Amazon Web Services - AWS) for server hosting, data storage, and content delivery. Production services are hosted in EU regions, while beta/testing environments may be hosted in USA regions.
+  - Cloud hosting infrastructure (Amazon Web Services - AWS) for server hosting, data storage, and content delivery. Production services are hosted in EU regions, while beta/testing environments may be hosted in USA regions. We also use Amazon CloudFront CDN (Content Delivery Network) to deliver content efficiently; CDN edge locations are distributed globally and may temporarily cache and store your content to improve performance.
   - Email service providers (such as Brevo) to send app notifications, newsletters, and announcements
   - Cloud storage providers to store and deliver your content securely
   - Analytics services to understand how users interact with the App and improve performance
@@ -88,18 +88,18 @@ This Privacy Policy describes the type of information that we collect from you (
 
 ## 5.Cookies
 
-- 5.1 The MixThat application does not use cookies. However, our documentation website (docs.mixthat.co) does not use cookies either. Please note that while we do not use cookies, we do collect Technical Data (including IP addresses and device information) through standard server logs and application diagnostics as described in Section 3.2 above. This collection is necessary for the operation, security, and improvement of MixThat.
+- 5.1 We do not use non-essential tracking or marketing cookies on MixThat or our documentation website. However, we may use essential technical identifiers (including session cookies and security tokens) that are strictly necessary for security, load balancing, DDoS protection, and session management. Under UK Privacy and Electronic Communications Regulations (PECR), these essential technical cookies do not require consent as they are necessary for the provision of our services. Please note that while we do not use cookies for tracking or advertising, we do collect Technical Data (including IP addresses and device information) through standard server logs and application diagnostics as described in Section 3.2 above. This collection is necessary for the operation, security, and improvement of MixThat.
 
 ## 6.Where we store your data and security
 
-- 6.1 We may transfer your collected data to storage outside the UK. Your data may be processed outside the UK through our cloud hosting provider (Amazon Web Services - AWS). Our production environment is hosted in AWS EU regions to ensure your data remains within the European Economic Area where possible. Beta and testing environments may be hosted in AWS USA regions. If we do store or transfer data outside the UK, we will take all reasonable steps to ensure that your data is treated as safely and securely as it would be within the UK and under the UK GDPR. Such steps may include, but not be limited to, the use of legally binding contractual terms between us and any third parties we engage with and the use of approved Model Contractual Arrangements. Your acceptance of this Privacy Policy shall be your consent permitting us to store or transfer data outside the UK if it is necessary for us to do so.
+- 6.1 We may transfer your collected data to storage outside the UK. Your data may be processed outside the UK through our cloud hosting provider (Amazon Web Services - AWS). Our production environment is hosted in AWS EU regions to ensure your data remains within the European Economic Area where possible. Beta and testing environments may be hosted in AWS USA regions. Additionally, we use Amazon CloudFront CDN (Content Delivery Network) with edge locations distributed globally to deliver content efficiently; these edge locations may temporarily cache and store your content. If we do store or transfer data outside the UK, we will take all reasonable steps to ensure that your data is treated as safely and securely as it would be within the UK and under the UK GDPR. Such steps may include, but not be limited to, the use of legally binding contractual terms between us and any third parties we engage with and the use of approved Model Contractual Arrangements. Your acceptance of this Privacy Policy shall be your consent permitting us to store or transfer data outside the UK if it is necessary for us to do so.
 - 6.2 Data security is of great importance to us, and to protect your data we have put in place suitable physical, electronic and managerial procedures to safeguard and secure personal data that we hold. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know. They will only process your personal data on our instructions and they are subject to a duty of confidentiality.
 - 6.3 We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so.
 - 6.4 By giving us your personal data, you agree to this arrangement. We will do what we reasonably can to keep your data secure.
 - 6.5 We have implemented security measures such as a firewall to protect any data and maintain a high level of security.
 - 6.6 Notwithstanding the security measures that we take, it is important to remember that the transmission of data via the internet may not be completely secure and that you are advised to take suitable precautions when transmitting to us data via the internet and you take the risk that any sending of that data turns out to be not secure despite our efforts.
 - 6.7 We will keep personal data for as long as is necessary which is usually the life of our relationship with you. Specific retention periods for different types of data are outlined below in our Data Retention Policies. We review our data retention obligations to ensure we are not retaining data for longer than we are legally obliged to.
-- 6.8 International Transfers: Personal data that we process through third-party service providers (including AWS cloud hosting, email service providers, and other processors) may be stored or processed outside the UK or EU. When this occurs, we ensure that appropriate safeguards are in place, such as standard contractual clauses and AWS's GDPR-compliant data processing agreements, to comply with UK GDPR requirements and protect your personal data.
+- 6.8 International Transfers: Personal data that we process through third-party service providers (including AWS cloud hosting, CloudFront CDN edge locations, email service providers, and other processors) may be stored or processed outside the UK or EU. When this occurs, we ensure that appropriate safeguards are in place, such as standard contractual clauses and AWS's GDPR-compliant data processing agreements, to comply with UK GDPR requirements and protect your personal data.
 - 6.9 Server Logs and Technical Data: Server logs, error logs, and similar technical data (including IP addresses) are retained for a limited period necessary for security purposes, such as detecting and preventing unauthorized access, fraud, and security threats. These logs are automatically purged after a reasonable retention period.
 
 ### Data Retention Policies for MixThat Users
@@ -128,7 +128,7 @@ This Privacy Policy describes the type of information that we collect from you (
 
 - 8.1 Under the UK GDPR, you have the right to:
   - request access to, deletion of or correction of, your personal data and content held by us at no cost to you;
-  - request that your personal data be transferred to another person (data portability);
+  - request that your personal data be transferred to another person (data portability). As MixThat is currently in an MVP phase, automated export functionality is not yet available. If you require a copy of your account data (including metadata such as playlists, likes, and account history), please contact privacy@firstcoders.co.uk and we will fulfill your request manually within 30 days;
   - request deletion of your user-generated content from MixThat;
   - be informed of what data processing is taking place;
   - restrict processing;
@@ -139,9 +139,9 @@ This Privacy Policy describes the type of information that we collect from you (
 
 ## 9.Children's Privacy
 
-- 9.1 MixThat is not intended for use by children under the age of 13. We do not knowingly collect, store, or process personal data from children under 13 years of age.
-- 9.2 If you are a parent or guardian and believe that your child under the age of 13 has provided us with personal data, please contact us immediately at privacy@firstcoders.co.uk so that we can take appropriate action to remove such information from our systems.
-- 9.3 We comply with the UK Age Appropriate Design Code and take appropriate measures to ensure that children's data, if inadvertently collected, is handled in accordance with their best interests and legal requirements.
+- 9.1 MixThat is not intended for use by individuals under the age of 18, or the age of majority in your jurisdiction, whichever is higher. We do not knowingly collect, store, or process personal data from individuals under this age.
+- 9.2 If you are a parent or guardian and believe that your child under the age of 18 (or the age of majority in your jurisdiction) has provided us with personal data, please contact us immediately at privacy@firstcoders.co.uk so that we can take appropriate action to remove such information from our systems.
+- 9.3 We comply with the UK Age Appropriate Design Code and other applicable child protection laws and take appropriate measures to ensure that data from individuals under the age of majority, if inadvertently collected, is handled in accordance with their best interests and legal requirements.
 
 ## 10.Dispute Resolution
 

@@ -20,7 +20,7 @@ Last Updated: 15 Jan 2026
 ## Definitions
 
 - "We", "Us" and "Ours" mean First Coders LTD.
-- "The Websites" means the website available under the domain mixthat.co.
+- "The Websites" means the websites available under the domain mixthat.co and its subdomains.
 - "The Software" means the Stem Player Web Component
 - "The Documentation" means any documentation which we may make available for The Products either by publishing it on The Website or shared with you by any other means.
 - "The Products" means The Websites and/or the Software and/or The Documentation.
@@ -60,36 +60,14 @@ Subject to the terms contained in this agreement, we grant you a revocable, limi
 
 The Term will commence on the date you accept these Terms and Conditions, or when you start using the Products and will remain in force until you stop using the Products or terminate your plan, or when we terminate this agreement.
 
-## Plan-Based Features, Limits, and Permissions
+## User Accounts and Service Limits
 
-- Users may self-register for an account and must provide accurate information.
-- The number of tracks, maximum duration, audio quality, and source audio options are determined by the user’s plan. Free users have lower limits and fewer options than sponsors.
-- If you exceed your plan’s storage, track, or bandwidth limits, we reserve the right to remove tracks or block/remove your account without warning.
-- You may only upload tracks and stems within the limits of your plan. Attempting to circumvent these limits is a violation of these Terms.
-- Only certain plans allow high quality streaming audio and the option to persist source audio for download or mixing. Free users cannot select these options.
-- The maximum duration of uploaded tracks is plan-dependent. Free users may upload only short tracks; sponsors may upload longer tracks.
-
-## Sharing, Embedding, and Permissions
-
-- You may create share URLs and embed codes for your tracks. By default, these are time-limited. Only certain plans (e.g., sponsor) can extend expiry or grant download/mixing permissions to share URLs.
-- As a free user, you cannot extend the expiry of share URLs or embed codes, nor grant download or mixing permissions to guests.
-- As a sponsor, you may extend expiry and grant download/mixing permissions to share URLs as permitted by your plan.
-- Only the owner or those with a valid share URL (with the right permissions) can access, mix, or download tracks.
-
-## Mixing and Downloading
-
-- You may mix any of your own tracks with source audio, subject to your plan’s permissions.
-- Guests with a valid share URL and the appropriate permissions may mix or download source audio as allowed by the owner’s plan and the share URL settings.
-
-## Security and Enforcement
-
-- The system enforces plan-based and share-based permissions, including but not limited to:
-  - Track count, storage, and bandwidth limits
-  - Audio quality and source audio restrictions
-  - Share URL expiry and permissions (download, mixing)
-  - Access control for reading and writing tracks
-- Attempting to circumvent these limits or permissions is strictly prohibited and may result in account suspension or removal.
-- We reserve the right to update which limits and permissions are enforced at any time, and to introduce new enforcement measures as needed to protect the service and its users.
+- Users may self-register for an account and must provide accurate and current information.
+- Your use of the Products is subject to service limits determined by your account plan, including but not limited to storage capacity, bandwidth, content duration, and feature availability.
+- Different account plans (free, sponsored, or other tiers) have different service limits and feature access. Details of plan-specific features and limits are available within the Products and may be updated from time to time.
+- You must not attempt to circumvent or exceed the service limits applicable to your account plan through technical means or otherwise.
+- If you exceed your plan's service limits, We reserve the right to remove content, restrict access, suspend, or terminate your account without prior notice.
+- We reserve the right to modify service limits, features, and access controls at any time without prior notice.
 
 ## Data Retention and Account Management
 
@@ -100,7 +78,7 @@ To maintain sustainable service operations and optimal performance for all users
 - **Content Retention**: User content (tracks, mixes, and associated data) on free accounts may be automatically deleted if no activity (plays, shares, edits, or account access) occurs for a period of 3 months or more.
 - **Account Retention**: Free user accounts that remain completely inactive (no login or platform interaction) for 6 months or more may be subject to removal.
 - **Sharing URLs**: Private track sharing URLs expire after 3 days to manage server resources and security.
-- **Notification Policy**: While we endeavor to provide advance notice via email before automatic deletions, we cannot guarantee delivery of such notifications. Users are responsible for maintaining regular account activity to preserve their content.
+- **Notification Policy**: We will make reasonable efforts to provide advance notice via email at least 30 days before automatic deletions, but we cannot guarantee delivery of such notifications due to email delivery issues, spam filters, or outdated contact information. Users are responsible for maintaining regular account activity and keeping original copies of uploaded content to preserve their data. If you need assistance accessing your data before deletion, please contact [support@firstcoders.co.uk](mailto:support@firstcoders.co.uk).
 
 ### Sponsored Accounts
 
@@ -140,11 +118,17 @@ You must not upload, make available, or continue to make available content to wh
 
 We have no responsibility to monitor any Content which has been posted to the Products by any of the users.
 
+### User Backup Responsibility
+
+As the Products are currently in a developmental/MVP (Minimum Viable Product) phase, You acknowledge that the Products are not intended as a primary storage or backup service. You must maintain original copies of all Content uploaded to the Products. We are not responsible for the loss of any Content, and we do not guarantee the ability to download or export Content directly from the interface at this stage. If you require assistance accessing your data, you may contact us at [support@firstcoders.co.uk](mailto:support@firstcoders.co.uk) and we will make reasonable efforts to assist you manually.
+
 ### Grant of License
 
 You hereby grant Us a limited, worldwide, non-exclusive, royalty-free and fully paid license to Us to store Your Content on our servers, in original and/or in modified and/or transcoded form.
 
 You also grant a limited, worldwide, non-exclusive, royalty-free, fully paid up, license to other users of the Products and to operators and users of any other websites, apps and/or platforms to which Your Content has been shared or embedded using the Products to use share, re-share, download, listen to offline, transmit, mix, adapt, Your content.
+
+The licenses granted to other users in this section are subject to the condition that you possess all necessary rights and permissions to grant such a license. We do not mediate rights disputes between users.
 
 The licenses granted in this section are granted separately with respect to each item of Your Content that you upload to the Products. Licenses with respect to audio Content, and any images or text within your account, will (subject to the following paragraph of these Terms of Use) terminate automatically when you remove such Content from your account. Licenses with respect to comments or other contributions that you make using the Product will be perpetual and irrevocable, and will continue notwithstanding any termination of your account.
 
@@ -189,3 +173,4 @@ Where in the course of using the Products you are asked to provide any informati
 ## Governing Law
 
 These Terms and Conditions shall be construed in accordance with English law and you hereby submit to the exclusive jurisdiction of the English courts.
+
