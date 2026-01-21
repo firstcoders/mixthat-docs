@@ -15,8 +15,9 @@ seo:
 
 If you have any questions, need technical assistance, or want to provide feedback, we're here to help!
 
-- For general support or inquiries, email us at <a href="mailto:mixthat@firstcoders.co.uk">mixthat@firstcoders.co.uk</a>
+- For general support or inquiries, email us at <a href="mailto:team@mixthat.co">team@mixthat.co</a>
 - For bug reports or feature requests, please visit our [GitHub Issues page](https://github.com/firstcoders/mixthat/issues)
 - For documentation suggestions, open an issue or pull request on our [documentation repository](https://github.com/firstcoders/mixthat-docs)
 
 We aim to respond to all support requests as quickly as possible. Thank you for using Mix That!
+
