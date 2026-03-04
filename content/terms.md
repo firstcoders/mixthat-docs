@@ -3,7 +3,7 @@ title: "Terms and Conditions"
 description: "Read the terms and conditions for using Mix That, including acceptable use, intellectual property, and user responsibilities."
 summary: "Review the terms and conditions governing your use of Mix That, including user rights, content ownership, and legal disclaimers."
 date: 2025-03-01T17:19:07+02:00
-lastmod: 2026-01-15T00:00:00+02:00
+lastmod: 2026-02-03T00:00:00+02:00
 draft: false
 type: "legal"
 seo:
@@ -15,7 +15,7 @@ seo:
 
 ##### Terms and Conditions
 
-Last Updated: 15 Jan 2026
+Last Updated: 03 Feb 2026
 
 ## Definitions
 
@@ -50,6 +50,12 @@ Subject to the terms contained in this agreement, we grant you a revocable, limi
 - damage or impair or attempt to damage or impair the functionality of the Product (including, but not limited to, by the use of automated scripts, bots, "hacking", injecting of harmful code, exploits);
 - use automated systems, scripts, bots, crawlers, or scraping tools to access, extract, download, or collect Content or data from the Products for any purpose, including but not limited to training machine learning models, artificial intelligence systems, or creating derivative datasets, without Our express written permission;
 - use Content obtained from the Products (whether Your own or others') to train, fine-tune, or improve any artificial intelligence, machine learning, or algorithmic system without obtaining explicit written consent from Us and all relevant rights holders.
+- specifically, upload, share, or otherwise make available “Priority Illegal Content” under the UK Online Safety Act, including (non-exhaustive):
+  - terrorism content or promotion of terrorism,
+  - child sexual abuse material (CSAM),
+  - incitement to violence or criminal activity,
+  - hate speech and illegal hate content as defined by applicable law,
+  - fraud and deceptive practices.
 
 ### You must
 
@@ -99,6 +105,12 @@ We shall have the right to terminate your access to the Products without notice 
 ## Reporting infringements
 
 If you discover any content on the Products that you believe infringes your copyright, or the copyright of any third-party, please report this to us by contacting us at [contact and support]({{< relref "/docs/other/contact-and-support" >}}).
+
+### Complaints, Acknowledgements, and Appeals
+
+- We will acknowledge safety reports within 48 hours and aim to provide a decision or status update promptly thereafter.
+- If we remove or restrict content or accounts, we will provide the reason and you may appeal within 14 days via [support@firstcoders.co.uk](mailto:support@firstcoders.co.uk).
+- Users may report not only content, but also any concerns that we have failed to meet our online safety duties; such reports will be tracked and reviewed.
 
 ## Intellectual Property Rights
 
@@ -160,11 +172,13 @@ Initiating a chargeback without first attempting to resolve the issue with Us ma
 
 You must be at least 18 years old, or the age of majority in your jurisdiction, to use the Products. By using the Products, you represent and warrant that you meet this requirement.
 
+We enforce our 18+ policy through self-declaration at signup, manual account review, and user reporting. We do not use “highly effective age assurance” (e.g., ID or biometric verification); therefore, we take extra care to respond swiftly to reports of under-18 access and may restrict or remove accounts that breach this requirement.
+
 ## Disclaimers and Limitation of Liability
 
 TO THE EXTENT PERMITTED BY LAW WE WILL NOT BE RESPONSIBLE OR LIABLE FOR ANY LOSS OR DAMAGES OF ANY NATURE WHETHER DIRECT OR INDIRECT INCLUDING ANY LOSS OF PROFITS OR ANY CONSEQUENTIAL DAMAGES SUFFERED OR INCURRED BY YOU ARISING OUT OF OR IN CONNECTION WITH THE USE OF THE PRODUCTS. USE BY YOU OF THE PRODUCTS IS AT YOUR OWN RISK. THE PRODUCTS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY REPRESENTATION OR WARRANTY OF ANY KIND WHETHER EXPRESS OR IMPLIED INCLUDING BUT NOT LIMITED TO ANY WARRANTY AS TO CONTENT AND ACCURACY OF INFORMATION, USEFULNESS, TITLE, NON-INFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE OR THAT THE THE PRODUCTS WILL MEET YOUR REQUIREMENTS. FURTHER, NO WARRANTY IS GIVEN BY US THAT THE FUNCTIONALITY OF THE PRODUCTS WILL BE UNINTERRUPTED OR ERROR FREE, THAT DEFECTS WILL BE CORRECTED OR THAT THE PRODUCTS OR THE SERVER THAT MAKES THEM AVAILABLE ARE FREE OF VIRUSES OR ANYTHING ELSE WHICH MAY BE HARMFUL OR DESTRUCTIVE. IF YOU ARE DISSATISFIED WITH THE PRODUCTS YOUR SOLE REMEDY IS TO CEASE USING THEM. NOTHING IN THESE TERMS AND CONDITIONS SHALL BE CONSTRUED SO AS TO EXCLUDE OR LIMIT THE LIABILITY OF US FOR DEATH OR PERSONAL INJURY AS A RESULT OF THE NEGLIGENCE OF US.
 
-IN ADDITION, AND TO THE MAXIMUM EXTEND PERMITTED BY LAW, WE HAVE NO LIABILITY WHATSOEVER TO ANY CONTENT WHICH HAS BEEN POSTED TO THE PRODUCTS BY USERS.
+IN ADDITION, AND TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE HAVE NO LIABILITY WHATSOEVER TO ANY CONTENT WHICH HAS BEEN POSTED TO THE PRODUCTS BY USERS.
 
 ## Data Protection
 
