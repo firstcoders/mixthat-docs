@@ -24,15 +24,14 @@ To share a track, simply click the share icon:
 
 - You can change a track's public/private status at any time in the track settings
 - Remember, while the track is "public", sharing a link means anyone with the URL can access your track
-- [Upgrade your plan](/docs/other/sponsor-this-project/) to unlock extended sharing options
 
 ## Extended Share Options
 
-For [sponsors](/docs/other/sponsor-this-project/), Mix That offers advanced sharing capabilities that provide greater control and functionality:
+Mix That offers advanced sharing capabilities that provide greater control and functionality:
 
 ### Extended Share Expiry
 
-By default, share links expire after 3 days for security purposes. However, sponsors have additional options:
+By default, share links expire after 3 days for security purposes. Depending on your setup, you may also have additional options:
 
 - **Extended expiry periods**: Choose longer expiration times for your share links
 - **Indefinite sharing**: Set links to never expire for permanent sharing needs
@@ -40,7 +39,7 @@ By default, share links expire after 3 days for security purposes. However, spon
 
 ### Allow Creation of Mix to Users
 
-When source audio is stored for all stems in your track (available to sponsors), you can enable recipients to:
+When source audio is stored for all stems in your track, you can enable recipients to:
 
 - **Generate custom mixes**: Share link users can create their own mix versions
 - **Interactive experience**: Recipients can adjust stem levels and create personalized versions

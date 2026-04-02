@@ -1,6 +1,6 @@
 ---
 title: "Security of Your Audio Assets"
-description: "Learn how Mix That secures your audio assets, including encryption, access controls, and audit options for enterprise sponsors."
+description: "Learn how Mix That secures audio assets, including encryption, access controls, and options for business customers."
 summary: "An overview of Mix That's security practices for protecting your audio files and data."
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-12T00:00:00+02:00
@@ -9,7 +9,7 @@ weight: 1000
 toc: true
 seo:
   title: "Audio Asset Security | Mix That"
-  description: "Discover how Mix That protects your audio assets with encryption, secure access, and audit options for enterprise sponsors."
+  description: "Discover how Mix That protects your audio assets with encryption, secure access, and business-ready deployment options."
   canonical: "/docs/reference/security/"
   robots: "index, follow"
 ---
@@ -43,6 +43,6 @@ Key authentication features include:
 - **Secure Asset Delivery:** We protect your audio files using CloudFront signed URLs combined with JWT (JSON Web Tokens) authentication. All encryption keys use a minimum of 256-bit encryption to ensure robust security for asset access.
 - **Monitoring:** We continuously monitor our systems for suspicious activity and regularly update our security protocols.
 
-For [Enterprise Sponsors](/docs/other/sponsor-this-project/), we can provide source code access for independent security audits and compliance reviews.
+For organizations evaluating commercial or self-hosted use, we can discuss architecture, deployment controls, and security review requirements as part of the business planning process.
 
 If you have questions about our security practices or need more information, please [contact us](/docs/other/contact-and-support).
