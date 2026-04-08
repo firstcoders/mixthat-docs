@@ -26,7 +26,7 @@ To maintain sustainable service costs and optimal performance for all users, we 
 - **Inactive Account Cleanup**: User accounts that remain completely inactive (no login or activity) for **6 months or more** may be subject to removal to free up system resources.
 - **Pre-deletion Notifications**: While we aim to send warning emails before automatic deletions, we cannot guarantee delivery. **Consistent activity is the best way to ensure your content remains available.**
 
-> 💡 **Pro Tip**: See [Creator Plans](/docs/other/creator-plans/) to get **permanent data retention** and significantly higher storage limits.
+> 💡 **Pro Tip**: See [Creator Plans](/docs/plans/creator/) to get **permanent data retention** and significantly higher storage limits.
 
 ### Cost Control Through Paid Plans
 
@@ -36,7 +36,7 @@ Paid creator plans do more than unlock premium features. They also help us maint
 - Invest in better infrastructure and features
 - Maintain predictable operational costs through dedicated supporter contributions
 
-**Ready to supercharge your Mix That experience?** [Learn more about creator plan benefits and pricing](/docs/other/creator-plans/) or contact us for custom solutions tailored to your needs.
+**Ready to supercharge your Mix That experience?** [Learn more about creator plan benefits and pricing](/docs/plans/creator/) or contact us for custom solutions tailored to your needs.
 
 ## Fair Use Policy
 

@@ -13,12 +13,12 @@
           <p class="lead">{{ .Params.lead | safeHTML }}</p>
           {{/*  <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>  */}}
           <p>
-            <a href="https://app.mixthat.co/upload"
-              class="btn btn-lg me-1 border-dark btn-pulse-lg-hover text-black mb-2"
+            <a style="background-color: rgb(213,41,101); border: 1px solid rgb(241, 69, 129)!important; color: #DDD!important" href="https://app.mixthat.co/upload"
+              class="btn btn-lg btn-primary me-1 btn-pulse-lg-hover text-black mb-2 "
               >Build Your Player</a
             >
             <a href="{{ "docs/general/what-is-mixthat/" | relURL }}"
-              class="btn btn-lg me-1 border-dark btn-pulse-lg-hover text-black mb-2"
+              class="btn btn-lg btn-primary me-1 btn-pulse-lg-hover text-black mb-2"
               >Read the Docs</a
             >
           </p>

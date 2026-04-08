@@ -14,7 +14,9 @@ seo:
   robots: "index, follow"
 ---
 
-Sharing your music with others is easy in Mix That!
+Sharing your music with others is easy in Mix That.
+
+Mix That gives you more control than sending audio files around manually.
 
 To share a track, simply click the share icon:
 
@@ -50,7 +52,7 @@ When source audio is stored for all stems in your track, you can enable recipien
 This option allows recipients of the share link to:
 
 - **Download individual stems**: Access source audio for any stem that has it available
-- **Professional collaboration**: Share high-quality audio files with other producers or musicians
+- **Professional collaboration**: Share high-quality audio files with other recipients who need the original stems
 - **Remix capabilities**: Enable others to use your stems in their own projects
 
 ### Managing Your Share Links
@@ -90,4 +92,4 @@ The embed code can be pasted into:
 
 Look here for more info on [embedding](/docs/general/embedding-a-player)
 
-Enjoy sharing your music, and let us know if you have any questions or need help with sharing options!
+If you have any questions or need help with sharing options, [contact us](/docs/other/contact-and-support/).

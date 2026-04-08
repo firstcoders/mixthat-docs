@@ -1,7 +1,7 @@
 ---
-title: "Mix That — Stem Player Platform for Creators and Music Catalogs"
+title: "Mix That: A Stem Player Platform for Creators and Music Catalogs"
 description: "Mix That helps creators share interactive stems and helps music businesses deliver branded, embeddable stem playback without building the infrastructure from scratch."
-lead: "Mix That is a browser-based stem player platform with two clear paths: self-serve tools for creators and commercial options for music libraries, publishers, and other catalog businesses. Upload, stream, share, embed, and control multitrack audio without building the full stack yourself."
+lead: "Got stems? <i>Mix That</i> gives your audience a unique way to experience them: interactive in-browser mixing, embeddable playback, and better stem sharing without building the platform yourself.Ideal for songwriters, labels, publishers, and production music catalogs."
 date: 2024-06-12T00:00:00+02:00
 lastmod: 2025-06-12T00:00:00+02:00
 draft: false
@@ -12,3 +12,4 @@ logo: ./logo-darkmode.png
 #   canonical: "/"
 #   robots: "index, follow"
 ---
+

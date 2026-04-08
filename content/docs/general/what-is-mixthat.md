@@ -1,7 +1,7 @@
 ---
 title: "What is MixThat?"
 description: "MixThat is a browser-based stem player platform for creators and music businesses."
-summary: "Discover how MixThat serves both individual creators and commercial music catalogs with interactive multitrack audio tools."
+summary: "Discover how MixThat helps songwriters, labels, and commercial music teams present music through interactive multitrack playback and better stem sharing."
 date: 2025-03-01T16:13:18+02:00
 lastmod: 2025-03-01T16:13:18+02:00
 draft: false
@@ -14,12 +14,12 @@ seo:
   robots: "index, follow"
 ---
 
-**MixThat** is a web-based platform for uploading, mixing, and sharing multitrack and stem audio directly in the browser.
+**MixThat** gives people a more engaging way to experience stems: interactive in-browser mixing, embeddable playback, and better sharing workflows without building the stack yourself.
 
-It is designed for two kinds of users:
+It can be useful for:
 
-- **Creators** who want to publish interactive listening experiences without building infrastructure
-- **Music businesses** that want branded, embeddable stem playback and controlled sharing for catalogs, clients, and internal workflows
+- **Songwriters, artists, and producers** who want listeners to explore the arrangement rather than just press play
+- **Labels, publishers, and music companies** that want a stronger way to present releases, catalogs, or stems online
 
 ---
 
@@ -35,6 +35,9 @@ With MixThat, you can:
 Everything runs in the cloud — no installs, no file transfers, and no complex hosting setup.
 Your listeners can engage with your tracks immediately through our powerful [Stem Player](https://www.stemplayer-js.com).
 
+For individual songwriters, that means a more distinctive way to present a release, demo, or work in progress.
+For labels and other music companies, it creates a better way to share stems, campaigns, and interactive listening experiences without building custom tooling.
+
 ---
 
 ## Powered by the Stem Player
@@ -46,9 +49,9 @@ It lets listeners:
 - Loop and zoom in on regions
 - Experience your track interactively, not passively
 
-It’s an entirely new way to present your music online.
+It’s a more interactive way to present music online and invite deeper listener engagement.
 
-For organizations, it also creates a practical way to present stems on-brand and in-context, instead of handing over zip files and hoping the client can evaluate them properly.
+For organizations, it also creates a practical way to present stems on-brand and in-context, instead of handing over zip files and hoping the recipient can evaluate them properly.
 
 ---
 
@@ -62,7 +65,7 @@ Behind the scenes, MixThat handles:
 - Automatic transcoding for multiple formats
 - Secure and efficient cloud hosting
 
-For individual users, that means less setup and faster sharing. For businesses, it means less product and infrastructure work to get a credible stem experience live.
+For individual users, that means less setup and faster sharing. For labels and businesses, it means less product and infrastructure work to get a credible interactive stem experience live.
 
 ---
 
@@ -70,11 +73,11 @@ For individual users, that means less setup and faster sharing. For businesses, 
 
 MixThat is built for anyone who works with multitrack or stem audio:
 
-- **Musicians & Producers** — Showcase interactive versions of your songs
+- **Songwriters, Musicians & Producers** — Showcase interactive versions of your songs and let listeners explore the arrangement
 - **Music Teachers** — Share lessons with adjustable stems
 - **Karaoke Creators** — Build mixable karaoke experiences
 - **Choirs & Ensembles** — Provide isolated voice parts for practice
-- **Labels & Publishers** — Present catalogs with modern, engaging playback
+- **Labels & Publishers** — Present releases and catalogs with modern, engaging playback
 - **Production Music Libraries** — Let clients preview, mix, and share stems before licensing
 
 💡 _Have a unique idea or use case? We’d love to hear from you!_
@@ -87,10 +90,10 @@ MixThat is built for anyone who works with multitrack or stem audio:
 
 Use MixThat as a self-serve platform for uploading, sharing, and embedding interactive tracks.
 
-[View Creator Plans →](/docs/other/creator-plans/)
+[View Creator Plans →](/docs/plans/creator/)
 
 ### For businesses
 
-Use MixThat as a commercial platform for catalog presentation, controlled sharing, embedding, and potential managed or self-hosted deployment.
+Use MixThat as a commercial platform for catalog presentation, audience-facing interactive playback, controlled sharing, embedding, and potential managed or self-hosted deployment.
 
-[View Business Plans →](/docs/other/business-plans/)
+[View Business Plans →](/docs/plans/business/)
