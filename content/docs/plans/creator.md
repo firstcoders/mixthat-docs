@@ -5,10 +5,12 @@ summary: "Pricing and feature tiers for individual creators using Mix That to sh
 date: 2026-04-02T00:00:00+02:00
 lastmod: 2026-04-02T00:00:00+02:00
 draft: false
+slug: "creator"
 weight: 201
 toc: true
 aliases:
   - /docs/other/creator-plans/
+  - /docs/plans/creator-plans/
 seo:
   title: "Creator Plans | Mix That"
   description: "Explore Mix That plans for individual creators, including storage, sharing, and quality limits."
@@ -59,3 +61,4 @@ We currently handle creator upgrades through Patreon:
 > After becoming a Patron, please [contact us](/docs/other/contact-and-support/) with your Patreon username or email so we can verify your sponsorship and activate your benefits.
 
 If you have questions about creator plans, [contact us](/docs/other/contact-and-support/).
+

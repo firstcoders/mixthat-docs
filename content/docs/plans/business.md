@@ -5,10 +5,12 @@ summary: "Managed hosting for smaller teams and self-hosted licensing for organi
 date: 2026-04-02T00:00:00+02:00
 lastmod: 2026-04-02T00:00:00+02:00
 draft: false
+slug: "business"
 weight: 202
 toc: true
 aliases:
   - /docs/other/business-plans/
+  - /docs/plans/business-plans/
 seo:
   title: "Business Plans | Mix That"
   description: "Explore Mix That commercial options for production music companies, publishers, and other organizations."
@@ -74,3 +76,4 @@ Detailed documentation, architectural material, and commercial terms are provide
 Business plans are handled directly rather than through Patreon or self-serve checkout.
 
 To discuss managed hosting, self-hosting, integration work, or commercial licensing, [contact us](/docs/other/contact-and-support/).
+
