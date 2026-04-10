@@ -19,8 +19,8 @@
   weight = 4
 
 [[main]]
-  name = "Sponsor this project"
-  url = "/docs/other/sponsor-this-project/"
+  name = "Plans"
+  url = "/docs/plans/"
   weight = 5
 
 
