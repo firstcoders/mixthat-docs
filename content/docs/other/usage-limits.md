@@ -16,7 +16,7 @@ seo:
 
 ## Keeping Mix That Sustainable
 
-To offer Mix That as a free service, we need to manage our operational costs, particularly for storage and network traffic. We've implemented some fair usage limits to ensure everyone can enjoy the platform.\*\*\*\*
+To offer Mix That as a free service, we need to manage our operational costs, particularly for storage and network traffic. We've implemented some fair usage limits to ensure everyone can enjoy the platform.
 
 ### Data Management for Free Accounts
 
