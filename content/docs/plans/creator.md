@@ -34,7 +34,7 @@ They are a strong fit for songwriters, producers, and independent artists who wa
 | **Streams/Downloads Quota** | 2K/month                             | 5K/month           | 25K/month           |
 | **Audio Max Quality**       | STANDARD                             | STANDARD           | HIGH                |
 | **Audio Max Duration**      | 5min                                 | 10min              | 25min               |
-| **Sharing & Embedding**     | Up to 14-day expiring URLs           | Extended/permanent | Extended/permanent  |
+| **Sharing & Embedding**     | 14-day expiring URLs                 | Extended/permanent | Extended/permanent  |
 | **Track Retention**         | Deleted after 3 months of inactivity | Permanent\*        | Permanent\*         |
 | **API Access**              | None                                 | None               | Full                |
 | **API Request Quota**       | N/A                                  | N/A                | 3000 requests/month |
