@@ -57,7 +57,7 @@ The quality of audio available for download or mixing depends on the quality of 
 
 ## Audio Duration Limits
 
-Each stem you upload must be under a maximum duration, which depends on your account type. If a file is too long, you'll see a clear error message and may need to upgrade your account for longer uploads.
+Each stem you upload must be under a maximum duration. If a file is too long, you'll see a clear error message.
 
 ## Source Audio Persistence
 
@@ -66,16 +66,13 @@ When uploading stems, you have the option to keep your original source audio fil
 - **Mix Generation:** If source audio is preserved, you will be able to generate mixes and also offer this ability to those you share the track with
 - **Download Quality:** Downloads will maintain the quality of your source files
 - **Storage:** Keeping source files requires additional storage space
-- **Account Requirements:** Source audio persistence will require a upgraded account
 
 ## Track & Stem Limits
 
-There are limits on the number of tracks. If you reach a limit, you'll be notified and may need to upgrade your account or remove existing tracks/stems.
+There are limits on the number of tracks. If you reach a limit, you'll be notified and may need to remove existing tracks or stems.
 
 There are also limits on the number of stems you can add to each track, although this limit is set to a generous number. The reason for this is mainly to ensure adequate player performance in the browser.
 
 ## Account Permissions
 
-Some upload features (like high quality, long duration, or source downloads) require an upgraded account. If you don't have access, you'll see a warning or error message.
-
-For more details about account features and upgrade options, see the [Sponsor This Project](/docs/other/sponsor-this-project/) page.
+Some upload features may depend on your current account settings. If you don't have access, you'll see a warning or error message.

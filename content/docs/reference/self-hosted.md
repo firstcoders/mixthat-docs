@@ -1,22 +1,23 @@
 ---
 title: "Self-Hosting"
-description: "Comprehensive guide for enterprise sponsors on deploying and managing a self-hosted Mix That instance, including benefits, requirements, and support."
-summary: "Step-by-step instructions and key information for enterprise sponsors to self-host Mix That, with details on architecture, support, and early access."
+description: "Guide for organizations evaluating a self-hosted Mix That deployment."
+summary: "Overview of self-hosted Mix That for organizations that need infrastructure control, continuity, or internal governance."
 date: 2025-03-01T16:04:48+02:00
 lastmod: 2025-06-11T00:00:00+02:00
-weight: 1002
+weight: 303
 toc: true
-draft: true
 seo:
-  title: "Self-Hosting Mix That: Enterprise Deployment Guide"
-  description: "Learn how to deploy, manage, and scale your own Mix That instance for your organization, with full support and documentation."
-  canonical: "/docs/guides/self-hosted/"
+  title: "Self-Hosting Mix That"
+  description: "Learn how to deploy and operate your own Mix That instance in AWS."
+  canonical: "/docs/reference/self-hosted/"
   robots: "index, follow"
 ---
 
-Are you an [enterprise sponsor](/docs/other/sponsor-this-project/) looking to host Mix That within your own infrastructure? Our self-hosting option is designed for organizations that require full control over their audio assets, data, and integrations.
+Mix That offers a self-hosted path for organizations that want to run the platform in their own AWS environment.
 
-Mix That is built with a modern, serverless-first architecture, ensuring cost-effectiveness, scalability, and straightforward deployment. This makes it ideal for enterprises seeking robust, secure, and flexible audio management solutions.
+This is primarily intended for teams that need stronger control over infrastructure, procurement, continuity, data handling, or internal governance than a hosted service can provide.
+
+Mix That uses a serverless AWS architecture, which keeps the deployment model straightforward while still giving your team ownership of the environment.
 
 A self-hosted Mix That instance provides a solid foundation for audio asset management and delivery, with core features including:
 
@@ -25,10 +26,11 @@ A self-hosted Mix That instance provides a solid foundation for audio asset mana
 - **Secure CDN Delivery:** Delivers audio assets securely and efficiently over a preconfigured Content Delivery Network (CDN), ensuring fast and reliable access worldwide.
 - **Mixing & Downloading:** Enables users to mix audio stems directly in the platform and download high-quality mixes on demand.
 
-While Mix That is still in early development and not yet feature-rich, it is designed to grow with your needs. We welcome your feedback and suggestions—your input will help shape the platform's future features and capabilities.
+## Why Choose Self-Hosted
 
-With Mix That, your team can manage, store, transcode, and deliver audio seamlessly, while providing powerful mixing and download capabilities for your users—all within your own infrastructure.
+- Your organization keeps operational ownership of the platform
+- The deployment sits inside your AWS account rather than ours
+- The model reduces supplier lock-in and gives internal stakeholders a clearer continuity story
+- It is often the better fit for companies with stricter security review, procurement, or governance requirements
 
-We are preparing to release the full source code under the Business Source License (BSL), along with detailed documentation and architectural diagrams, to support your development team in deploying and maintaining your instance efficiently.
-
-For more information, to discuss your requirements, or to request early access to resources, please [contact us]({{< relref "/docs/other/contact-and-support" >}}). Our team is ready to provide guidance and support tailored to your organization's needs.
+For commercial terms or deployment discussions, see [Business Plans](/docs/plans/business/) or [contact us]({{< relref "/docs/other/contact-and-support" >}}).
