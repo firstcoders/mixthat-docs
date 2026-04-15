@@ -7,7 +7,7 @@ lastmod: 2026-04-15T00:00:00+00:00
 draft: false
 weight: 10
 tags: ["Product Update", "Features", "MixThat"]
-categories: ["Announcements"]
+categories: ["Features"]
 contributors: []
 seo:
   title: "New Feature: Saving and Playing Back a Mix | Mix That Blog"
